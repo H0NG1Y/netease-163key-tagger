@@ -1,9 +1,9 @@
 {
   "name": "netease-163key-tagger",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
-  "description": "给本地音乐文件（MP3/FLAC/NCM）写入网易云音乐的 163 key(Don't modify) 标签",
+  "description": "给本地音乐文件写入网易云音乐的 163key 标签，让客户端认成曲库里的歌",
   "main": "lib/163key.mjs",
   "engines": {
     "node": ">=22"
@@ -16,8 +16,12 @@
     "self-test": "node apply.mjs self-test",
     "start": "node server.mjs",
     "web": "node server.mjs",
-    "test": "node apply.mjs self-test"
+    "test": "node apply.mjs self-test",
+    "build": "node build.mjs",
+    "release": "pwsh -NoProfile -ExecutionPolicy Bypass -File Build-Release.ps1"
   },
-  "dependencies": {},
-  "comment": "刻意零依赖：只用 Node 内置 crypto / fetch / fs，避免沙箱里装不了包"
+  "devDependencies": {
+    "postject": "^1.0.0-alpha.6"
+  },
+  "comment": "运行时零依赖：只用 Node 内置 crypto/fetch/fs。postject 只在打包 EXE 时用，build.mjs 会自己装到 build-tmp。release 脚本需要 PowerShell 7+（pwsh），5.1 会把 UTF-8 中文读错。"
 }

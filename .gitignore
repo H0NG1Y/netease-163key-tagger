@@ -1,6 +1,11 @@
 # 依赖（本项目实际零依赖，留一行防止将来加）
 node_modules/
 
+# 构建产物：EXE 由 GitHub Release 分发，不进仓库
+dist/
+build-tmp/
+*.exe
+
 # 运行时产物：扫描/匹配报告、缓存、日志、临时副本
 out/
 *.tmp

@@ -22,9 +22,19 @@ import * as api from './lib/netease-api.mjs';
 import { isDefiniteUgc, catalogScore, parseFilename, pickBest, DURATION_TOLERANCE_MS } from './lib/match.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const OUT = path.join(HERE, 'out');
-const WEB = path.join(HERE, 'web');
-const CONFIG_FILE = path.join(HERE, '.config.json');
+// exe 态由启动器注入：ASSETS 指向释放出来的资源目录，DATA 指向用户数据目录。
+// 源码态两者都不设，沿用项目目录（行为和以前完全一致）。
+const ASSETS = process.env.NETEASE_163KEY_ASSETS || HERE;
+const DATA = process.env.NETEASE_163KEY_DATA || HERE;
+const OUT = path.join(DATA, 'out');
+const WEB = path.join(ASSETS, 'web');
+const CONFIG_FILE = path.join(DATA, '.config.json');
+/**
+ * exe 态检测：SEA 里 process.execPath 就是打包好的 exe 本身。
+ * 判断方式看是否有启动器注入的环境变量，比 require('node:sea') 更可控
+ * （后者在 ESM 里拿不到 require，而且源码态也不该走这条路）。
+ */
+const IS_SEA = !!process.env.NETEASE_163KEY_ASSETS;
 const NODE = process.execPath;
 const PORT = Number(process.env.PORT || 0);
 
@@ -148,9 +158,16 @@ function startJob(op, args) {
   if (protect.length) env.NETEASE_163KEY_PROTECT = protect.join(path.delimiter);
   env.NETEASE_163KEY_ROOT = config.root || '';
   env.NETEASE_163KEY_BACKUP = config.backup || '';
+  // 子进程要和父进程用同一个数据目录（exe 态是 ~/.netease-163key-tagger）
+  env.NETEASE_163KEY_DATA = DATA;
 
-  const argv = [path.join(HERE, 'apply.mjs'), op, ...args, '--progress', progressFile];
-  const child = spawn(NODE, argv, { cwd: HERE, env, windowsHide: true });
+  // 子进程有两种形态：
+  //   源码态：node <ASSETS>/apply.mjs scan ...
+  //   exe 态 ：<exe> --cli scan ...          （启动器看到 --cli 就转去跑 apply）
+  const argv = IS_SEA
+    ? ['--cli', op, ...args, '--progress', progressFile]
+    : [path.join(ASSETS, 'apply.mjs'), op, ...args, '--progress', progressFile];
+  const child = spawn(NODE, argv, { cwd: ASSETS, env, windowsHide: true });
 
   job = {
     op,

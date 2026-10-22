@@ -22,12 +22,15 @@ import { readTags, write163Key, detectFormat, parseId3v2, parseFlac, isProtected
 import { parseFilename, pickBest, DURATION_TOLERANCE_MS } from './lib/match.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
+// exe 态：源码被释放到临时目录，配置与产物必须落在用户数据目录，
+// 否则临时文件一被清理，匹配报告就没了。源码态 DATA 就是项目根。
+const DATA = process.env.NETEASE_163KEY_DATA || HERE;
 const NODE = process.execPath;
 
 // 命令行与 Web 端共用同一份本机配置，避免两边指到不同目录。
 function readLocalConfig() {
   try {
-    return JSON.parse(fs.readFileSync(path.join(HERE, '.config.json'), 'utf8'));
+    return JSON.parse(fs.readFileSync(path.join(DATA, '.config.json'), 'utf8'));
   } catch {
     return {};
   }
@@ -40,7 +43,7 @@ if (DEFAULT_BACKUP) addProtectedRoot(DEFAULT_BACKUP);
 for (const d of LOCAL_CFG.protect || []) if (d) addProtectedRoot(d);
 
 const AUDIO_RE = /\.(mp3|flac)$/i;
-const OUT = path.join(HERE, 'out');
+const OUT = path.join(DATA, 'out');
 
 // ── 杂项 ─────────────────────────────────────────────────────
 
