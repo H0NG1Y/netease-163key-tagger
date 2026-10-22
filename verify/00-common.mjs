@@ -475,8 +475,8 @@ export function failCount() {
   return failures;
 }
 
-export const PROJECT = 'D:\\HonGLY\\netease-163key-tagger';
+export const PROJECT = '<REPO>';
 export const TARGET = 'E:\\CloudMusic_163key';
 export const BACKUP = 'E:\\CloudMusic_backup_20261022';
 export const ORIGINAL = 'E:\\CloudMusic';
-export const REAL_SAMPLE = 'D:\\HonGLY\\思想道德与法治\\《放下手机》\\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3';
+export const REAL_SAMPLE = '<REAL_SAMPLE:一个由官方客户端写入 163key 的真实 mp3>';

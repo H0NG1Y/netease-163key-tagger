@@ -19,7 +19,7 @@ import fs from 'node:fs';
 import { REAL_SAMPLE, TARGET, vParseFlac, vParseTag, vReadAudio } from './00-common.mjs';
 
 console.log('═══ 证据 1：社区事实标准 163marker 的字段来源 ═══\n');
-const ref = fs.readFileSync('D:/HonGLY/netease-163key-tagger/probe/ref/163marker-core.py.txt', 'utf8');
+const ref = fs.readFileSync('<REPO>/probe/ref/163marker-core.py.txt', 'utf8');
 const lines = ref.split(/\r?\n/);
 lines.forEach((l, i) => {
   if (/bitrate|mp3DocId|duration/.test(l)) console.log(`  L${i + 1}: ${l.trim()}`);
@@ -71,7 +71,7 @@ console.log(`  ⇒ 若语义是「云端 mp3 档位」（320k），则全部正�
 console.log('\n═══ 证据 4：客户端拿 bitrate 干什么？（决定这个错有多大影响） ═══\n');
 console.log('  notes/api.md §6.2 记录：客户端曲库库 dbTrack 里 "bitrate" 出现 0 次');
 console.log('  ⇒ 客户端不靠 163key 的 bitrate 做任何本地判断，字段仅作展示/透传');
-const apiMd = fs.readFileSync('D:/HonGLY/netease-163key-tagger/notes/api.md', 'utf8');
+const apiMd = fs.readFileSync('<REPO>/notes/api.md', 'utf8');
 const hit = apiMd.includes('`"bitrate"` → **0**') || /"bitrate"`?[^\n]{0,20}→\s*\*\*0\*\*/.test(apiMd);
 console.log(`  ⇒ 复核 notes/api.md 是否确实这么写：${hit ? '是' : '需人工确认'}`);
 

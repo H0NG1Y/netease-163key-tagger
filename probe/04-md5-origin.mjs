@@ -13,7 +13,7 @@ import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 
 const TARGET = 'cde6b150f488f81c8f0d9b374d2fe2fb';
-const SAMPLE = 'D:\\HonGLY\\思想道德与法治\\《放下手机》\\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3';
+const SAMPLE = '<REAL_SAMPLE:一个由官方客户端写入 163key 的真实 mp3>';
 
 const md5 = (b) => createHash('md5').update(b).digest('hex');
 

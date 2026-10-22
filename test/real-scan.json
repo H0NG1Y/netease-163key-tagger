@@ -1,5 +1,5 @@
 {
-  "root": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src",
+  "root": "<REPO>\\test\\e2e\\src",
   "generatedAt": "2026-10-22T06:19:18.565Z",
   "count": 3,
   "fmtCount": {
@@ -9,7 +9,7 @@
   "records": [
     {
       "file": "Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3",
-      "abs": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src\\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3",
+      "abs": "<REPO>\\test\\e2e\\src\\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3",
       "size": 8602160,
       "mtime": "2023-11-12T13:00:08.823Z",
       "format": "mp3",
@@ -48,7 +48,7 @@
     },
     {
       "file": "周杰伦 - 一路向北.flac",
-      "abs": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src\\周杰伦 - 一路向北.flac",
+      "abs": "<REPO>\\test\\e2e\\src\\周杰伦 - 一路向北.flac",
       "size": 35741903,
       "mtime": "2026-10-22T05:01:19.934Z",
       "format": "flac",
@@ -77,7 +77,7 @@
     },
     {
       "file": "周杰伦 - 一路向北.mp3",
-      "abs": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src\\周杰伦 - 一路向北.mp3",
+      "abs": "<REPO>\\test\\e2e\\src\\周杰伦 - 一路向北.mp3",
       "size": 4791802,
       "mtime": "2025-02-27T09:53:48.291Z",
       "format": "mp3",

@@ -17,7 +17,7 @@ import { createDecipheriv, createHash } from 'node:crypto';
 import { getSongDetail, to163Meta, searchSong, metaTo163Plain, META_FIELD_ORDER } from '../lib/netease-api.mjs';
 import { pickBest, parseFilename } from '../lib/match.mjs';
 
-const SAMPLE = 'D:\\HonGLY\\思想道德与法治\\《放下手机》\\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3';
+const SAMPLE = '<REAL_SAMPLE:一个由官方客户端写入 163key 的真实 mp3>';
 const KEY_HEX = '2331346c6a6b5f215c5d2630553c2728';
 
 function readRealTag(file) {

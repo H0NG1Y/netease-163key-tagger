@@ -52,7 +52,7 @@ for (const r of rows) brs[r.meta.bitrate] = (brs[r.meta.bitrate] || 0) + 1;
 for (const [k, v] of Object.entries(brs).sort((a, b) => b[1] - a[1])) console.log(`  ${k}: ${v} 个`);
 
 // detail 缓存里 format 是否恒为 mp3
-const cache = JSON.parse(fs.readFileSync('D:/HonGLY/netease-163key-tagger/out/api-cache-100.json', 'utf8'));
+const cache = JSON.parse(fs.readFileSync('<REPO>/out/api-cache-100.json', 'utf8'));
 const detKeys = Object.keys(cache).filter((k) => k.startsWith('detail:'));
 const fmtCount = {};
 for (const k of detKeys) {

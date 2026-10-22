@@ -258,7 +258,7 @@ Error: addid3content: AES_set_encrypt_key error!
 附近还有 `orpheus::local_music` / `music_discern` / `filepath_watche.cpp` / `MusicID3Reader` 等符号。三份 NTPK 包（magic `NTPK`）是加密的，未解，因此「客户端具体怎么消费这些字段」无法从二进制进一步证实。
 
 ### 6.2 客户端曲库数据库（`webdb.dat`，只读副本）
-`C:\Users\HonGLY\AppData\Local\Netease\CloudMusic\Library\webdb.dat`，293,100,544 字节，magic `SQLite format 3`，用 Node 内置 `node:sqlite` 只读打开（**先复制到 %TEMP% 再读，避免锁客户端**）。19 张表，关键三张：
+`%USERPROFILE%\AppData\Local\Netease\CloudMusic\Library\webdb.dat`，293,100,544 字节，magic `SQLite format 3`，用 Node 内置 `node:sqlite` 只读打开（**先复制到 %TEMP% 再读，避免锁客户端**）。19 张表，关键三张：
 
 | 表 | 结构 | 行数 |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
  * verify/_probe-field-semantics.mjs —— 探查 163key 各字段的「语义」到底来自本地文件还是云端条目
  *
  * 判据来源（唯一 ground truth）：官方客户端写的真实样本
- *   D:\HonGLY\思想道德与法治\《放下手机》\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3
+ *   <REAL_SAMPLE:一个由官方客户端写入 163key 的真实 mp3>
  *
  * 对每个字段，问一个问题：这个值是「本地文件的属性」还是「云端条目的属性」？
  * 用真实样本可以分辨，因为它的本地属性与云端属性**不完全相同**。

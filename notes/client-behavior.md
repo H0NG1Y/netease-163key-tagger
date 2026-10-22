@@ -3,7 +3,7 @@
 - 调研人：teammate `client-behavior`（共享任务板 task-2）
 - 日期：2026-10-22
 - 方法：①网络一手资料（官方专栏/官方答疑、GitHub 仓库源码与 issue、第三方实测博客）；②**只读**检查本机 Windows 客户端安装目录、用户数据目录与其 SQLite 库、以及客户端二进制内嵌字符串。
-- 权限声明：**全程只读**。没有修改/删除客户端任何文件；所有 SQLite 都是在 `%TEMP%` 里的副本上或 `mode=ro` 打开；未对 `E:\CloudMusic`、`C:\Users\HonGLY\Downloads\Music` 下任何音频做写入。本文所有「路径 + 文件名」均是我实际看到的内容。
+- 权限声明：**全程只读**。没有修改/删除客户端任何文件；所有 SQLite 都是在 `%TEMP%` 里的副本上或 `mode=ro` 打开；未对 `E:\CloudMusic`、`%USERPROFILE%\Downloads\Music` 下任何音频做写入。本文所有「路径 + 文件名」均是我实际看到的内容。
 - 分档：【已证实】= 一手实测/官方原文/我本机直接观察；【有旁证】= 多个二手来源一致但无一手直证；【推测】= 我的推理；【未找到证据】= 明确没有找到。
 
 ---
@@ -71,7 +71,7 @@
 
 ### 1.2 客户端自己的本地数据库/索引
 
-`C:\Users\HonGLY\AppData\Local\Netease\CloudMusic\Library\` 下两个 SQLite（我实测，均以 `SQLite format 3\0` 开头）：
+`%USERPROFILE%\AppData\Local\Netease\CloudMusic\Library\` 下两个 SQLite（我实测，均以 `SQLite format 3\0` 开头）：
 
 **A. `library.dat`（13,312 B；另有 `library_bak.dat` 13,312 B、`library.dat-journal` 6,704 B）——本地曲库索引**
 - 只有一张表 `track`：
@@ -302,7 +302,7 @@ le = (e,t) => { ... if(!ae.test(e.realSuffix||"") || u)
 
 | 文件 | 实测 MD5 | 标签里的 `mp3DocId` | 相等？ |
 |---|---|---|---|
-| `D:\HonGLY\思想道德与法治\《放下手机》\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3` | `96dc78c78f627fd4f4c38d826a178f10` | `cde6b150f488f81c8f0d9b374d2fe2fb` | ✗ |
+| `<REAL_SAMPLE:一个由官方客户端写入 163key 的真实 mp3>` | `96dc78c78f627fd4f4c38d826a178f10` | `cde6b150f488f81c8f0d9b374d2fe2fb` | ✗ |
 | `…\assets\minecraft\sounds\music\menu\menu1.ogg`（两份副本 md5 相同） | `ce6c6ee028a7d1525132d9825164d553` | `81fc9d0ce34b9a0946ce979ca3f3fb65` | ✗ |
 
 ⇒ 【已证实】**`mp3DocId` ≠ 该本地文件的 MD5**；它更像服务端/NOS 侧文档 id（与 DLL 里 `file_uploader.cpp` 的 `bucket/token/docId`、`it2.datas` 同族），**本地无法推导**。解析端（`E`）不校验它 ⇒ 写个占位值不会被本地解析拒绝；但**「是否影响秒传/云盘匹配/客户端判断是否需要重新下载」未找到证据**（§6 存疑）。
@@ -324,7 +324,7 @@ le = (e,t) => { ... if(!ae.test(e.realSuffix||"") || u)
 `cloudmusic.exe`（2,634,744 B）、`cloudmusic.dll`（37,747,192 B，LastWriteTime 2026/10/10 21:06）、`package\orpheus.ntpk`（38,310,589 B，文件头是 ASCII 十六进制串 `0003f3efaaf702c76a85e4401a22460ea6ac…` 而非 `NTPK`）、`package\native.ntpk`（779 B，头 `NTPK`）、`package\common.skin`（1,213,673 B，头 `NTPK`）、`package\dark.skin`、`resource\`（`3D环绕.ncae`、`ca`、`format.ico`、`gpuforbidlist`、`ncm_notice`、`translation.bin`、`vivid_model.bin` 等）。
 `cloudmusic.dll` 内嵌 **TagLib**（`FLAC::File::scan()`、`Ogg::FLAC::File::scan()`、`Vorbis::File::read() - Could not find the Vorbis comment header`、`ASF::File::save()` 等），并在 @30681456 出现字面量 **`DESCRIPTION`**（紧邻 `TRACKNUM`）；@30663488 起是 TagLib 的 ID3v2 帧名表（`COMMENT`/`ALBUM`/`TIT2`…）。`cloudmusic.exe` 内上述 163key/DESCRIPTION 关键字 0 命中（逻辑都在 DLL 里）。
 
-### 3.2 用户数据目录 `C:\Users\HonGLY\AppData\Local\Netease\CloudMusic\`
+### 3.2 用户数据目录 `%USERPROFILE%\AppData\Local\Netease\CloudMusic\`
 一级子目录：`ad, Aegis, aioresource, audioeffect, Cache, discern, dumps, Library, Log, preview, safemode, Statics, Temp, update, wasm, webapp91x64, webdata`；一级文件：`cloudmusic.elog, info, install.log, localdata, localware`。
 - `Library\`：`library.dat`、`library.dat-journal`、`library_bak.dat`、`webdb.dat`（§1.2 已详解）
 - `Statics\`：2043 个条目 = 2038+ 个 32 位十六进制名 `.dat` + `index.dat`(1,403,904 B) + `index.dat-journal`。`index.dat` 是 SQLite，表 `cache(id,url,path,type,headers,size,create_time,access_time,ttl)`；搜 `CloudMusic`/`VipSongsDownload`/`E:\`/`163 key`/`download`/`mp3`/`flac` 计数全 0 → 只是通用 HTTP 缓存，不是曲库。
@@ -340,19 +340,19 @@ le = (e,t) => { ... if(!ae.test(e.realSuffix||"") || u)
 - 我逐文件搜 `163 key`（含 UTF-16LE）/`163key`/`music:{`/`dj:{`：**57/57 全为 0 命中**。
 - `library.dat` 里那 17 行 `dir='E:\CloudMusic'` 覆盖的文件名（节选）：`G-DRAGON - POWER.mp3`、`G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME…`、`G.E.M. 邓紫棋…`、`Michita…`、`pro、陈小满…`、`suhmeduh…`、`Valentin…`、`周杰伦 - 一路向北.mp3`、`季彦霖…`、`磨尖的粉笔…`、`艾比利…`、`蒋孜怡,岳燃…`、`郑润泽…`、`阴雨天…`、`颜人中-慢慢.flac`、`颜人中-我只能离开.mp3`、`黄龄-鸳鸯戏.flac`。
   **44 个今天 13:01 拷入的「周杰伦 - *.flac」一行都没有**（`library.dat` 最后写入 12:29，早于拷贝）→ 客户端**必须扫描**才会进库，靠拷文件本身不会自动被认。
-- `webdb.dat.offlineTrack` 唯一那条 `dir='<download>'` 记录的实体文件是 `C:\Users\HonGLY\Downloads\Music\【四川话助眠】温柔姐姐安慰压力大的你…  角色扮演  情景模拟.aac`（16,354,199 B），该文件头是 MP4/AAC 容器（`ftyp isom … avc1 isom dash`），**不含任何 163key**；`webdb.dat` 里按文件名关键词（`四川话`）逐表逐列搜索 **0 命中**（即它不在 `dbTrack`/`historyTracks` 里）。该行的其它字段：`duration=595391.833`、`timestamp=1789572948`、`bitrate=219`、`tracknumber=10000`、`parentdir='C:\Users\HonGLY\Downloads\Music'`、`librarypath='C:\Users\HonGLY\Downloads'`、`starttime=0.0`、`artistid='0'`（album/genre/artist 空）。
+- `webdb.dat.offlineTrack` 唯一那条 `dir='<download>'` 记录的实体文件是 `%USERPROFILE%\Downloads\Music\【四川话助眠】温柔姐姐安慰压力大的你…  角色扮演  情景模拟.aac`（16,354,199 B），该文件头是 MP4/AAC 容器（`ftyp isom … avc1 isom dash`），**不含任何 163key**；`webdb.dat` 里按文件名关键词（`四川话`）逐表逐列搜索 **0 命中**（即它不在 `dbTrack`/`historyTracks` 里）。该行的其它字段：`duration=595391.833`、`timestamp=1789572948`、`bitrate=219`、`tracknumber=10000`、`parentdir='%USERPROFILE%\Downloads\Music'`、`librarypath='%USERPROFILE%\Downloads'`、`starttime=0.0`、`artistid='0'`（album/genre/artist 空）。
   → 这是「下载分组不依赖标签」的直接反例，也是理解 `dir='<download>'` 语义的关键样本。
 
 ### 3.4 ★ 本机真实 163key 样本（**这是本项目最宝贵的真值样本**）
-我用 Python 扫 `E:\`、`D:\`、`C:\Users\HonGLY`（3523 个音频文件）后，共找到 **10 个**含 163key 的文件：
-1. **真实用户老文件（2023 年，非本项目产物）**：`D:\HonGLY\思想道德与法治\《放下手机》\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3`（8,602,160 B，CreationTime/LastWriteTime = **2023/11/12 21:00**，ID3v2.3，COMM 帧，编码字节 0x00、语言码 `XXX`）。解密后明文：
+我用 Python 扫 `E:\`、`D:\`、`%USERPROFILE%`（3523 个音频文件）后，共找到 **10 个**含 163key 的文件：
+1. **真实用户老文件（2023 年，非本项目产物）**：`<REAL_SAMPLE:一个由官方客户端写入 163key 的真实 mp3>`（8,602,160 B，CreationTime/LastWriteTime = **2023/11/12 21:00**，ID3v2.3，COMM 帧，编码字节 0x00、语言码 `XXX`）。解密后明文：
    `music:{"musicId":1809412694,"musicName":"John Dreamer-亚托克斯 伴奏（Jackie remix）","artist":[["Jackie",37125028]],"albumId":121139178,"album":"ATOX","albumPicDocId":"109951165606660795","albumPic":"https://p3.music.126.net/fDOu_nezGgSAF5NfVuqFsg==/109951165606660795.jpg","bitrate":320000,"mp3DocId":"cde6b150f488f81c8f0d9b374d2fe2fb","duration":213702,"mvId":0,"alias":[],"transNames":[],"format":"mp3"}`
    → **2023 年的真实标签里带 `"format":"mp3"`，且数字型 id、`mvId:0`**；字段顺序与本项目当前实现的顺序一致。
    → 注意：这个 mp3 **完全不在客户端任何库里**（`library.dat` 18 行、`webdb.dat` 都没有它），客户端从未把它当成已下载/已收录。它是「有标签但客户端根本不认识它」的现成反例。
 2. **真实第三方 .ogg 样本（Vorbis）**：`D:\Program Files\Minecraft Launcher\.minecraft\versions\隔离区\resourcepacks\…\assets\minecraft\sounds\music\menu\menu1.ogg`（等 6 个 menu*.ogg，两个资源包版本各一份）。字段名是 **`DESCRIPTION=`**，紧邻 `TRACKNUMBER=2`；解密后明文：
    `music:{"musicId":"33378175","musicName":"Horizon","artist":[["Pawel Blaszczak","41735"]],"albumId":"3206018","album":"Dying Light (Original Score)","albumPicDocId":"7940672977237536","albumPic":"https://p3.music.126.net/xGGDH_fd4qBtT2tIOfFSew==/7940672977237536.jpg","bitrate":320000,"mp3DocId":"81fc9d0ce34b9a0946ce979ca3f3fb65","duration":160000,"mvId":"","alias":[],"transNames":[],"format":"mp3","fee":0,"volumeDelta":-4.5797}`
    → **字符串型 id + 额外字段 `fee`/`volumeDelta`** 的另一种（更新的？）标签形态；且该 ogg 里 `format` 仍写 `"mp3"`（说明 `format` 至少不总是可靠）。**这是「Vorbis 字段名 = DESCRIPTION」的本机实物证据。**
-3. **本项目自己的输出（3 个）**：`D:\HonGLY\netease-163key-tagger\out\scratch\t2.mp3`、`t3.mp3`、`t4.flac`。解密均成功，密文 Base64 前缀与真实样本一致（`L64FU3W4YxX3ZFTmbZ+8/`）→ 密钥/算法/前缀实现正确。
+3. **本项目自己的输出（3 个）**：`%WORKSPACE%\netease-163key-tagger\out\scratch\t2.mp3`、`t3.mp3`、`t4.flac`。解密均成功，密文 Base64 前缀与真实样本一致（`L64FU3W4YxX3ZFTmbZ+8/`）→ 密钥/算法/前缀实现正确。
    **但 t4.flac 的字段名是 `COMMENT=`（不是 `DESCRIPTION=`），见 §4。**
 
 （原 Lead 说「全盘只有 1 个文件带 163key」，那是因为扫描时本项目还没产出 t2/t3/t4；现在共 10 个，其中 1 个真实老 mp3 + 6 个真实 ogg + 3 个项目产物。）
@@ -403,7 +403,7 @@ le = (e,t) => { ... if(!ae.test(e.realSuffix||"") || u)
 
 ### 5.4 建议的验收实验（一次、只读为主，需用户同意才动客户端库）
 1. 关闭网易云客户端 → 备份 `Library\library.dat`、`library_bak.dat`、`webdb.dat`（**不要**在没有备份时写库）。
-2. 复制一个带正确 163key 的文件到下载根目录的直接子级（候选：`C:\Users\HonGLY\Downloads\Music\`，因为它是唯一已知的下载根痕迹）。
+2. 复制一个带正确 163key 的文件到下载根目录的直接子级（候选：`%USERPROFILE%\Downloads\Music\`，因为它是唯一已知的下载根痕迹）。
 3. 启动客户端 → 观察四点：(a) 是否出现在「下载管理」；(b) `library.dat` 是否新增 `dir='<download>'` 行、该行 `id` 是否 = SHA1(路径)；(c) `webdb.dat.offlineTrack` 是否新增行；(d) 若判定为已下载，记录该行 `jsonStr` 与 `newRelativePath`（这是以后能否「伪造已下载」的唯一钥匙）。
 4. 对照组：同一个文件放进 `E:\CloudMusic\`（非下载根），看两者差异 → 直接判定「标签 vs 记账 vs 路径」谁在起作用。
 > 该实验会读客户端库、会往音乐目录拷文件，属于「修改本机状态」，**必须由 Lead/用户明确同意后再做**；我本人按任务要求全程只读，未执行。
@@ -418,7 +418,7 @@ le = (e,t) => { ... if(!ae.test(e.realSuffix||"") || u)
 1. **【首选·低风险】标签写对 ＋ 放进下载根目录 ＋ 触发下载目录扫描**
    - 标签：MP3 写 ID3v2 `COMM`（内容 `163 key(Don't modify):` + Base64(AES-128-ECB(`music:{...}`))，密钥 `#14ljk_!\]&0U<'(`）；**FLAC 必须写到 Vorbis `DESCRIPTION`**（见 §4；建议 DESCRIPTION + COMMENT 双写以兼容读取端）。
    - payload 字段严格对齐 §2.7(d)：`musicId, musicName, artist[[name,id],…], albumId, album, albumPicDocId, albumPic, bitrate, mp3DocId, duration(ms), mvId, alias, transNames, format`（`fee`/`volumeDelta` 客户端也会写，可加）。
-   - 目录：必须是**客户端正在使用的下载根目录**（本机线索：`librarypath='C:\Users\HonGLY\Downloads'`、`parentdir='C:\Users\HonGLY\Downloads\Music'`，来自 `library.dat` 里唯一那条 `dir='<download>'` 行；真正的下载根配置写在混淆存储里，未只读取证到，见 §6）。**推荐至少把文件同时放两处**（下载根与其直接子级 `Music\`）以提高命中概率。
+   - 目录：必须是**客户端正在使用的下载根目录**（本机线索：`librarypath='%USERPROFILE%\Downloads'`、`parentdir='%USERPROFILE%\Downloads\Music'`，来自 `library.dat` 里唯一那条 `dir='<download>'` 行；真正的下载根配置写在混淆存储里，未只读取证到，见 §6）。**推荐至少把文件同时放两处**（下载根与其直接子级 `Music\`）以提高命中概率。
    - 触发：让客户端做一次下载目录扫描（`storage.downloadscanner`；UI 上的对应动作大概率是「打开下载管理 / 设置里改下载目录 / 启动客户端」——**具体触发时机未定位，属本方案唯一未闭合环节**）。
 2. **【不需要了】**~~伪造/写入客户端数据库~~：JS 会自己重建 `offlineTrack` 行，所以**直接改库属于下策**（还要处理 `state` 是 JSON 序列化字符串、`jsonStr` 结构、`&`/`@` 列映射、journal 一致性等细节，风险远高于标签路线）。
 3. **【不建议】**走线上匹配接口（`/eapi/search/match/new`、`/eapi/music/matcher`）——需要登录态 + device 签名，且 `iyn.me` 的实测显示那是频谱/hash 匹配，与 163key 是两条独立通道。
@@ -430,7 +430,7 @@ le = (e,t) => { ... if(!ae.test(e.realSuffix||"") || u)
 
 **修订后的验收实验（4 步；需要在「先关客户端 → 拷文件 → 开客户端 → 只读复验」的窗口内进行，仍需 Lead/用户明确同意，我全程不动客户端库）**
 1. 记录基线：`offlineTrack` 行数（当前 **0**）、`library.dat` 行数（当前 18）、客户端进程未运行时复制 `webdb.dat`+`library.dat`(+journal) 到 `%TEMP%` 留底（**只读副本**）。
-2. 取一个现成带真标签的样本（如 `D:\HonGLY\netease-163key-tagger\test\e2e\src\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3`）与一个「去掉标签」的对照副本，文件名保持 `歌手 - 歌名.ext`，放进下载根目录（候选①`C:\Users\HonGLY\Downloads`、候选②`C:\Users\HonGLY\Downloads\Music`）。
+2. 取一个现成带真标签的样本（如 `%WORKSPACE%\netease-163key-tagger\test\e2e\src\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3`）与一个「去掉标签」的对照副本，文件名保持 `歌手 - 歌名.ext`，放进下载根目录（候选①`%USERPROFILE%\Downloads`、候选②`%USERPROFILE%\Downloads\Music`）。
 3. 启动客户端 → 打开「下载管理」/触发一次下载目录扫描 → 关闭客户端。
 4. 只读复验：`offlineTrack` 行数、新行的 `id/state/newRelativePath/jsonStr`、`library.dat` 是否新增、`E:\CloudMusic` 是否变化；把结果贴回报告。
 

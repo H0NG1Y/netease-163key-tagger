@@ -31,7 +31,7 @@ const H = { 'User-Agent': UA, Referer: 'https://music.163.com/' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 /** 读 match.mjs 的常量但**不调用**它的函数；我只对照行为约定 */
-const matchSrc = fs.readFileSync('D:/HonGLY/netease-163key-tagger/lib/match.mjs', 'utf8');
+const matchSrc = fs.readFileSync('<REPO>/lib/match.mjs', 'utf8');
 const hasSameRelease = /sameRelease/.test(matchSrc);
 info('lib/match.mjs 里是否存在 sameRelease 逻辑', hasSameRelease ? '是' : '否');
 check(hasSameRelease, 'P1-3 修复代码确实存在（sameRelease 分支）');

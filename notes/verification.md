@@ -2,9 +2,9 @@
 
 **验证人**：verifier（独立第三方，非实现者）
 **验证时间**：2026-10-22 14:44 – 15:0x（Asia/Hong_Kong）
-**审计对象**：`D:\HonGLY\netease-163key-tagger\` 的产物 `E:\CloudMusic_163key\`（57 个音频文件：13 mp3 + 44 flac）
+**审计对象**：`%WORKSPACE%\netease-163key-tagger\` 的产物 `E:\CloudMusic_163key\`（57 个音频文件：13 mp3 + 44 flac）
 **只读基准**：`E:\CloudMusic_backup_20261022\`（写前快照）、`E:\CloudMusic\`（原始素材）
-**Ground truth**：`D:\HonGLY\思想道德与法治\《放下手机》\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3`（官方客户端写入，唯一可信参照）
+**Ground truth**：`<REAL_SAMPLE:一个由官方客户端写入 163key 的真实 mp3>`（官方客户端写入，唯一可信参照）
 
 ---
 
@@ -546,7 +546,7 @@ node verify/_probe-tail.mjs             # 心底的旧.flac 的 Info.bytes 偏�
 node verify/_probe-mp3walk.mjs          # MP3 帧走查调试（记录 48kHz 文件的采样率陷阱）
 ```
 
-**环境**：Node v24.21.0（`C:\Users\HonGLY\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin\node.exe`），零 npm 依赖，仅用 `node:crypto` / `node:fs` / `node:path` + 全局 `fetch`。
+**环境**：Node v24.21.0（`%USERPROFILE%\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin\node.exe`），零 npm 依赖，仅用 `node:crypto` / `node:fs` / `node:path` + 全局 `fetch`。
 
 **注意**：`verify/artifacts/baseline-*.json` 是本次审计开始时对三个目录拍的 sha256 快照。若日后重跑 `05-guard.mjs`，它会用这个基线复核保护目录未被改动——**如果你重新拍了基线，这个交叉检查就失去意义了**。
 

@@ -19,7 +19,7 @@ import { TARGET, vReadAudio } from './00-common.mjs';
 
 const { write163Key } = await import('../lib/tags.mjs');
 
-const S = 'D:/HonGLY/netease-163key-tagger/verify/scratch2';
+const S = '<REPO>/verify/scratch2';
 fs.rmSync(S, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
 fs.mkdirSync(S, { recursive: true });
 
