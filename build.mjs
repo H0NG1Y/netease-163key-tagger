@@ -136,11 +136,16 @@ function materialize() {
   }
   process.env.NETEASE_163KEY_ASSETS = dir;
 
-  // --cli 模式：等价于直接跑 apply.mjs（server 用它跑 scan/match/apply/verify）
+  // 命令行模式判定：
+  //   server.mjs 只认环境变量（PORT / NO_OPEN），不吃任何命令行参数，
+  //   所以「只要带了参数」就按命令行走。
+  //   这样敲错命令会打印用法，而不是默默起一个网页服务挂着。
+  //   --cli（server 调子进程时用的老写法）也继续兼容。
   const argv = process.argv.slice(2);
-  const isCli = argv[0] === '--cli';
+  const isCli = argv.length > 0;
+  const cliArgs = argv[0] === '--cli' ? argv.slice(1) : argv;
   const target = isCli ? 'apply.mjs' : 'server.mjs';
-  if (isCli) process.argv = [process.argv[0], path.join(dir, 'apply.mjs'), ...argv.slice(1)];
+  if (isCli) process.argv = [process.argv[0], path.join(dir, 'apply.mjs'), ...cliArgs];
 
   try {
     await import(pathToFileURL(path.join(dir, target)).href);

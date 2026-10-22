@@ -104,6 +104,32 @@ $versioned = Join-Path $dist "netease-163key-tagger-v$Version.exe"
 Copy-Item -LiteralPath $built -Destination $versioned -Force
 Write-Host "已生成带版本号的副本：$([IO.Path]::GetFileName($versioned))"
 
+# ── 5b. 编译安装版（Inno Setup）───────────────────────────────
+Write-Host ''
+Write-Host '── 打包安装版 ──' -ForegroundColor Cyan
+$innoCandidates = @(
+    (Join-Path $env:ProgramFiles 'Inno Setup 7\ISCC.exe'),
+    (Join-Path ${env:ProgramFiles(x86)} 'Inno Setup 7\ISCC.exe'),
+    (Join-Path ${env:ProgramFiles(x86)} 'Inno Setup 6\ISCC.exe'),
+    (Join-Path $env:ProgramFiles 'Inno Setup 6\ISCC.exe')
+) | Where-Object { $_ -and (Test-Path -LiteralPath $_) }
+$iscc = $innoCandidates | Select-Object -First 1
+if (-not $iscc) {
+    Fail @'
+未找到 Inno Setup 的编译器 ISCC.exe。
+        需要装 Inno Setup 6 或 7： https://jrsoftware.org/isdl.php
+'@
+}
+Write-Host "  编译器：$iscc"
+
+& $iscc "/DMyAppVersion=$Version" (Join-Path $root 'installer\netease-163key-tagger.iss')
+if ($LASTEXITCODE -ne 0) { Fail '安装包编译失败（ISCC 的报错就是原因）。' }
+
+$versionedSetup = Join-Path $dist "netease-163key-tagger-setup-v$Version.exe"
+if (-not (Test-Path -LiteralPath $versionedSetup)) { Fail "安装包不存在：$versionedSetup" }
+$setupMb = [Math]::Round((Get-Item -LiteralPath $versionedSetup).Length / 1MB, 1)
+Write-Host "产物：$versionedSetup ($setupMb MB)" -ForegroundColor Green
+
 # ── 6. 冒烟测试 ───────────────────────────────────────────────
 if (-not $SkipVerify) {
     Write-Host ''
@@ -111,15 +137,15 @@ if (-not $SkipVerify) {
     $out = & $versioned --cli 2>&1 | Out-String
     if ($LASTEXITCODE -ne 0 -or $out -notmatch 'apply.mjs') {
         Write-Host $out
-        Fail 'EXE 自检失败：--cli 没有输出预期用法信息。'
+        Fail '单文件版自检失败：--cli 没有输出预期用法信息。'
     }
-    Write-Host 'EXE 能正常启动并响应 --cli。' -ForegroundColor Green
+    Write-Host '单文件版能正常启动并响应 --cli。' -ForegroundColor Green
 }
 
 # ── 7. 生成校验文件 ──────────────────────────────────────────
 Write-Host ''
 Write-Host '── 生成校验文件 ──' -ForegroundColor Cyan
-$artifacts = @($versioned)
+$artifacts = @($versioned, $versionedSetup)
 foreach ($artifact in $artifacts) {
     $name = [IO.Path]::GetFileName($artifact)
     $hash = (Get-FileHash -LiteralPath $artifact -Algorithm SHA256).Hash
@@ -147,6 +173,10 @@ Get-ChildItem -LiteralPath $dist -File | Sort-Object Name | ForEach-Object {
 }
 Write-Host ''
 Write-Host '下一步（需要 GitHub CLI 已登录）：'
-$exeName = "netease-163key-tagger-v$Version.exe"
 $tag = "v$Version"
-Write-Host ('  gh release create {0} "dist\{1}" dist\checksums.txt --title "{2}" --notes-file RELEASE-NOTES.md' -f $tag, $exeName, $tag)
+Write-Host ''
+Write-Host '  新版本：'
+Write-Host ('    gh release create {0} "dist\netease-163key-tagger-v{1}.exe" "dist\netease-163key-tagger-setup-v{1}.exe" dist\checksums.txt --title "{0}" --notes-file RELEASE-NOTES.md' -f $tag, $Version)
+Write-Host ''
+Write-Host '  补到已有版本（本次就是这种情况）：'
+Write-Host ('    gh release upload {0} "dist\netease-163key-tagger-v{1}.exe" "dist\netease-163key-tagger-setup-v{1}.exe" dist\checksums.txt --clobber' -f $tag, $Version)

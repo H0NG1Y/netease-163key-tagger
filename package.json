@@ -23,5 +23,5 @@
   "devDependencies": {
     "postject": "^1.0.0-alpha.6"
   },
-  "comment": "运行时零依赖：只用 Node 内置 crypto/fetch/fs。postject 只在打包 EXE 时用，build.mjs 会自己装到 build-tmp。release 脚本需要 PowerShell 7+（pwsh），5.1 会把 UTF-8 中文读错。"
+  "comment": "运行时零依赖：只用 Node 内置 crypto/fetch/fs。postject 只在打包单文件版时用，build.mjs 会自己装到 build-tmp。release 会一次产出「单文件版 + 安装版 + checksums.txt」，需要 PowerShell 7+（pwsh）和 Inno Setup 6/7（编安装包用）。"
 }

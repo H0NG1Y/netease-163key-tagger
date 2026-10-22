@@ -27,25 +27,112 @@ Nothing is downloaded, no paid content is bypassed. Only tags on files you alrea
 
 Get the latest build from [GitHub Releases](https://github.com/H0NG1Y/netease-163key-tagger/releases/latest).
 
-- `netease-163key-tagger-vX.Y.Z.exe` (~89 MB) — **single portable executable, just double-click**; the target machine does not need Node.js. Config and reports live in `%USERPROFILE%\.netease-163key-tagger`.
-- From source: requires Node.js 22+, zero npm dependencies.
+Every release ships **two builds with identical features**; the only difference is whether it installs into your system:
 
-Each release also ships `.sha256` and `checksums.txt` so you can verify the download:
+| Download | Best for | Notes |
+| --- | --- | --- |
+| `netease-163key-tagger-vX.Y.Z.exe` | Occasional use, keep it on a USB stick | **Portable** — no install, no extraction, just double-click. No Node.js needed. |
+| `netease-163key-tagger-setup-vX.Y.Z.exe` | Regular use, want it on your PATH | **Installer** — installs to a fixed folder, registers itself on PATH, adds a standard uninstall entry. |
+
+Each release also ships `checksums.txt` so you can verify the download:
 
 ```powershell
 Get-FileHash .\netease-163key-tagger-v0.3.0.exe -Algorithm SHA256
 ```
 
-<details>
-<summary>Prefer the command line?</summary>
+### Portable build
 
-The same EXE works as a CLI:
+Double-click it. That's it — no installation, no extraction. Your browser opens automatically.
+
+- Config and reports always live in `%USERPROFILE%\.netease-163key-tagger`, so you can move the EXE anywhere
+- The first launch takes a few seconds (it unpacks its bundled runtime into `%TEMP%`); later launches are instant
+- To remove it, delete the EXE and that folder
+
+The command line works too, but you have to spell out the path:
 
 ```powershell
-.\netease-163key-tagger.exe --cli scan
-.\netease-163key-tagger.exe --cli match
-.\netease-163key-tagger.exe --cli apply --write
-.\netease-163key-tagger.exe --cli verify
+.\netease-163key-tagger.exe scan           # scan your music folder
+.\netease-163key-tagger.exe match          # match against the catalog
+.\netease-163key-tagger.exe apply --write  # write the tags
+.\netease-163key-tagger.exe verify         # verify the result
+```
+
+### Installer build
+
+Download `...-setup-...exe`, double-click it, click **Install**. It will:
+
+1. Install to `C:\Program Files\netease-163key-tagger\`
+2. Add that folder to the **system** PATH
+3. Register a standard uninstall entry in **Settings → Apps → Installed apps**
+
+Because it writes to Program Files and the system PATH, **it asks for administrator rights via UAC** (same as the neighbouring [gacha-link-fetcher](https://github.com/H0NG1Y/gacha-link-fetcher)). The wizard lets you choose whether to add the PATH entry, whether to create a desktop shortcut, and whether to launch the app when done.
+
+Then open a **new** terminal window and run it from anywhere:
+
+```powershell
+netease-163key-tagger                 # launch the web UI
+netease-163key-tagger scan            # scan your music folder
+netease-163key-tagger match           # match against the catalog
+netease-163key-tagger apply --write   # write the tags
+netease-163key-tagger verify          # verify the result
+```
+
+No arguments gives you the GUI; `scan` / `match` / `apply` / `verify` / `self-test` run the CLI.
+
+<details>
+<summary>Silent install / custom folder / silent uninstall</summary>
+
+These are the standard Inno Setup switches:
+
+```powershell
+# silent install (adds the PATH entry by default)
+.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+
+# custom folder
+.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /DIR="D:\Tools\163key"
+
+# skip the PATH entry (no /TASKS means no optional task)
+.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /TASKS=""
+
+# silent uninstall
+"C:\Program Files\netease-163key-tagger\unins000.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+```
+
+Install logs land in `%TEMP%\Setup Log *.txt`.
+
+</details>
+
+<details>
+<summary>Which environment variable does it touch? Can it break my PATH?</summary>
+
+It edits **`Path`** under `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` — the system PATH.
+
+Three deliberate choices to avoid making a mess:
+
+- The value is read **raw**, so existing `%SystemRoot%\system32`-style variable references in your PATH are **not** expanded (verified by experiment, not assumed)
+- `ValueType: expandsz` plus `preservestringtype` keeps the type as `REG_EXPAND_SZ` instead of downgrading it to `REG_SZ`
+- It checks first, so an already-present folder is never added twice
+
+On uninstall, Inno Setup restores `Path` from its uninstall log, with an extra `CurUninstallStepChanged` fallback in the script. **Install then uninstall returns your PATH byte-for-byte to what it was** (also verified by experiment).
+
+It broadcasts `WM_SETTINGCHANGE` afterwards, but **already-open terminal windows still won't see the new command** — that's how Windows works. Open a new one.
+
+</details>
+
+<details>
+<summary>Run from source</summary>
+
+Requires Node.js 22+, zero npm dependencies:
+
+```powershell
+node server.mjs      # web UI
+node apply.mjs scan  # CLI
+```
+
+Build both release artifacts yourself:
+
+```powershell
+pwsh .\Build-Release.ps1
 ```
 
 </details>
@@ -118,16 +205,22 @@ Audio payload is never touched — there is a regression test for exactly that.
 
 ## CLI
 
-```bash
-node apply.mjs scan     --root ./music
-node apply.mjs match    --root ./music
-node apply.mjs apply    --report out/matches.json --dry-run
-node apply.mjs apply    --report out/matches.json --write
-node apply.mjs verify   --root ./music --backup ./music-backup
-node apply.mjs self-test
+With the **installer build**, just use the exe name:
+
+```powershell
+netease-163key-tagger scan     --root D:\Music
+netease-163key-tagger match    --root D:\Music
+netease-163key-tagger apply    --report out/matches.json --dry-run
+netease-163key-tagger apply    --report out/matches.json --write
+netease-163key-tagger verify   --root D:\Music --backup D:\Music-backup
+netease-163key-tagger self-test
 ```
 
-Release ladder for `apply`: auto-matched only by default; `--include-review` allows medium confidence; `--all` allows everything.
+With the **portable build** or from source, swap `netease-163key-tagger` for `.\netease-163key-tagger.exe` or `node apply.mjs` — the arguments are identical.
+
+Release ladder for `apply`: auto-matched only by default; `--include-review` allows medium confidence; `--all` allows everything. Duration mismatches and suspected UGC uploads can only be forced through with `--all`.
+
+Add `--meta` to also rewrite title/artist/album, and `--cover` to embed album art too (both **off by default**).
 
 ## Algorithm
 
@@ -188,15 +281,22 @@ Two more subtle ones: the client only reads the **last** `COMM` frame (a key pla
 - `test/` — four suites, 212 assertions, offline
 - `verify/` — independent verification suites
 - `notes/` — API behavior, client mechanics, binary forensics, pitfalls, acceptance report
-- `build.mjs` — single-file EXE packaging via Node SEA
+- `build.mjs` — portable single-file EXE packaging via Node SEA
+- `installer/netease-163key-tagger.iss` — Inno Setup script for the installer build
+- `Build-Release.ps1` — emits both builds plus `checksums.txt` in one go
 
 ## Development
 
-```bash
+```powershell
 node server.mjs          # run from source
 node apply.mjs self-test # 212 assertions, fully offline
-node build.mjs           # package the EXE (needs Node 22+ and network for postject)
+node build.mjs           # package the portable build (needs Node 22+ and network for postject)
+pwsh .\Build-Release.ps1 # produce both builds + checksums.txt
 ```
+
+The portable and installer builds are **two artifacts of the same release**; `Build-Release.ps1` emits both and fails if either is missing.
+
+The installer is built with [Inno Setup](https://jrsoftware.org/isdl.php) (6 or 7), matching the neighbouring projects: `gacha-link-fetcher` uses Inno Setup for its `Setup.exe`, `OptiScalerInstaller` uses WiX for its MSI.
 
 ## Disclaimer
 

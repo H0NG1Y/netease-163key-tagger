@@ -25,27 +25,118 @@
 
 ## 下载
 
-请从 [GitHub Releases](https://github.com/H0NG1Y/netease-163key-tagger/releases/latest) 下载最新版本。
+请从 [GitHub Releases](https://github.com/H0NG1Y/netease-163key-tagger/releases/latest) 下载。
 
-- `netease-163key-tagger-v版本号.exe`（约 89 MB）：**单文件免安装，双击即用**，目标机器不需要装 Node.js。配置与报告保存在 `%USERPROFILE%\.netease-163key-tagger`。
-- 从源码运行：需要 Node.js 22 或更新版本，零 npm 依赖。
+每次发版都提供两个版本，**功能完全一样**，区别只是「装不装进系统」，按习惯挑一个：
 
-Release 同时提供 `.sha256` 和 `checksums.txt`，可用于核对下载文件的 SHA-256：
+| 下载 | 适合谁 | 说明 |
+| --- | --- | --- |
+| `netease-163key-tagger-v版本号.exe` | 偶尔用、想随身带 | **单文件版**，绿色免安装，双击即用，不需要装 Node.js |
+| `netease-163key-tagger-setup-v版本号.exe` | 经常用、想直接敲命令 | **安装版**，装到固定目录并登记进 PATH，带标准卸载项 |
+
+Release 同时提供 `checksums.txt`，可以核对下载文件的 SHA-256：
 
 ```powershell
 Get-FileHash .\netease-163key-tagger-v0.3.0.exe -Algorithm SHA256
 ```
 
-<details>
-<summary>想用命令行？</summary>
+### 单文件版
 
-同一个 EXE 也能当 CLI 用：
+下载完**双击**就行——不用安装，也不用解压。浏览器会自动打开界面。
+
+- 配置和报告固定放在 `%USERPROFILE%\.netease-163key-tagger`，换个地方放 exe 也不会丢
+- 第一次启动会慢几秒（要把内置资源释放到 `%TEMP%`），之后秒开
+- 不想要了，删掉这个 exe 和上面那个目录就干净了
+
+想用命令行也可以，只是得带上路径：
 
 ```powershell
-.\netease-163key-tagger.exe --cli scan
-.\netease-163key-tagger.exe --cli match
-.\netease-163key-tagger.exe --cli apply --write
-.\netease-163key-tagger.exe --cli verify
+.\netease-163key-tagger.exe scan           # 扫描音乐目录
+.\netease-163key-tagger.exe match          # 联网匹配
+.\netease-163key-tagger.exe apply --write  # 写入标签
+.\netease-163key-tagger.exe verify         # 校验结果
+```
+
+### 安装版
+
+下载 `...-setup-...exe`，**双击**，点「安装」。它会做三件事：
+
+1. 装到 `C:\Program Files\netease-163key-tagger\`
+2. 把安装目录登记进**系统** PATH
+3. 在「设置 → 应用 → 已安装的应用」里登记标准卸载项
+
+因为要写 Program Files 和系统 PATH，**安装时会弹一次 UAC 要管理员权限**（和隔壁的 [gacha-link-fetcher](https://github.com/H0NG1Y/gacha-link-fetcher) 一样）。安装向导里可以选：
+
+- 是否加入 PATH
+- 是否创建桌面快捷方式
+- 装完是否立刻启动
+
+装完**开一个新的终端窗口**，在任何目录都能直接敲：
+
+```powershell
+netease-163key-tagger                 # 启动网页界面
+netease-163key-tagger scan            # 扫描音乐目录
+netease-163key-tagger match           # 联网匹配
+netease-163key-tagger apply --write   # 写入标签
+netease-163key-tagger verify          # 校验结果
+```
+
+不带参数是图形界面；带 `scan` / `match` / `apply` / `verify` / `self-test` 就是命令行。
+
+<details>
+<summary>静默安装 / 自定义目录 / 静默卸载</summary>
+
+Inno Setup 的标准静默参数：
+
+```powershell
+# 静默安装（默认会加 PATH）
+.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+
+# 指定目录
+.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /DIR="D:\Tools\163key"
+
+# 不要加 PATH（不加 /TASKS 就是不加）
+.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /TASKS=""
+
+# 静默卸载
+"C:\Program Files\netease-163key-tagger\unins000.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+```
+
+安装日志写在 `%TEMP%\Setup Log *.txt`。
+
+</details>
+
+<details>
+<summary>它改的是哪个环境变量？会不会写坏我的 PATH？</summary>
+
+改的是 `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` 里的 **`Path`**，也就是系统 PATH。
+
+三个实现细节，专门为了不给人添麻烦：
+
+- 读的时候是**原样读**的，PATH 里原有的 `%SystemRoot%\system32` 这类变量引用**不会被展开**（这条是实测验证过的）
+- `ValueType: expandsz` + `preservestringtype`，值类型仍然是 `REG_EXPAND_SZ`，不会被降级成 `REG_SZ`
+- 安装前先查重，已经在 PATH 里就不重复添加
+
+卸载时 Inno Setup 会按日志把 `Path` 恢复成安装前的值，脚本里的 `CurUninstallStepChanged` 另有一道兜底。**装一次再卸一次，PATH 逐字节回到原样**（同样是实测过的）。
+
+改完会广播 `WM_SETTINGCHANGE`，但**已经开着的终端窗口仍然认不到新命令**，这是 Windows 的规矩，开一个新的就行。
+
+</details>
+
+<details>
+<summary>从源码运行</summary>
+
+需要 Node.js 22 或更新版本，零 npm 依赖：
+
+```powershell
+node server.mjs      # 网页界面
+node apply.mjs scan  # 命令行
+```
+
+自己打包（单文件版 + 安装版一起出，需要 [Inno Setup](https://jrsoftware.org/isdl.php) 6/7）：
+
+```powershell
+pwsh .\Build-Release.ps1
 ```
 
 </details>
@@ -122,16 +213,22 @@ node apply.mjs apply --report out/matches.json --write --meta --cover    # 再�
 
 不想开界面也可以直接用 CLI，所有子命令都支持 `--progress <file>` 输出结构化进度。
 
-```bash
-node apply.mjs scan     --root ./music
-node apply.mjs match    --root ./music
-node apply.mjs apply    --report out/matches.json --dry-run
-node apply.mjs apply    --report out/matches.json --write
-node apply.mjs verify   --root ./music --backup ./music-backup
-node apply.mjs self-test
+装了**安装版**的话，直接敲 exe 名：
+
+```powershell
+netease-163key-tagger scan     --root D:\Music
+netease-163key-tagger match    --root D:\Music
+netease-163key-tagger apply    --report out/matches.json --dry-run
+netease-163key-tagger apply    --report out/matches.json --write
+netease-163key-tagger verify   --root D:\Music --backup D:\Music-backup
+netease-163key-tagger self-test
 ```
 
+**单文件版**或从源码跑，把 `netease-163key-tagger` 换成 `.\netease-163key-tagger.exe` 或 `node apply.mjs` 即可，参数完全一样。
+
 `apply` 的放行阶梯：默认只写自动命中的条目；`--include-review` 放行中等置信度；`--all` 全部放行。时长不符和 UGC 冒充只有 `--all` 能绕过。
+
+顺带改写文件信息用 `--meta`（标题/歌手/专辑）、`--cover`（再加封面），**默认关闭**。
 
 ## 算法
 
@@ -208,15 +305,22 @@ node apply.mjs self-test
 - `test/`：四套自测（212 条断言）+ 离线假 API
 - `verify/`：独立验证套件，用另一套实现交叉核对
 - `notes/`：接口行为、客户端机制、二进制取证、踩坑记录、验收报告
-- `build.mjs`：打包成单文件 EXE（Node SEA）
+- `build.mjs`：把源码打包成单文件 EXE（Node SEA）
+- `installer/netease-163key-tagger.iss`：安装版的 Inno Setup 脚本
+- `Build-Release.ps1`：一次产出「单文件版 + 安装版 + checksums.txt」
 
 ## 开发
 
-```bash
+```powershell
 node server.mjs          # 起本地服务（源码态）
 node apply.mjs self-test # 212 条断言，全程离线
-node build.mjs           # 打包 EXE（需要 Node 22+ 与联网装 postject）
+node build.mjs           # 打包单文件版（需要 Node 22+ 与联网装 postject）
+pwsh .\Build-Release.ps1 # 一次出「单文件版 + 安装版 + checksums.txt」
 ```
+
+单文件版和安装版是**同一次发版的两个产物**，`Build-Release.ps1` 会把两个都打出来，少一个就直接失败。
+
+编安装包用的是 [Inno Setup](https://jrsoftware.org/isdl.php)（6 或 7 都行），跟隔壁两个项目一致：`gacha-link-fetcher` 用 Inno Setup 出 Setup.exe，`OptiScalerInstaller` 用 WiX 出 MSI。
 
 ## 免责声明
 
