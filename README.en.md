@@ -27,10 +27,28 @@ Nothing is downloaded, no paid content is bypassed. Only tags on files you alrea
 
 Get the latest build from [GitHub Releases](https://github.com/H0NG1Y/netease-163key-tagger/releases/latest).
 
-- `netease-163key-tagger-vX.Y.Z.exe` — single portable executable, just double-click. Config and reports live in `%USERPROFILE%\.netease-163key-tagger`.
+- `netease-163key-tagger-vX.Y.Z.exe` (~89 MB) — **single portable executable, just double-click**; the target machine does not need Node.js. Config and reports live in `%USERPROFILE%\.netease-163key-tagger`.
 - From source: requires Node.js 22+, zero npm dependencies.
 
-Each release also ships `.sha256` and `checksums.txt` so you can verify the download.
+Each release also ships `.sha256` and `checksums.txt` so you can verify the download:
+
+```powershell
+Get-FileHash .\netease-163key-tagger-v0.3.0.exe -Algorithm SHA256
+```
+
+<details>
+<summary>Prefer the command line?</summary>
+
+The same EXE works as a CLI:
+
+```powershell
+.\netease-163key-tagger.exe --cli scan
+.\netease-163key-tagger.exe --cli match
+.\netease-163key-tagger.exe --cli apply --write
+.\netease-163key-tagger.exe --cli verify
+```
+
+</details>
 
 ## Usage
 

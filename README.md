@@ -27,10 +27,28 @@
 
 请从 [GitHub Releases](https://github.com/H0NG1Y/netease-163key-tagger/releases/latest) 下载最新版本。
 
-- `netease-163key-tagger-v版本号.exe`：单文件免安装，双击即用。配置与报告保存在 `%USERPROFILE%\.netease-163key-tagger`。
+- `netease-163key-tagger-v版本号.exe`（约 89 MB）：**单文件免安装，双击即用**，目标机器不需要装 Node.js。配置与报告保存在 `%USERPROFILE%\.netease-163key-tagger`。
 - 从源码运行：需要 Node.js 22 或更新版本，零 npm 依赖。
 
-Release 同时提供 `.sha256` 和 `checksums.txt`，可用于核对下载文件的 SHA-256。
+Release 同时提供 `.sha256` 和 `checksums.txt`，可用于核对下载文件的 SHA-256：
+
+```powershell
+Get-FileHash .\netease-163key-tagger-v0.3.0.exe -Algorithm SHA256
+```
+
+<details>
+<summary>想用命令行？</summary>
+
+同一个 EXE 也能当 CLI 用：
+
+```powershell
+.\netease-163key-tagger.exe --cli scan
+.\netease-163key-tagger.exe --cli match
+.\netease-163key-tagger.exe --cli apply --write
+.\netease-163key-tagger.exe --cli verify
+```
+
+</details>
 
 ## 使用方法
 
