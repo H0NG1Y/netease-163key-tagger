@@ -1,0 +1,418 @@
+[
+  {
+    "name": "G-DRAGON - POWER.mp3",
+    "fmt": "mp3",
+    "musicId": 2641013819,
+    "mp3DocId": "517c3da5e0ddcc137062eea06cfc7a50",
+    "synthetic": "517c3da5e0ddcc137062eea06cfc7a50",
+    "isSynthetic": true
+  },
+  {
+    "name": "G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME (feat. TAEYANG & DAESUNG).mp3",
+    "fmt": "mp3",
+    "musicId": 2650460256,
+    "mp3DocId": "c3fc034633dce42b1c4fda754b95d7ed",
+    "synthetic": "c3fc034633dce42b1c4fda754b95d7ed",
+    "isSynthetic": true
+  },
+  {
+    "name": "G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3",
+    "fmt": "mp3",
+    "musicId": 36270426,
+    "mp3DocId": "53bba9111479ee01ab29579949013bfa",
+    "synthetic": "53bba9111479ee01ab29579949013bfa",
+    "isSynthetic": true
+  },
+  {
+    "name": "Michita - Cry For Me (feat. Ami).mp3",
+    "fmt": "mp3",
+    "musicId": 27681762,
+    "mp3DocId": "7cd9d58dbd782ab227a06dc62dcc32c4",
+    "synthetic": "7cd9d58dbd782ab227a06dc62dcc32c4",
+    "isSynthetic": true
+  },
+  {
+    "name": "Valentin - Unchanged Mind.mp3",
+    "fmt": "mp3",
+    "musicId": 857983,
+    "mp3DocId": "3fbcdf271c3333f4091be2a0bfb2ed63",
+    "synthetic": "3fbcdf271c3333f4091be2a0bfb2ed63",
+    "isSynthetic": true
+  },
+  {
+    "name": "pro、陈小满 - 心底的旧.mp3",
+    "fmt": "mp3",
+    "musicId": 2735941345,
+    "mp3DocId": "eb55673729efe201eeddf0331924da74",
+    "synthetic": "eb55673729efe201eeddf0331924da74",
+    "isSynthetic": true
+  },
+  {
+    "name": "suhmeduh - Phone Kisses.mp3",
+    "fmt": "mp3",
+    "musicId": 446512853,
+    "mp3DocId": "6c184a90347167bc39f47172b559fd06",
+    "synthetic": "6c184a90347167bc39f47172b559fd06",
+    "isSynthetic": true
+  },
+  {
+    "name": "周杰伦 - 七里香.flac",
+    "fmt": "flac",
+    "musicId": 186001,
+    "mp3DocId": "0f16145cc067956681f40f3fc0e7ef9b",
+    "synthetic": "3ea5fc8aa87d32ab3fcc753c2b558350",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 不爱我就拉倒.flac",
+    "fmt": "flac",
+    "musicId": 1962166010,
+    "mp3DocId": "c905988a5fde07fb259040779fa1664e",
+    "synthetic": "4428536f7a0fc7976e7d26b8669adf39",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 不能说的秘密.flac",
+    "fmt": "flac",
+    "musicId": 185868,
+    "mp3DocId": "49345f79cfb8b1fddf43efe3abf89df1",
+    "synthetic": "eb538e42df64a23d321a417334d686b6",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 东风破.flac",
+    "fmt": "flac",
+    "musicId": 186018,
+    "mp3DocId": "e549e0c61f38d3820867f9fcdf02fc07",
+    "synthetic": "9997152d4d43f6b297811a885ad24493",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 半岛铁盒.flac",
+    "fmt": "flac",
+    "musicId": 186046,
+    "mp3DocId": "943a0ef6c09d90f60a77d8eec725d86e",
+    "synthetic": "41029759df5ba1c6477371025309c10c",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 反方向的钟.flac",
+    "fmt": "flac",
+    "musicId": 186162,
+    "mp3DocId": "213cebef579193ac65a1b9de5db93a1b",
+    "synthetic": "cd969d9e866a797e43ca6c58467847f4",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 发如雪.flac",
+    "fmt": "flac",
+    "musicId": 185906,
+    "mp3DocId": "7b8c11cc35c84dbd083d210b388914c5",
+    "synthetic": "8234adacc6046c728f2a7dcef3fe0a84",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 可爱女人.flac",
+    "fmt": "flac",
+    "musicId": 186145,
+    "mp3DocId": "a5a1cf8a9a0414b3b1eaeb2a670ae48f",
+    "synthetic": "d58df80e304ff472e96665e89b2a654b",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 听妈妈的话.flac",
+    "fmt": "flac",
+    "musicId": 185879,
+    "mp3DocId": "1805e4a0d5ffde7c99a61def0a530835",
+    "synthetic": "26d463f1787c6a8e1c10c0c130fbcc83",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 夜曲.flac",
+    "fmt": "flac",
+    "musicId": 185904,
+    "mp3DocId": "f2377b28b5af6154bd8e8cdc65802893",
+    "synthetic": "81ff555c2c9d7ed06196c4d215ba2f72",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 安静.flac",
+    "fmt": "flac",
+    "musicId": 186139,
+    "mp3DocId": "f75b3730855e632841664e77da65a1e7",
+    "synthetic": "9a06c2d6684dcea0ec4b79463ee92bb8",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 我是如此相信.flac",
+    "fmt": "flac",
+    "musicId": 1409990258,
+    "mp3DocId": "488a535ad1470b3ef35021b0bc36e000",
+    "synthetic": "e438af37d1e0c9bc8b13b2d5fadb617f",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 我落泪情绪零碎.flac",
+    "fmt": "flac",
+    "musicId": 185676,
+    "mp3DocId": "22de4b2b1aacf241e59a52c6a3ec31a1",
+    "synthetic": "c2950ec047a6aa611083d04eb899600e",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 搁浅.flac",
+    "fmt": "flac",
+    "musicId": 186005,
+    "mp3DocId": "1739d3eb35d33db9707b36e7c6c06ad9",
+    "synthetic": "996672e73094905efa15ffcd164b5e0b",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 断了的弦.flac",
+    "fmt": "flac",
+    "musicId": 186011,
+    "mp3DocId": "3b36010e0a3c880790fbe627871af076",
+    "synthetic": "24a293c36af9b65050a3d200f3138fa2",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 明明就.flac",
+    "fmt": "flac",
+    "musicId": 25641369,
+    "mp3DocId": "a6b6dc72309cc8a253483b825609933a",
+    "synthetic": "5e8d38c43ec9cf5cd6378e0352e1dbe3",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 晴天.flac",
+    "fmt": "flac",
+    "musicId": 186016,
+    "mp3DocId": "67d856fde4df905eef7fffa7a9aa4f11",
+    "synthetic": "2e088a8b0741b5bcc25ebb02fbacc679",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 暗号.flac",
+    "fmt": "flac",
+    "musicId": 186047,
+    "mp3DocId": "6cf9007a866817876122455c2c7c29b2",
+    "synthetic": "3e3c3fa33dedf6dbcbd6e08078dea8e7",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 最后的战役.flac",
+    "fmt": "flac",
+    "musicId": 186059,
+    "mp3DocId": "939b6c7b194cd5096c2addf78c41d6e9",
+    "synthetic": "eb39b4105cbeb1b4374cb40a84e2c64b",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 最长的电影.flac",
+    "fmt": "flac",
+    "musicId": 185821,
+    "mp3DocId": "67a96a54d83883e8f719e22e3d4bc29e",
+    "synthetic": "877c1840fda6438afe975595cb040589",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 本草纲目.flac",
+    "fmt": "flac",
+    "musicId": 185882,
+    "mp3DocId": "2f121bd25848d73757dc9124d1711de2",
+    "synthetic": "ab2b2d92c77047df6b4f96f7a6c4b871",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 枫.flac",
+    "fmt": "flac",
+    "musicId": 185912,
+    "mp3DocId": "88cec2e5f04898c025ec581b1d151dc1",
+    "synthetic": "a3ca167180877cfcae68426ced565cfa",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 止战之殇.flac",
+    "fmt": "flac",
+    "musicId": 186009,
+    "mp3DocId": "7454b178b9e310a6c1351c1507432e99",
+    "synthetic": "564f74b818c7e66277af4bf8f86b41fe",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 烟花易冷.flac",
+    "fmt": "flac",
+    "musicId": 185668,
+    "mp3DocId": "ecd1a112dc8c0a5d8600cfd827e8e924",
+    "synthetic": "ad1c63827e8fce11e17f17dc43137a81",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 爱你没差.flac",
+    "fmt": "flac",
+    "musicId": 25653004,
+    "mp3DocId": "be65a9b34e6861c3d43b7fef8322ee7c",
+    "synthetic": "455edfb947ee14a76cad41c8763a1613",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 爱在西元前.flac",
+    "fmt": "flac",
+    "musicId": 186114,
+    "mp3DocId": "d05f5933f78c6f667953550a84245cd9",
+    "synthetic": "294bc3d628a1eaedb396e0df9b8dc1c2",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 简单爱.flac",
+    "fmt": "flac",
+    "musicId": 186119,
+    "mp3DocId": "2d20be92289b5880740e3b92eb0cf1bd",
+    "synthetic": "727ab32b439cdeacfb52c1a5d3a0bf1a",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 算什么男人.flac",
+    "fmt": "flac",
+    "musicId": 29818120,
+    "mp3DocId": "a913d2e5c6dfefbd1ac1f0d63a5c2bb0",
+    "synthetic": "1dbae7b4042cb8e931cefb97dea940f9",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 给我一首歌的时间.flac",
+    "fmt": "flac",
+    "musicId": 185694,
+    "mp3DocId": "72fed3a77a60fe3d8906ec9a6ab514f9",
+    "synthetic": "31cbd45703dfd799dbacc43d78cd99b8",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 蒲公英的约定.flac",
+    "fmt": "flac",
+    "musicId": 185815,
+    "mp3DocId": "14cffa42793d3b378776748c8c3a989a",
+    "synthetic": "6374bf4a8fe334ab2f4ad76aa019c1f1",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 说了再见.flac",
+    "fmt": "flac",
+    "musicId": 185667,
+    "mp3DocId": "f30c96bf5c100e8ac860b221ddd8347f",
+    "synthetic": "7a274bb66c96769d6ea45f881fd2971b",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 说好不哭 (with 五月天阿信).flac",
+    "fmt": "flac",
+    "musicId": 1391274164,
+    "mp3DocId": "4d6e436bd5d63443c6fc1f6fa285bcb6",
+    "synthetic": "2c5596cb83ebb6bc53504554ab1a16b5",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 说好的幸福呢.flac",
+    "fmt": "flac",
+    "musicId": 185699,
+    "mp3DocId": "3ae36c3401f72416a6beafc896201ee9",
+    "synthetic": "a155c2b89da6da03e1fe7b628a750227",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 轨迹.flac",
+    "fmt": "flac",
+    "musicId": 186010,
+    "mp3DocId": "222c9ba4a98cbbecfc6ab44fefd7944c",
+    "synthetic": "bc56a7a32ffe69ad4511f7e91dd922ba",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 退后.flac",
+    "fmt": "flac",
+    "musicId": 185884,
+    "mp3DocId": "c10fa375ac5df4e79b58c22e1b9244ac",
+    "synthetic": "281b377c78039396cb6bca3b05352753",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 黑色毛衣.flac",
+    "fmt": "flac",
+    "musicId": 185908,
+    "mp3DocId": "329723f1b73b5659dd885081218a2a61",
+    "synthetic": "62d8ec7776c93a16bb4c9247af8a418f",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦 - 龙卷风.flac",
+    "fmt": "flac",
+    "musicId": 186160,
+    "mp3DocId": "b31ef67fdcb89751123ad2ee0bf5bc78",
+    "synthetic": "18d286fe52fa31d4006dc89750443cd8",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦、梁心颐 - 珊瑚海.flac",
+    "fmt": "flac",
+    "musicId": 185920,
+    "mp3DocId": "673e025f839f723b57789dee5081cd47",
+    "synthetic": "6056c05f1c7c9f0e23779749b880a40c",
+    "isSynthetic": false
+  },
+  {
+    "name": "周杰伦、潘儿 - 夜的第七章.flac",
+    "fmt": "flac",
+    "musicId": 185878,
+    "mp3DocId": "0a0837a027b34b0f124a741eb58720b1",
+    "synthetic": "ef125136a13008d5bf4c1c992023347b",
+    "isSynthetic": false
+  },
+  {
+    "name": "季彦霖 - 选择失忆.flac",
+    "fmt": "flac",
+    "musicId": 548556306,
+    "mp3DocId": "d171b827ead70bdc5437c47a5f45f87d",
+    "synthetic": "54fe413dc2392a3cf7bdb7b83a899e2e",
+    "isSynthetic": false
+  },
+  {
+    "name": "郑润泽 - 瞬.mp3",
+    "fmt": "mp3",
+    "musicId": 2063864551,
+    "mp3DocId": "8c825a4d96bc0e75ddbb9c47bde0c1de",
+    "synthetic": "8c825a4d96bc0e75ddbb9c47bde0c1de",
+    "isSynthetic": true
+  },
+  {
+    "name": "阴雨天 - 和你的照片还留着.mp3",
+    "fmt": "mp3",
+    "musicId": 2135427500,
+    "mp3DocId": "43edb42259869e4f5cf95f3e6dd240bf",
+    "synthetic": "0ecd42d7ba661403566638024c1d28bd",
+    "isSynthetic": false
+  },
+  {
+    "name": "颜人中 - 慢慢.flac",
+    "fmt": "flac",
+    "musicId": 1910905300,
+    "mp3DocId": "e682d3825a14d3942d2728c05639e37a",
+    "synthetic": "3c07c0063f0562744159655e557ce974",
+    "isSynthetic": false
+  },
+  {
+    "name": "颜人中 - 我只能离开.mp3",
+    "fmt": "mp3",
+    "musicId": 1398283847,
+    "mp3DocId": "2fdceee8e7b13de471b2013dd67718ad",
+    "synthetic": "f2961c0e1d32957c92d2732549cc4342",
+    "isSynthetic": false
+  },
+  {
+    "name": "黄龄 - 鸳鸯戏.flac",
+    "fmt": "flac",
+    "musicId": 2071207559,
+    "mp3DocId": "92cb73a76192f9942f9fb95b1c5c4063",
+    "synthetic": "79951318e9456936314dbac210728f79",
+    "isSynthetic": false
+  }
+]

@@ -1,0 +1,557 @@
+{
+  "at": "2026-10-22T07:17:42.298Z",
+  "rows": [
+    {
+      "name": "周杰伦 - 七里香.flac",
+      "fmt": "flac",
+      "declared": 958000,
+      "measured": 958203,
+      "absDiff": -203,
+      "relPct": 0.021185489922281604,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 不爱我就拉倒.flac",
+      "fmt": "flac",
+      "declared": 976000,
+      "measured": 975868,
+      "absDiff": 132,
+      "relPct": 0.01352641955674333,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 不能说的秘密.flac",
+      "fmt": "flac",
+      "declared": 900000,
+      "measured": 899970,
+      "absDiff": 30,
+      "relPct": 0.0033334444481482716,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 东风破.flac",
+      "fmt": "flac",
+      "declared": 882000,
+      "measured": 882242,
+      "absDiff": -242,
+      "relPct": 0.027430115546528046,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 半岛铁盒.flac",
+      "fmt": "flac",
+      "declared": 917000,
+      "measured": 917130,
+      "absDiff": -130,
+      "relPct": 0.014174653538756774,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 反方向的钟.flac",
+      "fmt": "flac",
+      "declared": 878000,
+      "measured": 878424,
+      "absDiff": -424,
+      "relPct": 0.048268262251486754,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 发如雪.flac",
+      "fmt": "flac",
+      "declared": 968000,
+      "measured": 968263,
+      "absDiff": -263,
+      "relPct": 0.027162041718004303,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 可爱女人.flac",
+      "fmt": "flac",
+      "declared": 927000,
+      "measured": 926801,
+      "absDiff": 199,
+      "relPct": 0.021471707518658265,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 听妈妈的话.flac",
+      "fmt": "flac",
+      "declared": 945000,
+      "measured": 945188,
+      "absDiff": -188,
+      "relPct": 0.01989022289745532,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 夜曲.flac",
+      "fmt": "flac",
+      "declared": 947000,
+      "measured": 947499,
+      "absDiff": -499,
+      "relPct": 0.0526649632347897,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 安静.flac",
+      "fmt": "flac",
+      "declared": 797000,
+      "measured": 796833,
+      "absDiff": 167,
+      "relPct": 0.020957967353259718,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 我是如此相信.flac",
+      "fmt": "flac",
+      "declared": 1697000,
+      "measured": 1697111,
+      "absDiff": -111,
+      "relPct": 0.006540526812919131,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 我落泪情绪零碎.flac",
+      "fmt": "flac",
+      "declared": 894000,
+      "measured": 894279,
+      "absDiff": -279,
+      "relPct": 0.031198317303660267,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 搁浅.flac",
+      "fmt": "flac",
+      "declared": 873000,
+      "measured": 873082,
+      "absDiff": -82,
+      "relPct": 0.009392015870216085,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 断了的弦.flac",
+      "fmt": "flac",
+      "declared": 886000,
+      "measured": 885746,
+      "absDiff": 254,
+      "relPct": 0.028676392554976258,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 明明就.flac",
+      "fmt": "flac",
+      "declared": 850000,
+      "measured": 849513,
+      "absDiff": 487,
+      "relPct": 0.057326962624468375,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 晴天.flac",
+      "fmt": "flac",
+      "declared": 938000,
+      "measured": 937901,
+      "absDiff": 99,
+      "relPct": 0.010555485067187263,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 暗号.flac",
+      "fmt": "flac",
+      "declared": 883000,
+      "measured": 882597,
+      "absDiff": 403,
+      "relPct": 0.04566070358272235,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 最后的战役.flac",
+      "fmt": "flac",
+      "declared": 965000,
+      "measured": 964843,
+      "absDiff": 157,
+      "relPct": 0.01627207742606828,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 最长的电影.flac",
+      "fmt": "flac",
+      "declared": 813000,
+      "measured": 812822,
+      "absDiff": 178,
+      "relPct": 0.021899013560164465,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 本草纲目.flac",
+      "fmt": "flac",
+      "declared": 960000,
+      "measured": 959996,
+      "absDiff": 4,
+      "relPct": 0.00041666840278501165,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 枫.flac",
+      "fmt": "flac",
+      "declared": 888000,
+      "measured": 887682,
+      "absDiff": 318,
+      "relPct": 0.03582363954659439,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 止战之殇.flac",
+      "fmt": "flac",
+      "declared": 875000,
+      "measured": 874897,
+      "absDiff": 103,
+      "relPct": 0.011772814399866499,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 烟花易冷.flac",
+      "fmt": "flac",
+      "declared": 861000,
+      "measured": 860940,
+      "absDiff": 60,
+      "relPct": 0.006969126768415918,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 爱你没差.flac",
+      "fmt": "flac",
+      "declared": 865000,
+      "measured": 865034,
+      "absDiff": -34,
+      "relPct": 0.0039304813452419205,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 爱在西元前.flac",
+      "fmt": "flac",
+      "declared": 996000,
+      "measured": 996185,
+      "absDiff": -185,
+      "relPct": 0.018570847784297094,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 简单爱.flac",
+      "fmt": "flac",
+      "declared": 954000,
+      "measured": 953712,
+      "absDiff": 288,
+      "relPct": 0.030197795560924053,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 算什么男人.flac",
+      "fmt": "flac",
+      "declared": 882000,
+      "measured": 881853,
+      "absDiff": 147,
+      "relPct": 0.01666944490748458,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 给我一首歌的时间.flac",
+      "fmt": "flac",
+      "declared": 995000,
+      "measured": 994888,
+      "absDiff": 112,
+      "relPct": 0.011257548588383818,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 蒲公英的约定.flac",
+      "fmt": "flac",
+      "declared": 869000,
+      "measured": 868720,
+      "absDiff": 280,
+      "relPct": 0.032231328851643794,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 说了再见.flac",
+      "fmt": "flac",
+      "declared": 845000,
+      "measured": 845478,
+      "absDiff": -478,
+      "relPct": 0.05653606598870698,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 说好不哭 (with 五月天阿信).flac",
+      "fmt": "flac",
+      "declared": 812000,
+      "measured": 812318,
+      "absDiff": -318,
+      "relPct": 0.0391472305180976,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 说好的幸福呢.flac",
+      "fmt": "flac",
+      "declared": 844000,
+      "measured": 843792,
+      "absDiff": 208,
+      "relPct": 0.02465062479852855,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 轨迹.flac",
+      "fmt": "flac",
+      "declared": 929000,
+      "measured": 928995,
+      "absDiff": 5,
+      "relPct": 0.0005382160291497801,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 退后.flac",
+      "fmt": "flac",
+      "declared": 918000,
+      "measured": 918334,
+      "absDiff": -334,
+      "relPct": 0.03637020953160833,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 黑色毛衣.flac",
+      "fmt": "flac",
+      "declared": 894000,
+      "measured": 893655,
+      "absDiff": 345,
+      "relPct": 0.03860550212330262,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦 - 龙卷风.flac",
+      "fmt": "flac",
+      "declared": 887000,
+      "measured": 886708,
+      "absDiff": 292,
+      "relPct": 0.032930795707267785,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦、梁心颐 - 珊瑚海.flac",
+      "fmt": "flac",
+      "declared": 914000,
+      "measured": 914043,
+      "absDiff": -43,
+      "relPct": 0.004704373864249275,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "周杰伦、潘儿 - 夜的第七章.flac",
+      "fmt": "flac",
+      "declared": 962000,
+      "measured": 961690,
+      "absDiff": 310,
+      "relPct": 0.0322349197766432,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "季彦霖 - 选择失忆.flac",
+      "fmt": "flac",
+      "declared": 1509000,
+      "measured": 1509089,
+      "absDiff": -89,
+      "relPct": 0.005897597822262305,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "颜人中 - 慢慢.flac",
+      "fmt": "flac",
+      "declared": 1533000,
+      "measured": 1532907,
+      "absDiff": 93,
+      "relPct": 0.006066904254465535,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "黄龄 - 鸳鸯戏.flac",
+      "fmt": "flac",
+      "declared": 1835000,
+      "measured": 1835112,
+      "absDiff": -112,
+      "relPct": 0.006103169724790639,
+      "ok": true,
+      "kind": "无损"
+    },
+    {
+      "name": "G-DRAGON - POWER.mp3",
+      "fmt": "mp3",
+      "declared": 320000,
+      "measured": 320058,
+      "absDiff": -58,
+      "relPct": 0.018121715439076667,
+      "ok": true,
+      "frameKbps": 320000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME (feat. TAEYANG & DAESUNG).mp3",
+      "fmt": "mp3",
+      "declared": 320000,
+      "measured": 320040,
+      "absDiff": -40,
+      "relPct": 0.012498437695288089,
+      "ok": true,
+      "frameKbps": 320000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3",
+      "fmt": "mp3",
+      "declared": 320000,
+      "measured": 320034,
+      "absDiff": -34,
+      "relPct": 0.010623871213683547,
+      "ok": true,
+      "frameKbps": 320000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "Michita - Cry For Me (feat. Ami).mp3",
+      "fmt": "mp3",
+      "declared": 128000,
+      "measured": 128011,
+      "absDiff": -11,
+      "relPct": 0.008593011538070948,
+      "ok": true,
+      "frameKbps": 128000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "Valentin - Unchanged Mind.mp3",
+      "fmt": "mp3",
+      "declared": 128000,
+      "measured": 128011,
+      "absDiff": -11,
+      "relPct": 0.008593011538070948,
+      "ok": true,
+      "frameKbps": 128000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "pro、陈小满 - 心底的旧.mp3",
+      "fmt": "mp3",
+      "declared": 320000,
+      "measured": 320020,
+      "absDiff": -20,
+      "relPct": 0.006249609399412537,
+      "ok": true,
+      "frameKbps": 320000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "suhmeduh - Phone Kisses.mp3",
+      "fmt": "mp3",
+      "declared": 128000,
+      "measured": 128027,
+      "absDiff": -27,
+      "relPct": 0.02108930147547002,
+      "ok": true,
+      "frameKbps": 128000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "蒋孜怡,岳燃 - 拼图爱.mp3",
+      "fmt": "mp3",
+      "declared": 320000,
+      "measured": 320051,
+      "absDiff": -51,
+      "relPct": 0.015934960365691718,
+      "ok": true,
+      "frameKbps": 320000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "郑润泽 - 瞬.mp3",
+      "fmt": "mp3",
+      "declared": 128000,
+      "measured": 128012,
+      "absDiff": -12,
+      "relPct": 0.009374121176139737,
+      "ok": true,
+      "frameKbps": 128000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "阴雨天 - 和你的照片还留着.mp3",
+      "fmt": "mp3",
+      "declared": 128000,
+      "measured": 128018,
+      "absDiff": -18,
+      "relPct": 0.01406052273898983,
+      "ok": true,
+      "frameKbps": 128000,
+      "snapped": true,
+      "isCbr": true
+    },
+    {
+      "name": "颜人中 - 我只能离开.mp3",
+      "fmt": "mp3",
+      "declared": 320000,
+      "measured": 320033,
+      "absDiff": -33,
+      "relPct": 0.010311436633097212,
+      "ok": true,
+      "frameKbps": 320000,
+      "snapped": true,
+      "isCbr": true
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "root": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src",
+  "generatedAt": "2026-10-22T06:19:18.565Z",
+  "count": 3,
+  "fmtCount": {
+    "mp3": 2,
+    "flac": 1
+  },
+  "records": [
+    {
+      "file": "Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3",
+      "abs": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src\\Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3",
+      "size": 8602160,
+      "mtime": "2023-11-12T13:00:08.823Z",
+      "format": "mp3",
+      "title": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+      "artist": "Jackie",
+      "album": "ATOX",
+      "durationMs": 213744,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/eULyEnL7fe393Gb6wZrkUaYUzGtHvofQEnXtCi6jaHYCfJxWOO2siXuMwVyJoYonb80jJJDKCdcZnMmev5BM/DmbH0WFRFditMwEVyaKLao0P6hF55q3h5Lo9agMWf/eoHFGUhCf5B4sUohWISM00bYYJvZS/tZLcd7zSXzXEWTmrfNhInrN3KfovXN8hzHPBSFkpcog1aYNpwKvLTkazY0OyAx25FCsiKYN8wDRiqEL1oQgWfmdSItMBgdGaybqPLBkUUFiHScqfuSNrfWd34NjHO82wUZIgob5mGjw0zooGyw1kpinBshFcu3e13zmJVeRJkxyH/GLqYkmqeWN6DKC3xM7nNZ7Syxq5Vz9YeUPJjoG9lVSK2YD5WGFMeggikXEZEEO11xKQ6Gj/Tp9tIbO6jDu0/BoPKbuDsA6wT2Vk1SmT+gHtR8G66UacrQRXIF9zUR6DB1nd8FoIVJYtirW0krItkzbsSKoVjZfbyQC//W2XOTJbGnz7j62WPcd474VC7dRPzzZqObxJ/kcR8=",
+      "hasKey": true,
+      "frames": [
+        "TSSE",
+        "COMM",
+        "TALB",
+        "TIT2",
+        "TPE1",
+        "TPOS",
+        "TRCK",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3",
+        "hadExt": true,
+        "title": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+        "titleCore": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+        "artist": "Jackie",
+        "artists": [
+          "Jackie"
+        ],
+        "feat": [],
+        "queries": [
+          "John Dreamer-亚托克斯 伴奏（Jackie remix） Jackie",
+          "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+          "Jackie"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 一路向北.flac",
+      "abs": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src\\周杰伦 - 一路向北.flac",
+      "size": 35741903,
+      "mtime": "2026-10-22T05:01:19.934Z",
+      "format": "flac",
+      "title": "一路向北",
+      "artist": "周杰伦",
+      "album": "J III MP3 Player",
+      "durationMs": 294240,
+      "key163": null,
+      "hasKey": false,
+      "parsed": {
+        "raw": "周杰伦 - 一路向北.flac",
+        "hadExt": true,
+        "title": "一路向北",
+        "titleCore": "一路向北",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "一路向北 周杰伦",
+          "一路向北",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 一路向北.mp3",
+      "abs": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src\\周杰伦 - 一路向北.mp3",
+      "size": 4791802,
+      "mtime": "2025-02-27T09:53:48.291Z",
+      "format": "mp3",
+      "title": "一路向北",
+      "artist": "周杰伦",
+      "album": "J III MP3 Player",
+      "durationMs": 295732,
+      "key163": null,
+      "hasKey": false,
+      "frames": [
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "周杰伦 - 一路向北.mp3",
+        "hadExt": true,
+        "title": "一路向北",
+        "titleCore": "一路向北",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "一路向北 周杰伦",
+          "一路向北",
+          "周杰伦"
+        ]
+      }
+    }
+  ]
+}

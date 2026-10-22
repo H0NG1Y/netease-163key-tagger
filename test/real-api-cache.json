@@ -1,0 +1,359 @@
+{
+  "search:John Dreamer-亚托克斯 伴奏（Jackie remix） Jackie": [
+    {
+      "id": 1809412694,
+      "name": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+      "artists": [
+        {
+          "id": 37125028,
+          "name": "Jackie"
+        }
+      ],
+      "album": {
+        "id": 121139178,
+        "name": "ATOX"
+      },
+      "durationMs": 213702,
+      "raw": {
+        "name": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+        "id": 1809412694,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 37125028,
+            "name": "Jackie",
+            "tns": [],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 10,
+        "st": 0,
+        "rt": "",
+        "fee": 0,
+        "v": 41,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 121139178,
+          "name": "ATOX",
+          "picUrl": "http://p1.music.126.net/fDOu_nezGgSAF5NfVuqFsg==/109951165606660795.jpg",
+          "tns": [],
+          "pic_str": "109951165606660795",
+          "pic": 109951165606660800
+        },
+        "dt": 213702,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8550765,
+          "vd": 44909,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5130477,
+          "vd": 47543,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3420333,
+          "vd": 49139,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 1185773,
+          "fid": 0,
+          "size": 31675283,
+          "vd": 44911,
+          "sr": 48000
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 131200,
+        "originCoverType": 2,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 7,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 0,
+        "mv": 0,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1809412694,
+          "fee": 0,
+          "payed": 0,
+          "st": 0,
+          "pl": 320000,
+          "dl": 999000,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 320000,
+          "toast": false,
+          "flag": 257,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "lossless",
+          "playMaxBrLevel": "lossless",
+          "downloadMaxBrLevel": "lossless",
+          "plLevel": "exhigh",
+          "dlLevel": "lossless",
+          "flLevel": "exhigh",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": null,
+            "cannotListenReason": null,
+            "playReason": null,
+            "freeLimitTagType": null
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ],
+          "code": 0,
+          "message": null,
+          "plLevels": null,
+          "dlLevels": null,
+          "ignoreCache": null,
+          "bd": null
+        }
+      }
+    },
+    {
+      "id": 1810029383,
+      "name": "John Dreamer-亚托克斯（Jackie remix）",
+      "artists": [
+        {
+          "id": 37125028,
+          "name": "Jackie"
+        }
+      ],
+      "album": {
+        "id": 121139178,
+        "name": "ATOX"
+      },
+      "durationMs": 213702,
+      "raw": {
+        "name": "John Dreamer-亚托克斯（Jackie remix）",
+        "id": 1810029383,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 37125028,
+            "name": "Jackie",
+            "tns": [],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 10,
+        "st": 0,
+        "rt": "",
+        "fee": 0,
+        "v": 40,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 121139178,
+          "name": "ATOX",
+          "picUrl": "http://p2.music.126.net/fDOu_nezGgSAF5NfVuqFsg==/109951165606660795.jpg",
+          "tns": [],
+          "pic_str": "109951165606660795",
+          "pic": 109951165606660800
+        },
+        "dt": 213702,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8550444,
+          "vd": 62211,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5130284,
+          "vd": 64819,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3420204,
+          "vd": 66423,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1215202,
+          "fid": 0,
+          "size": 32461423,
+          "vd": 62210,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 128,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 6,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 0,
+        "mv": 0,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1810029383,
+          "fee": 0,
+          "payed": 0,
+          "st": 0,
+          "pl": 320000,
+          "dl": 999000,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 320000,
+          "toast": false,
+          "flag": 257,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "lossless",
+          "playMaxBrLevel": "lossless",
+          "downloadMaxBrLevel": "lossless",
+          "plLevel": "exhigh",
+          "dlLevel": "lossless",
+          "flLevel": "exhigh",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": null,
+            "cannotListenReason": null,
+            "playReason": null,
+            "freeLimitTagType": null
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ],
+          "code": 0,
+          "message": null,
+          "plLevels": null,
+          "dlLevels": null,
+          "ignoreCache": null,
+          "bd": null
+        }
+      }
+    }
+  ],
+  "detail:1809412694": {
+    "musicId": 1809412694,
+    "musicName": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+    "artist": [
+      [
+        "Jackie",
+        37125028
+      ]
+    ],
+    "albumId": 121139178,
+    "album": "ATOX",
+    "albumPicDocId": "109951165606660795",
+    "albumPic": "https://p1.music.126.net/fDOu_nezGgSAF5NfVuqFsg==/109951165606660795.jpg",
+    "bitrate": 320000,
+    "mp3DocId": "cde6b150f488f81c8f0d9b374d2fe2fb",
+    "duration": 0,
+    "mvId": 0,
+    "alias": [],
+    "transNames": [],
+    "format": "mp3"
+  }
+}

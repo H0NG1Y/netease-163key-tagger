@@ -1,0 +1,448 @@
+[
+  {
+    "name": "G-DRAGON - POWER.mp3",
+    "fmt": "mp3",
+    "declared": 320000,
+    "real": 320000,
+    "kind": "CBR",
+    "values": [
+      320
+    ],
+    "verdict": "OK"
+  },
+  {
+    "name": "G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME (feat. TAEYANG & DAESUNG).mp3",
+    "fmt": "mp3",
+    "declared": 320000,
+    "real": 320000,
+    "kind": "CBR",
+    "values": [
+      320
+    ],
+    "verdict": "OK"
+  },
+  {
+    "name": "G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3",
+    "fmt": "mp3",
+    "declared": 320000,
+    "real": 320000,
+    "kind": "CBR",
+    "values": [
+      320
+    ],
+    "verdict": "OK"
+  },
+  {
+    "name": "Michita - Cry For Me (feat. Ami).mp3",
+    "fmt": "mp3",
+    "declared": 320000,
+    "real": 128000,
+    "kind": "CBR",
+    "values": [
+      128
+    ],
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "Valentin - Unchanged Mind.mp3",
+    "fmt": "mp3",
+    "declared": 320000,
+    "real": 128000,
+    "kind": "CBR",
+    "values": [
+      128
+    ],
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "pro、陈小满 - 心底的旧.mp3",
+    "fmt": "mp3",
+    "declared": 320000,
+    "real": 320000,
+    "kind": "CBR",
+    "values": [
+      320
+    ],
+    "verdict": "OK"
+  },
+  {
+    "name": "suhmeduh - Phone Kisses.mp3",
+    "fmt": "mp3",
+    "declared": 320003,
+    "real": 128000,
+    "kind": "CBR",
+    "values": [
+      128
+    ],
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 七里香.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 958203,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 不爱我就拉倒.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 975868,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 不能说的秘密.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 899970,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 东风破.flac",
+    "fmt": "flac",
+    "declared": 320001,
+    "real": 882242,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 半岛铁盒.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 917130,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 反方向的钟.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 878424,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 发如雪.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 968263,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 可爱女人.flac",
+    "fmt": "flac",
+    "declared": 320002,
+    "real": 926801,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 听妈妈的话.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 945188,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 夜曲.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 947499,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 安静.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 796833,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 我是如此相信.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 1697111,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 我落泪情绪零碎.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 894279,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 搁浅.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 873082,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 断了的弦.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 885746,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 明明就.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 849513,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 晴天.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 937901,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 暗号.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 882597,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 最后的战役.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 964843,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 最长的电影.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 812822,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 本草纲目.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 959996,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 枫.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 887682,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 止战之殇.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 874897,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 烟花易冷.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 860940,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 爱你没差.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 865034,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 爱在西元前.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 996185,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 简单爱.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 953712,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 算什么男人.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 881853,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 给我一首歌的时间.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 994888,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 蒲公英的约定.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 868720,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 说了再见.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 845478,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 说好不哭 (with 五月天阿信).flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 812318,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 说好的幸福呢.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 843792,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 轨迹.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 928995,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 退后.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 918334,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 黑色毛衣.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 893655,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦 - 龙卷风.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 886708,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦、梁心颐 - 珊瑚海.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 914043,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "周杰伦、潘儿 - 夜的第七章.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 961690,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "季彦霖 - 选择失忆.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 1509089,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "郑润泽 - 瞬.mp3",
+    "fmt": "mp3",
+    "declared": 320000,
+    "real": 128000,
+    "kind": "CBR",
+    "values": [
+      128
+    ],
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "阴雨天 - 和你的照片还留着.mp3",
+    "fmt": "mp3",
+    "declared": 128002,
+    "real": 128000,
+    "kind": "CBR",
+    "values": [
+      128
+    ],
+    "verdict": "OK"
+  },
+  {
+    "name": "颜人中 - 慢慢.flac",
+    "fmt": "flac",
+    "declared": 320000,
+    "real": 1532907,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  },
+  {
+    "name": "颜人中 - 我只能离开.mp3",
+    "fmt": "mp3",
+    "declared": 320002,
+    "real": 320000,
+    "kind": "CBR",
+    "values": [
+      320
+    ],
+    "verdict": "OK"
+  },
+  {
+    "name": "黄龄 - 鸳鸯戏.flac",
+    "fmt": "flac",
+    "declared": 320002,
+    "real": 1835112,
+    "kind": "FLAC",
+    "verdict": "MISMATCH"
+  }
+]

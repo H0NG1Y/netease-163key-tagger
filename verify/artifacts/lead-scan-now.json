@@ -1,0 +1,1789 @@
+{
+  "root": "E:\\CloudMusic_163key",
+  "generatedAt": "2026-10-22T06:46:42.316Z",
+  "count": 57,
+  "fmtCount": {
+    "mp3": 13,
+    "flac": 44
+  },
+  "records": [
+    {
+      "file": "G-DRAGON - POWER.mp3",
+      "abs": "E:\\CloudMusic_163key\\G-DRAGON - POWER.mp3",
+      "size": 5787484,
+      "mtime": "2025-01-18T13:26:53.942Z",
+      "format": "mp3",
+      "title": "POWER",
+      "artist": "G-DRAGON",
+      "album": "POWER",
+      "durationMs": 143282,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/eoa4fVXKMC8bzZ4SGCEjeGU//mAjBL+fDvzBUToOoE/modPDSt1q22OGEzx+IXXj6FN+/TkmzBWu1JBC5L5rdGB3Uot+ggA5/vZW07N+sj5dZv4PA+t+sLOui/g9D/FfkyqPbzwqX3WCnFQBk4g85dePjfVAyByeDFOwYka01WqRluD2I3/j5k2/NWOrsbMVqSV9WwPywtyRobXRm/DMot/qOwZwIuYNMu9aaZf3dtmbJu49JqKKY3wrgRjQGS7Lrzhd0eThXDrsnMG3b4sZloKyxkUG/lGJHhDq9O/rNe7snnPnJ/hrVZsRer2bpHOTfPCAizYqEK6wXRRDTIYo0eJzPnL3J0nSKZVHoQ7QG4mckWWTy/dOfbHEGfHlhDMiWmhmjH4DMNCLFoKmvfMkzPIX9p/sqwehhs1CvqAOVFPkKWCjGpnaamEDkQVZYVnJ2m+/FGuy/x+sYwNv8d38R2ssIuEsqccEDnPUv/kFIvb",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "G-DRAGON - POWER.mp3",
+        "hadExt": true,
+        "title": "POWER",
+        "titleCore": "POWER",
+        "artist": "G-DRAGON",
+        "artists": [
+          "G-DRAGON"
+        ],
+        "feat": [],
+        "queries": [
+          "POWER G-DRAGON",
+          "POWER",
+          "G-DRAGON"
+        ]
+      }
+    },
+    {
+      "file": "G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME (feat. TAEYANG & DAESUNG).mp3",
+      "abs": "E:\\CloudMusic_163key\\G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME (feat. TAEYANG & DAESUNG).mp3",
+      "size": 8536656,
+      "mtime": "2025-01-18T13:31:54.899Z",
+      "format": "mp3",
+      "title": "HOME SWEET HOME (feat. TAEYANG & DAESUNG)",
+      "artist": "G-DRAGON/TAEYANG/DAESUNG",
+      "album": "HOME SWEET HOME (feat. TAEYANG & DAESUNG)",
+      "durationMs": 211383,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/VTGYMpfiT1urC6nLwo14nVf//Nsw+FAR8z7Px6JGY4MtDySaNBXNzwrV0nt4EWl3KuQAdeoEM5mDTQ6KARiiScYjNGv5bDzeSlGRUqgfqAnFZQM7zyh957ZAf644hTjZ7HHjyyw3xN/7GkXJ0wb1L4NMIHGZssVToZdSj8yRanhSQwumI8mJQpdrfljUVplH/2qtI2uZKZiK2+p/fdnmDn27+slN/mniPVQDrhFXSIfjDDRu+ld45OVf4TI7cJxYwqa2FV88+2VrDX2IGqVxtqXicJCf4Fv9Pnz6hnJI4cW7V1ooJDNSsGYyqYpBl/3Gw5FLsouTycm38eJ44l/YqvvU9T+FiZVNwhApNjmb5SrqMG34V7TUWCcI0MS/EXKrDrbO17mp+6+EyUSGO65PAYP6486Px97yUBs+x3Arga+AgdSYR6D9X9TDqN7k+B6eD64S8Rq/9cHxWRS4z/zXgyvN7OwY+FGsoI1UKZviqv9jQmLITLMm1KMN9AjpxRyZLMDRdPOc/s3VHoGBNjWZKxLilvKkDPIOXlgWC+z4XXBsaY5uHSrK6Hp1JI7a5slIMt3CYgmsaGXs0lsB0+/j7bHUtM4Q9k+tby0BcJgbTtR6YURAByiRHQ6CI5tvtxzQg==",
+      "hasKey": true,
+      "frames": [
+        "APIC",
+        "TYER",
+        "COMM",
+        "COMM",
+        "TCON",
+        "TALB",
+        "TIT2",
+        "TPE1"
+      ],
+      "parsed": {
+        "raw": "G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME (feat. TAEYANG & DAESUNG).mp3",
+        "hadExt": true,
+        "title": "HOME SWEET HOME (feat. TAEYANG & DAESUNG)",
+        "titleCore": "HOME SWEET HOME",
+        "artist": "G-DRAGON,TAEYANG,DAESUNG",
+        "artists": [
+          "G-DRAGON",
+          "TAEYANG",
+          "DAESUNG"
+        ],
+        "feat": [
+          "TAEYANG",
+          "DAESUNG"
+        ],
+        "queries": [
+          "HOME SWEET HOME G-DRAGON",
+          "HOME SWEET HOME (feat. TAEYANG & DAESUNG) G-DRAGON,TAEYANG,DAESUNG",
+          "HOME SWEET HOME G-DRAGON TAEYANG",
+          "HOME SWEET HOME",
+          "HOME SWEET HOME (feat. TAEYANG & DAESUNG)",
+          "G-DRAGON"
+        ]
+      }
+    },
+    {
+      "file": "G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3",
+      "abs": "E:\\CloudMusic_163key\\G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3",
+      "size": 9901001,
+      "mtime": "2025-03-24T13:56:25.536Z",
+      "format": "mp3",
+      "title": "来自天堂的魔鬼",
+      "artist": "G.E.M. 邓紫棋",
+      "album": "新的心跳",
+      "durationMs": 245525,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/Wjlm8x72Q/9Vf4cNCcf9aH2DoPzTx9e6Ah8otYuH+hJNpZcxK1/prE6GzVkzCx1IMUY9p+OPueYNQ5WgrUXw2EMRA8q0X6g7NOgVkNL4yF3Npcf7XbBmerUmhtj9v/x6C2ybH7Ob6EuBHzPqa+gAnfBQ2bj7FwhPpgXjb0e1Gwa2SCwAlKLBE6NcsK7h2q+LUweV5r6G7rLhByj4uykbi8gjCNlm0tTq8F0bsiUON9Z2JzYOJrYYA0G6o6ZSaomSJSfzkESenLU6kmsFrNMKa0bZ7EzX0fXPvx5VQIzQ6TPW3Pe+Agr9VDNVv7BnhFTxEMkUltzkybvMlmrm8GcWzkOwKLMW7DI2yzQSrNprBWWWeZK9IZHM+Wv8whP4TA99ZQZW+C26bzzWIt1+Z6hLXGNvlLhe3ysLs2rY8rC4rAGnuam75Rb1L4MjyldWTxi0e8sTjl4yCVxDgqnRgWUOmxzGH+rUrdyG4hW+JS7VAbeylNyZFqLP9vpifJkPPtLmQ==",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3",
+        "hadExt": true,
+        "title": "来自天堂的魔鬼",
+        "titleCore": "来自天堂的魔鬼",
+        "artist": "G.E.M. 邓紫棋",
+        "artists": [
+          "G.E.M. 邓紫棋"
+        ],
+        "feat": [],
+        "queries": [
+          "来自天堂的魔鬼 G.E.M. 邓紫棋",
+          "来自天堂的魔鬼",
+          "G.E.M. 邓紫棋"
+        ]
+      }
+    },
+    {
+      "file": "Michita - Cry For Me (feat. Ami).mp3",
+      "abs": "E:\\CloudMusic_163key\\Michita - Cry For Me (feat. Ami).mp3",
+      "size": 4927503,
+      "mtime": "2025-02-24T08:48:46.206Z",
+      "format": "mp3",
+      "title": "Cry For Me (feat. Ami)",
+      "artist": "Michita",
+      "album": "Pureness",
+      "durationMs": 302916,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/ae6Poqm3xxxk4laMdJcUJH0QNoi0V5Dix3vLukoY9fkF1QyPG3Yj7pE4l19me9iVL9BQOukxMuIrgE1xdPN7Td/yw0+wx3nna5mYjgJqMjLT08BijgFmpIVPxc9rXoKG9FD20qMfYrcc/IwOC+N4COXicJCf4Fv9Pnz6hnJI4cWWWFMXuLdjLJp0iA6aBy5VUAgffw9+21cdmMaHwkrdV2K+pn7CMKilLn9lylW+I3Zlyy4jn0Eu3Y8o8IiHkXurGY5K1bfzXnl9JO7Y4gGAqLn+YJNa8JaraqsHk7w0XEIa9EMMQ1tHZ8wVFGOUDOiPD64S8Rq/9cHxWRS4z/zXgwU4A6MGMcUQDPgjKi6NHK71yzV+/4NJ9Qy4k8Zb56LwSJVkRkH8MpEpDUxfDZFtt9CyYnGg/Bq0UdWxJpgLPn/saY5uHSrK6Hp1JI7a5slIMt3CYgmsaGXs0lsB0+/j7bHUtM4Q9k+tby0BcJgbTtR6YURAByiRHQ6CI5tvtxzQg==",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "Michita - Cry For Me (feat. Ami).mp3",
+        "hadExt": true,
+        "title": "Cry For Me (feat. Ami)",
+        "titleCore": "Cry For Me",
+        "artist": "Michita",
+        "artists": [
+          "Michita"
+        ],
+        "feat": [
+          "Ami"
+        ],
+        "queries": [
+          "Cry For Me Michita",
+          "Cry For Me (feat. Ami) Michita",
+          "Cry For Me",
+          "Cry For Me (feat. Ami)",
+          "Michita"
+        ]
+      }
+    },
+    {
+      "file": "Valentin - Unchanged Mind.mp3",
+      "abs": "E:\\CloudMusic_163key\\Valentin - Unchanged Mind.mp3",
+      "size": 4968370,
+      "mtime": "2025-03-04T10:44:32.797Z",
+      "format": "mp3",
+      "title": "Unchanged Mind",
+      "artist": "Valentin",
+      "album": "Make You",
+      "durationMs": 307226,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/YrtPZqsSZG2xaLKt5OMptwFI0P6YO2k2orIdJ2s5JuD4mPPH6sc12E0exuTH4EANH02Q7p3S673YK57i5KkbSfa9Axqjn25i3P3ZGIdnCBFOKDoeNhxb9Yi6xZqjazapStcHisWlzgtDLpVWhH6S9HQzcSolAfxY5ISc1R+BSVJibcdJB8fI+h1t5ukQ30eMb9Vcq9PpeRQZlxf+6BH18LTapCNHYNMrWeeyZ7pfbSHqnI+2O4th19nY6rf/qNuNgC4VAUN/btoayw9HnLXphEfoStp2cK1SiVQ3yB1tHQggCarZgkqPb5VdANohSPeMCk11ZAJi51oVgOBcz3/B0PGS7Nqf7/1woM1kaORM93UwGiR3cszWjretiurY4XrvEIO7+/NkJm2iprhfr6v9t6wkrCybacSkwGOvx5JGWdp+t9l8ne4hEtVigkgMn5NMopC1R8Zkhzg4p8AuAvt6Qlz9BLT+kBT2lRcOAgQl2AV7b8cQdI8quSJAZ02VcS4zA==",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "Valentin - Unchanged Mind.mp3",
+        "hadExt": true,
+        "title": "Unchanged Mind",
+        "titleCore": "Unchanged Mind",
+        "artist": "Valentin",
+        "artists": [
+          "Valentin"
+        ],
+        "feat": [],
+        "queries": [
+          "Unchanged Mind Valentin",
+          "Unchanged Mind",
+          "Valentin"
+        ]
+      }
+    },
+    {
+      "file": "pro、陈小满 - 心底的旧.mp3",
+      "abs": "E:\\CloudMusic_163key\\pro、陈小满 - 心底的旧.mp3",
+      "size": 7313088,
+      "mtime": "2025-06-11T16:38:42.681Z",
+      "format": "mp3",
+      "title": "心底的旧",
+      "artist": "pro;陈小满",
+      "album": "心底的旧",
+      "durationMs": 181838,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/VaSwcbWpG2CowbObWwW0+26ZMFzC+tMxnsau8Zk4zFp8R2TluH+HPQ6ot1WpSJQ+qT6nx4MAGVShj3Vd9JTg1smxYHhSJE994ffz44+jatHjvpWsGvtgaLpVK7jE2Tmi3RRs6vaP0uWADj5/yWPcuNxAZ8/Mfob8kmqGelR6LSYfBPOVpmIXlyAtOnEqGpIr1d//i7Xepz2rys4shEzvUx7GsYuj19R3/bVA/ylfaG6xcidY5wyYi4jd239ZdLRxKivAUKRkFhsaxCMUIzy5CRKAoqkrexkjr7Sf3cHhZ35H9kJu5ZbqCKIjxsxng4MR80R0nPDQtEF5hKTDFlYfZuiu8MqFpIMhu0ibvLZO9oZKfMHwBBk44VP5YuUlJyb3QwXN5opU65pxJwyeIp9oYQtkHUk2/VBAx+5Xf+4pXfMpq7D9d83GQ53gQKgSh+wp972XP3fK2ZnpudRfD9EvAxhMokAMrfQTMQvDgHUCUt3ckkh81zLCSGfPM181D783g==",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "pro、陈小满 - 心底的旧.mp3",
+        "hadExt": true,
+        "title": "心底的旧",
+        "titleCore": "心底的旧",
+        "artist": "pro、陈小满",
+        "artists": [
+          "pro",
+          "陈小满"
+        ],
+        "feat": [],
+        "queries": [
+          "心底的旧 pro",
+          "心底的旧 pro、陈小满",
+          "心底的旧 pro 陈小满",
+          "心底的旧",
+          "pro"
+        ]
+      }
+    },
+    {
+      "file": "suhmeduh - Phone Kisses.mp3",
+      "abs": "E:\\CloudMusic_163key\\suhmeduh - Phone Kisses.mp3",
+      "size": 2012238,
+      "mtime": "2025-03-04T10:38:36.614Z",
+      "format": "mp3",
+      "title": "Phone Kisses",
+      "artist": "suhmeduh",
+      "album": "Phone Kisses",
+      "durationMs": 122044,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/Yr8LThr8E5swvWzjXsUKgp+0FlV4+zmMox/DfV1Vu6rQjD5iOolF2A+8O+mmLVyj1QUJABk3ulCSuS+hxrgmFudwEH82tV1o4fApsTAkPa8SHBNBE+2vglCaK560hOKl1h9riefY7UCGeB9B+/mKB+XicJCf4Fv9Pnz6hnJI4cWT0KBwntTi7tpw5dDq6P8Lod8FGfBmg/RGO5NQTL329zvU9T+FiZVNwhApNjmb5SrcgcGK0NVpJSfAHTpVQEFCGQ0MQhhA8e5FT8frb+wkdBN8itlypDrlTJVdTQ+WtNVCtKtuZQ8kFgUVFRmV5Qr2dUBTR70B6WbmtHo+EKJkEo93Y4lkbnRe0d7QNgvwHjgF60nxChDdBWN8rMmHiIMyMsVgYz8UqI+g5nwt49REDPQsG58zGXq++qjsQTczX4ZsaY5uHSrK6Hp1JI7a5slIMt3CYgmsaGXs0lsB0+/j7bHUtM4Q9k+tby0BcJgbTtR6YURAByiRHQ6CI5tvtxzQg==",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "suhmeduh - Phone Kisses.mp3",
+        "hadExt": true,
+        "title": "Phone Kisses",
+        "titleCore": "Phone Kisses",
+        "artist": "suhmeduh",
+        "artists": [
+          "suhmeduh"
+        ],
+        "feat": [],
+        "queries": [
+          "Phone Kisses suhmeduh",
+          "Phone Kisses",
+          "suhmeduh"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 一路向北.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 一路向北.flac",
+      "size": 35741903,
+      "mtime": "2026-10-22T05:01:19.934Z",
+      "format": "flac",
+      "title": "一路向北",
+      "artist": "周杰伦",
+      "album": "J III MP3 Player",
+      "durationMs": 294240,
+      "key163": null,
+      "hasKey": false,
+      "parsed": {
+        "raw": "周杰伦 - 一路向北.flac",
+        "hadExt": true,
+        "title": "一路向北",
+        "titleCore": "一路向北",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "一路向北 周杰伦",
+          "一路向北",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 一路向北.mp3",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 一路向北.mp3",
+      "size": 4791802,
+      "mtime": "2025-02-27T09:53:48.291Z",
+      "format": "mp3",
+      "title": "一路向北",
+      "artist": "周杰伦",
+      "album": "J III MP3 Player",
+      "durationMs": 295732,
+      "key163": null,
+      "hasKey": false,
+      "frames": [
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "周杰伦 - 一路向北.mp3",
+        "hadExt": true,
+        "title": "一路向北",
+        "titleCore": "一路向北",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "一路向北 周杰伦",
+          "一路向北",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 七里香.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 七里香.flac",
+      "size": 35953513,
+      "mtime": "2026-10-22T05:01:15.352Z",
+      "format": "flac",
+      "title": "七里香",
+      "artist": "周杰伦",
+      "album": "七里香",
+      "durationMs": 299200,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/Vp8hN7vmg9/wRyd4nokzzX3cl9wMVWfaSdfVisATNNn+1+T3sXZv70znVraQnuXHhz8c1u0H3CPbBx/ltBlA66icphxqiqds0QAIwQ9deEvYVrxvgfnZjlrGk+x8R/rEBoqJ12DErs6pRL7VKLJTRXyq9zzEJpEkQW2+Ub+YOPAZ+td4Ff+tn/8HJFnj43FZwtqYGZ5vA+fBUM1GTe0sxHy6lLWtEQ5bhW3H7Q3bbCagjG99PxyaPmQnTDV8nwtF9I2Qr7EC3cKmApy0BeBYR2W+w/MB7AQD+iCoGUBpBwmorvDKhaSDIbtIm7y2TvaGcA02NVFC8zqKTCrmTwS3oU4yKx3u4deUmCCdd1SV8rBoe/KpeUDlVC5N2hwRi8yAznIZbor0yPy32HJyXhZU6P81vjxfj7RHqNr8dytKCyXJu2FmxOMf4EHp3FNAV+WJG1/ID3J2lqX4eTTGHcePoBpvvxRrsv8frGMDb/Hd/EdB11TFPcrhCcM9Vd5l+xznQ==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 七里香.flac",
+        "hadExt": true,
+        "title": "七里香",
+        "titleCore": "七里香",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "七里香 周杰伦",
+          "七里香",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 不爱我就拉倒.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 不爱我就拉倒.flac",
+      "size": 30128346,
+      "mtime": "2026-10-22T05:01:55.792Z",
+      "format": "flac",
+      "title": "不爱我就拉倒",
+      "artist": "周杰伦",
+      "album": "最伟大的作品",
+      "durationMs": 246280,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/deQELiNagDOEuP6iWNEUfVao+t9YbhwDNi+9gg2zu8p3jElOzjtJzzVr3kW65qxWJb98y/FXa1aG3xG0pW+iappWEDefj3KOojyE7YDWXHkeR15ig6YGi4vnikT0AV2nvSYn1j4vfyjHy+bXFsZlsqe1I/XtUovdFJHf34nfejaNOY58T1R2nTSNd/oZsZ6M6QCMHFecMaMDZYTD7WPgiB3VhawukgQW94l4nfe/2Y7qCKU1g4g/kTO9WKJDJ16I4lcisvvlp2A+ax0InRTnl7ILXS3qdxfCRGM1XFSXQ0JsxTS4SjPQxS+68BgSU+aoAD9MhfDvoqiVqR6s1SuE9gH80tCzBBlJvBzHSdlRGXmSqjdVQ7NdXkmQ8lWc6zHB8TXSdeVD5mwovKJh+a9cjPnVaIFHMcUVP3o0QnhYqau1pMHotvay5A+QQ2I0Kw9ke8sTjl4yCVxDgqnRgWUOmxzGH+rUrdyG4hW+JS7VAbehGMtJL/3B87y1XjXmhEw6A==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 不爱我就拉倒.flac",
+        "hadExt": true,
+        "title": "不爱我就拉倒",
+        "titleCore": "不爱我就拉倒",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "不爱我就拉倒 周杰伦",
+          "不爱我就拉倒",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 不能说的秘密.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 不能说的秘密.flac",
+      "size": 33758258,
+      "mtime": "2026-10-22T05:01:44.458Z",
+      "format": "flac",
+      "title": "不能说的秘密",
+      "artist": "周杰伦",
+      "album": "不能说的秘密 电影原声带",
+      "durationMs": 296534,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/dFhgYFaHaNOH4ThmC1/ANeASOGrHLq7uUiK3AuOYxZgr/iCtqXQJss4N5Yw7v4wHDrAVZ0xXWptK5R3O0cZVGiG0Dqow9WTX1nfviraSKVi14gsDDVvhd/pfkR+Ir3Z+MwOPk41c0j/s64sBTNnWxTd6ASXkJdpJQUv/4w+XjwgVNe69wC7LELi4Puwth9W5NQxiyh/EAdSbo9Ot8GqjxRVB6fPgmf1wfx7AdhaOF/cEBGwLZmpekvCF2nCdJ9rvh5/aEvWYQdLDZCTPsbCrVcCP3dg8fCoyMbJ3A8wnkP+PjcoccYhJDz1QK5t5aUub/IaAK1rnWsJhFCH25HSww9aVF1KhDRgxBsqAxXIITvW1KfGwcZonk/8sSU5KzqM5ivlB3wQnj4rPsLXKtDq1SIXqu6o1tYR6OU6Gcj97YyVlkxH5DcGasttlh/RoY019qliHbzRPvFAgYeESdHGMGDUq6hWutiq4p4WDEEx8SCGeAQi9zb7xarM8Wo4M/luBRD9crs8VTfK+NDyyJbqnbKWhpz1au0EOQC7gp6gUKZm868G53F//92aTIh9yOQRIfVVmqYtbKyRN3RqFGSsnmo=",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 不能说的秘密.flac",
+        "hadExt": true,
+        "title": "不能说的秘密",
+        "titleCore": "不能说的秘密",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "不能说的秘密 周杰伦",
+          "不能说的秘密",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 东风破.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 东风破.flac",
+      "size": 34890641,
+      "mtime": "2026-10-22T05:01:52.429Z",
+      "format": "flac",
+      "title": "东风破",
+      "artist": "周杰伦",
+      "album": "叶惠美",
+      "durationMs": 315415,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/aEcpbK4PQXUOSWuPLkvJoBrSKf2gBdMUii5hAyE1qWM+1+T3sXZv70znVraQnuXHhz8c1u0H3CPbBx/ltBlA66u4cYB9zUPLf7c8xfAn9taFovKYsWOh5dFg4uG3z7BxxoqJ12DErs6pRL7VKLJTRVe5wOsI9QhGLx20WOAqJg3FrT4jQcm/kOJpPzx6jk01u+hAnyLuDwkAcWn++Gna2cKpOgR4qVe1vhRPxvDMByKoZgVSzCFMpXGPsuyJ8W7N1OQfAo18O3+duzBmxOun0Hwo5MPrEPL9iQH5eQS75jyR5zDOTklDiL7cyr4fwzQCPEO2DrsdfbzeODPY3MX0VRar5w9hxlu3lPxDMJSwmyhxqj91vxNv3K+w1PGxNHW6nX4351oxNCb8yrrbrbZ78DMSi5I+BgbHT1HFJ7adRMrX9oKZyvBKjXMbgNga7jHybZd7lRWuOqCMVEQuf1E+M120DskYMNKjWTrD0v2Yt5m",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 东风破.flac",
+        "hadExt": true,
+        "title": "东风破",
+        "titleCore": "东风破",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "东风破 周杰伦",
+          "东风破",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 半岛铁盒.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 半岛铁盒.flac",
+      "size": 36699041,
+      "mtime": "2026-10-22T05:01:30.230Z",
+      "format": "flac",
+      "title": "半岛铁盒",
+      "artist": "周杰伦",
+      "album": "八度空间",
+      "durationMs": 319400,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/TvGDbtoAbWhTrRUyKSK78bCODu1n1Z8RCj6I8Ak9Tz4spoRXwwUYKzKt9dOue6EIU/ykB1na4LD5FwTd6KvHtv1vBkHydnAYOaXq8Z4yT3OscOv4n6iuUKJt7GQqg5cpNHYxlaLCKrmoGKRxuB1kL7mroGU8lF/5tOYfRJOD9IelkNWrqi7eL4zSVMCnm7QrORSNfGyPdIb5IgAViEpPt6sPhuX1fA7K0aq4pPto/wc2IrH8MKrt/QjXSZp3GnLWNVmiITWx5wHkqcbBYSyaDoeSrT+JlizVeS6agQ30+wD0efwMFVAsvRv+yKHHo6XWVmWFuuVPySuYwAoBBHNdz10y3hYtesvP//OzD+IMpwLZ3lOgSpLqE1MSL19Thd1wFjE9eXv0+mbCRkOKxsCEnZs1lehY4FfUVwmH1naHnG+7yxOOXjIJXEOCqdGBZQ6bHMYf6tSt3IbiFb4lLtUBt6EYy0kv/cHzvLVeNeaETDo",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 半岛铁盒.flac",
+        "hadExt": true,
+        "title": "半岛铁盒",
+        "titleCore": "半岛铁盒",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "半岛铁盒 周杰伦",
+          "半岛铁盒",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 反方向的钟.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 反方向的钟.flac",
+      "size": 28420523,
+      "mtime": "2026-10-22T05:01:32.612Z",
+      "format": "flac",
+      "title": "反方向的钟",
+      "artist": "周杰伦",
+      "album": "Jay",
+      "durationMs": 258108,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/VkHZ3gkGJPkyaaasz7Jry9KZYbxkQfUYdE+QgGFr5lJ1SoD5rJgHwJ6EFCNU8B3USdfsu7zX6bKdJ4UTz8NOd8l9/CBiDfk8W4cFNGT/G8VFW8YL17jJVA389U8dTcdhhoqJ12DErs6pRL7VKLJTRX7XHQyUd51PZxJbypTNsygNZGauh7NMwKdMjVPOLNx91aa51ogxkZIv4X7UHyUxvPrSbE7owkAVbnlpRPbUlXYt0Z8Jvu4KOHFvBShfGiIrKYJ2ti3Q+V1zRpmu8Tz5sC3AqqVrl8tgrPhmsauVhVForvDKhaSDIbtIm7y2TvaGR1rPQXeOF5WX84BqfJYdnsH8CIH0/l2efAShOn0LOtsib6buOljcBOKu94KyPHQi1g2x31rSOc2F9bA4l1r3jtTGUBIUFcs2GE7BLAVWNb1qUvKYqDQ9vOscFVJQyGGXpoINoHZ9zeAVvbokQ9UsNi2Xe5UVrjqgjFRELn9RPjNdtA7JGDDSo1k6w9L9mLeZg==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 反方向的钟.flac",
+        "hadExt": true,
+        "title": "反方向的钟",
+        "titleCore": "反方向的钟",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "反方向的钟 周杰伦",
+          "反方向的钟",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 发如雪.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 发如雪.flac",
+      "size": 36284830,
+      "mtime": "2026-10-22T05:01:23.799Z",
+      "format": "flac",
+      "title": "发如雪",
+      "artist": "周杰伦",
+      "album": "十一月的萧邦",
+      "durationMs": 299241,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/VafhCd/uCyoDzxzHv9OtkV34mMga/oBuOWTvrokv+vc+1+T3sXZv70znVraQnuXHhz8c1u0H3CPbBx/ltBlA657oQYIdOcw0J1iXmu/C9MYzwfGw6RAxnJVRJDXxTzrrwH5lWvAqhTshfliCq192ZihqvEh0YBYrxRjM9pjkrbn5tTt8zDQh5RdQvpyFFFZetfGHhxwts+3ZlZ/1FBkokNMh5TXgElKrhROZbAchSvZj7nKY6H+p65aOpBry5YjLehmN4yAIUVZGqBPXgnBu5OcRaia2Mp9xmoO98EazqdhQyRSW3OTJu8yWaubwZxbOZtcfrA8ittvPzuI4A4IAXbctwomkDMTTkpz/jhN4WZ77A9W44VBkZNpelnWgH8AV53veY4WYDPzgyU4uZK5LMKyy0/qf8Gy9XhRmJbZXV0q7yxOOXjIJXEOCqdGBZQ6bHMYf6tSt3IbiFb4lLtUBt6EYy0kv/cHzvLVeNeaETDo",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 发如雪.flac",
+        "hadExt": true,
+        "title": "发如雪",
+        "titleCore": "发如雪",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "发如雪 周杰伦",
+          "发如雪",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 可爱女人.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 可爱女人.flac",
+      "size": 27770802,
+      "mtime": "2026-10-22T05:01:47.385Z",
+      "format": "flac",
+      "title": "可爱女人",
+      "artist": "周杰伦",
+      "album": "Jay",
+      "durationMs": 239027,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/eTciPBrOluxAUhdiOJvgmWDE2zZaKd9J7VCJDCO864d6IP/HpjZx71N+pTI4PLd/k/ykB1na4LD5FwTd6KvHtvD2X9s8Ir1gAUcR6p6wu3i8VtXqkJCrq8llIhC2iyk2hSFkpcog1aYNpwKvLTkazbs1/oQOHLg4QwQR8hdDhS89PEr14vpSavjzc5WCY4uCgsNrVtnwpZDKIxLKS/jGHjLfAexZgdbrEz0lQTUypBrOKSLDlvBdOL33JYtfmQvgezX+hA4cuDhDBBHyF0OFLxxMCXU2Bxdf3MNbJqKA06Kq6jk1voxnMHzZ6PQs0uDVKm+jSSxB2/0MI421h275hPd41WMMjImMPZGPhuWB4D7dSzuBjx9CQn1XhlOys+m3Jl34bJySJ1vyb6ulIHQWBagUPLPyCBqYoq+iPRVrbeRmmMHt5b23UHbNJOPSiWoWwv/1tlzkyWxp8+4+tlj3HevBDS2PmcW8o2UAGHXm246",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 可爱女人.flac",
+        "hadExt": true,
+        "title": "可爱女人",
+        "titleCore": "可爱女人",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "可爱女人 周杰伦",
+          "可爱女人",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 听妈妈的话.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 听妈妈的话.flac",
+      "size": 31452765,
+      "mtime": "2026-10-22T05:01:39.480Z",
+      "format": "flac",
+      "title": "听妈妈的话",
+      "artist": "周杰伦",
+      "album": "依然范特西",
+      "durationMs": 265574,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/SVQd5f2eC0E6SbfTyy/kkDtrgQzr1LqhWQRI4OZAyX3l5v6yvTUmNvXQGVzlmA6Widfsu7zX6bKdJ4UTz8NOd8l9/CBiDfk8W4cFNGT/G8Ve6CvszP10S/ROOwhUEnrAWSg8cxPq1AGEgE1Pl+/sf5PMlFg5lwV5zkFVKDZtXRds5V+2RY0OzCGJ1miEKkjIHdWFrC6SBBb3iXid97/ZjuoIpTWDiD+RM71YokMnXojnbT59ijeyGpYHDTb6d7w1HAJhnfJYdbxImA1uzSSSA9l6USe7j7AHE1ll8m3EbKF2L12na0AeVuxkhHpKAIYo0/eOOrDfcOqh+d2xkdrWEP0wgGrZvX1kEKsRFlK816tq+YHeubqVA043DfjBhKggAA+uJbvW3UggeDjznVGWM76CXZGCqxZth78lPbrVGsWIdroxeqtUOtJajds2OD0/Av/1tlzkyWxp8+4+tlj3HevBDS2PmcW8o2UAGHXm246",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 听妈妈的话.flac",
+        "hadExt": true,
+        "title": "听妈妈的话",
+        "titleCore": "听妈妈的话",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "听妈妈的话 周杰伦",
+          "听妈妈的话",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 夜曲.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 夜曲.flac",
+      "size": 26897400,
+      "mtime": "2026-10-22T05:01:16.373Z",
+      "format": "flac",
+      "title": "夜曲",
+      "artist": "周杰伦",
+      "album": "十一月的萧邦",
+      "durationMs": 226828,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/VvO938KBMLxCkarKUWsHlyCUvdkUyqGcNYz/5XyvJ56lv3zL8VdrVobfEbSlb6JqmlYQN5+Pco6iPITtgNZceTtPcgeQwTZBIdV4HPZRjsCP2MoyDgL9/rhcthO8uwjpPrEYv5yMR35WfT3GZYiiRaXzWtmLVUnGoWhI7ASjl/E+W9hkf+AU+12NNi6PKA4lBARsC2ZqXpLwhdpwnSfa77cO78aMXI/eagTMwDF510tv6K6uVJ4WhuP8gsPeqPAhtaXIToqMXCxRlgsotKQiI6WGC6mYpkgGZ1FTnwBq1NEWlRdSoQ0YMQbKgMVyCE71qx23dnyOW7EfJLbu3sOlooAFyeV3YmS4+eznG1Vi9N5RaGFYocxEDlKobjRmaN8Az9EtFtWnpV71L+1M/bZ2naGp2Dtvmv3xp2eNTJolAsVPnID9C64K9SbuNjia8pFts5XNnqeVzMijg07RO1XTOWXgQ/ir/i5bePZEU5mdioUkyRezOftRUc92XuA8kND+g==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 夜曲.flac",
+        "hadExt": true,
+        "title": "夜曲",
+        "titleCore": "夜曲",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "夜曲 周杰伦",
+          "夜曲",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 安静.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 安静.flac",
+      "size": 33374722,
+      "mtime": "2026-10-22T05:01:44.916Z",
+      "format": "flac",
+      "title": "安静",
+      "artist": "周杰伦",
+      "album": "范特西",
+      "durationMs": 334227,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/QmOIpf3ZxeZwr9etEax0tEnT+quKEK5IImOSjfi+pvtlv3zL8VdrVobfEbSlb6JqmlYQN5+Pco6iPITtgNZceQNnrjMr3Fpu0LFGfKAVBcuZDei64XN57Eci3Lpgmc02RSFkpcog1aYNpwKvLTkazbx8Siw4cDGo38pgzghILCIaKNX4lM38GZ9GkrmvY1lVxLG8Ei0mE2mCIY8PmLZNvs1660JW5epuuR8K0O6sf3wV1ykGDn2yWCOZK3/Ar5yxiVupyT2blLut552Q6wsmmfpELeLoss6+Cb1y4Ad5rfTPJjoG9lVSK2YD5WGFMeggjCz1gQhjklKeIHXMcoFPK0tvVrWwO6+8gf0Xo3gmVEaMS4hgr5HKfu9bZXSsyhlvWDLn8ehC4cDsYMidooJXr6UQH78ygEiVo1fcXlyjwIk4yZ6V5gjsX+rzGy3hQ0IUJBYPWS0A1dJOJNyOYsgQhsNREAH/QTqcWG1VbXAVhnT",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 安静.flac",
+        "hadExt": true,
+        "title": "安静",
+        "titleCore": "安静",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "安静 周杰伦",
+          "安静",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 我是如此相信.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 我是如此相信.flac",
+      "size": 56573815,
+      "mtime": "2026-10-22T05:01:43.116Z",
+      "format": "flac",
+      "title": "我是如此相信",
+      "artist": "周杰伦",
+      "album": "我是如此相信",
+      "durationMs": 266383,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/ancwtY3eX9Lpjv4vv1iX0p+cpM5jzWdImGFnVovKMSLcBnTm/LrzpzRZK4sr2TVTZb98y/FXa1aG3xG0pW+iappWEDefj3KOojyE7YDWXHkCBiQT3dSEZyMVXUkQ6LcsN/psezpzLaGkRDZ6GyREh5d120HVk/SPOqN3U+NFkop1Q+MIFI5sfWPn3EkoO3DMMScHq9j/3Iio+VYbuk2KYw+IIias7TFLviRxlj1RDghmFzSN/OzVTXMa/I15TVOydSLUXZSnzStF3JvuHxpA1Ngxvp9U/aqqryOjMLwQQTlDIw9Wan1VjRdBvGqRyfNKXEwJdTYHF1/cw1smooDToqvvLeQmTQ999SToH+ulR80vFaWra2OWvJ4xeILkwUyNZ8Up0cesC9tpJbfJslZCrmwrDD5pGe91F207I7unJvtJRy09VVyPlaypCnu/Cy8ZlruqiA8Xv/5uMcFx6mKI48XoZ9aji0yDprlPDjP7mP2198cgaai044LLnx64M+jtIsDD9N4T9F8F8v8OQvxQDI8c66QQ5eLT2QCNmpAfVkQ",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 我是如此相信.flac",
+        "hadExt": true,
+        "title": "我是如此相信",
+        "titleCore": "我是如此相信",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "我是如此相信 周杰伦",
+          "我是如此相信",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 我落泪情绪零碎.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 我落泪情绪零碎.flac",
+      "size": 28913875,
+      "mtime": "2026-10-22T05:01:23.499Z",
+      "format": "flac",
+      "title": "我落泪情绪零碎",
+      "artist": "周杰伦",
+      "album": "跨时代",
+      "durationMs": 257894,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/dzrn3WAkAiUxN6cHktPdrbfPjABywxaX94wVuRHz20JZHzjkMLLnnZyezg/nQ7UmHN1jNlYdarBjhbNWRcWZuUDja/hTTIPqy9IdUIvYxF2a6rPr6AXLBjfJ30AI0lPjymGYaSZ4Kz85tP5GgQAf7F8E85WmYheXIC06cSoakivL2OjIVsaAZCR42YWYevae/TxK9eL6Umr483OVgmOLgoLDa1bZ8KWQyiMSykv4xh485Mq2Q1H27+IayK8dnBJxYAVsWEHB5BChfVTvz3cTIwHnKT2h5CNmvVy7CD/WNpe3Dpec//cDjZHGyecikwlzQfzS0LMEGUm8HMdJ2VEZeatDFWpxKUxY4AeYG1WO5M+v3X7iijmewwdtqgQOKPlXeq81o2ZH6RhxlMcwe2dAx/GEcrgxIuA1qNJY71Ph1XwY0Rou/nLuOWZbMeZq2imPMt3CYgmsaGXs0lsB0+/j7bs7bd1hXqx+2phRtz4XAoy0Df5bjbkHeoZh7i6zzfiDw==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 我落泪情绪零碎.flac",
+        "hadExt": true,
+        "title": "我落泪情绪零碎",
+        "titleCore": "我落泪情绪零碎",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "我落泪情绪零碎 周杰伦",
+          "我落泪情绪零碎",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 搁浅.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 搁浅.flac",
+      "size": 26300818,
+      "mtime": "2026-10-22T05:01:11.295Z",
+      "format": "flac",
+      "title": "搁浅",
+      "artist": "周杰伦",
+      "album": "七里香",
+      "durationMs": 240134,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/Y6g5RbSn/XyfDyBDIQH83hpJBXH4cOxtXF7kDd/bkgplv3zL8VdrVobfEbSlb6JqmlYQN5+Pco6iPITtgNZceSuRL52M8c1d9PAX8bOvXEwLjsfu66J/01k4CiD+QRmnBSFkpcog1aYNpwKvLTkazaUWpBMgRLa7Ozdx0QRSNGN9PEr14vpSavjzc5WCY4uCgsNrVtnwpZDKIxLKS/jGHjjJy+fS5jvyCU+0Nt3upQsCy6Eye5t1ANZuLs6kX78ZpRakEyBEtrs7N3HRBFI0Y1xMCXU2Bxdf3MNbJqKA06Kr7y3kJk0PffUk6B/rpUfNKSeF+dzXCxWwqSOuRZM3wO9VvcWtyOTYZJcAjUT7pdL5lwWzJlNL8uKm/jOdAfwjGVgz4TrvBYZlCzggsm1ayWraPIUVYYMY2CYBcVjMZRX8eXhtBpQOpOE4dRDVJsqYeN5QCZbsSTPoP1c+YL8W0LphREAHKJEdDoIjm2+3HNC",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 搁浅.flac",
+        "hadExt": true,
+        "title": "搁浅",
+        "titleCore": "搁浅",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "搁浅 周杰伦",
+          "搁浅",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 断了的弦.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 断了的弦.flac",
+      "size": 33022080,
+      "mtime": "2026-10-22T05:01:48.380Z",
+      "format": "flac",
+      "title": "断了的弦",
+      "artist": "周杰伦",
+      "album": "寻找周杰伦",
+      "durationMs": 297534,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/UP4AoOABAaPy4PuDXTwK0Ka8+iDYafO6rIUM4CA7GMUTJHkQAbOldm930BrGNRMO0/ykB1na4LD5FwTd6KvHtsV2rDyNWyuHwlGjlYlRsBD/a/Ndh5sFHMMHfO2oaTHfHyFguX7ymkMOstCXniEbHPVD4wgUjmx9Y+fcSSg7cMwu3O/5lkGsenQJzThLksQ8D4giJqztMUu+JHGWPVEOCGYXNI387NVNcxr8jXlNU7JXwMs5IQZaI5K0VXZ/IQz3qY21TijMDaX9+vmwWz/HcmOaAjA7wa6LXzb3cZZIONocTAl1NgcXX9zDWyaigNOiq+8t5CZND331JOgf66VHzQCrWGjgknH1Tl10pOwBd5tEKguYOrujEIpVC45Ai4vP9hdbh4KSIOZgE8mYlC1GFux7F1Fr3buAaOVLmXofupf06Be+8mNUVPWnohuX73MyxTdxCU+bJnDAn2Aj8b10FZWTenKhHa37A9qkkIHSVaezlc2ep5XMyKODTtE7VdM5ZeBD+Kv+Llt49kRTmZ2KhSTJF7M5+1FRz3Ze4DyQ0P6",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 断了的弦.flac",
+        "hadExt": true,
+        "title": "断了的弦",
+        "titleCore": "断了的弦",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "断了的弦 周杰伦",
+          "断了的弦",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 明明就.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 明明就.flac",
+      "size": 27748565,
+      "mtime": "2026-10-22T05:01:21.293Z",
+      "format": "flac",
+      "title": "明明就",
+      "artist": "周杰伦",
+      "album": "十二新作",
+      "durationMs": 260387,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/affDJLwSnFOkurwcuNisWlqUynnxWmz7vqv0/z/k6IoCFaLrhAsH5bGbZL1XvI3EISGOpdZ2r7wZV5HpgYmrruXImNnvGXy5E7tpVdJ4yFz645MN5zmn/lyEVik15pibt88sGIdeF40FPDnJ7khMtyCLfhG5+GGbaH9mbTjoJbVjfAKXHIIDzAmWSxoGqqkhyCMI2WbS1OrwXRuyJQ431kf+f5KtJjKURNqsZdf7UKTFcLHgtiwxsPqxKN0qPdnzLYH+fL0G7BiC85jLHqXcAPsNzWXf1qzeojfvjx1DfFFzl9NWazcbywoS+OyWdjG9KojjAdCuWnMdlKS7I5o5rARXynLPv+ibSg9by19i/JCOC+9jbuQ9m+To+H9PMxZT8/J1F7v8O7beYOjavmMdeejGjWqfZE/HMPEOncl6XHZ7yxOOXjIJXEOCqdGBZQ6bHMYf6tSt3IbiFb4lLtUBt6EYy0kv/cHzvLVeNeaETDo",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 明明就.flac",
+        "hadExt": true,
+        "title": "明明就",
+        "titleCore": "明明就",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "明明就 周杰伦",
+          "明明就",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 晴天.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 晴天.flac",
+      "size": 31731031,
+      "mtime": "2026-10-22T05:01:14.874Z",
+      "format": "flac",
+      "title": "晴天",
+      "artist": "周杰伦",
+      "album": "叶惠美",
+      "durationMs": 269747,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/bf58Hex0j6I75Njq6IIUPnXSpe7AV9Br7poZc/DA8O4lv3zL8VdrVobfEbSlb6JqmlYQN5+Pco6iPITtgNZceTcdO5Jke8hh2ImnQK81E2ODVajzxl/kzsmNuSgC+2A3hSFkpcog1aYNpwKvLTkazakdS6AGEyUU0GQ7YA8mfbEWjdvKm9iYNLsoS2iVHVQVN51kA7wIrvtA+dVxmuLqGRnJDuX4n1I2EI7+sKzhby8t3HZubIhB2tFwiKEib6IFJMqO42oj4TRN/gBeo72Hgk2SNVmyBg4QxkFYcRBD3DxPJjoG9lVSK2YD5WGFMeggmqecRg9JalIZVYkT08w4ZKQ5MC8TnedW9dm99I7QMp+8twTmE+EwRwQSfKUBCwG8N7EdhlwPm3XAoRbLM8HNt3EXheOgbL5fw2miIfsxYguZL3Yl8BZR0EtHt2mJCrTk2m+/FGuy/x+sYwNv8d38R0HXVMU9yuEJwz1V3mX7HOd",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 晴天.flac",
+        "hadExt": true,
+        "title": "晴天",
+        "titleCore": "晴天",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "晴天 周杰伦",
+          "晴天",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 暗号.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 暗号.flac",
+      "size": 30064334,
+      "mtime": "2026-10-22T05:01:33.734Z",
+      "format": "flac",
+      "title": "暗号",
+      "artist": "周杰伦",
+      "album": "八度空间",
+      "durationMs": 271760,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/cgUH5Iit2uCG9bzmuFi20Jy3PBZR+z1Ht2uJPrU4mLMlv3zL8VdrVobfEbSlb6JqmlYQN5+Pco6iPITtgNZceSc6lLYnISn99rkwS2o4LLphLg0f7idcWdon1pxyZdWdRoqJ12DErs6pRL7VKLJTRXoruJA8q/cfE9HrFkfQ5JIlj7KHksaBX7t/VTiNLYlgO+hAnyLuDwkAcWn++Gna2czn9YShJ/HCgoerW8qJgpsQ/NkNoQ1WSC/A8+AXopChAn0C1x1T4V1Tl9FbpODcEsb026t0t+78bVZSq9Rk/agfCNPdIx/n24BzEqD1Ww/6rlgdRNDWNsE5RAgy/FvhsUH7CZ6sx2YfWuQJ6acZFwBHaQkD5e7y6YYFh8lLmQDNHsvnC0Y21h4+hiYDUslaNJriskdujj7BB+51tjcY8hzX9oKZyvBKjXMbgNga7jHybZd7lRWuOqCMVEQuf1E+M120DskYMNKjWTrD0v2Yt5m",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 暗号.flac",
+        "hadExt": true,
+        "title": "暗号",
+        "titleCore": "暗号",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "暗号 周杰伦",
+          "暗号",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 最后的战役.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 最后的战役.flac",
+      "size": 30373727,
+      "mtime": "2026-10-22T05:01:56.077Z",
+      "format": "flac",
+      "title": "最后的战役",
+      "artist": "周杰伦",
+      "album": "八度空间",
+      "durationMs": 251160,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/S3tWrwa6WlRsc4mcGabWGIN9YvbrP/8FAjORhieAodp1MhaPa+xFrYxq7wwvQvVCydfsu7zX6bKdJ4UTz8NOd8l9/CBiDfk8W4cFNGT/G8V7CadmbD3y/sI0Fo681gXqjAe9yJ3WAZuNIDrQnvrYKTVD4wgUjmx9Y+fcSSg7cMwvSRt4iJ0GQM8ZxDeXhauSD4giJqztMUu+JHGWPVEOCED7BpIeySRyScHgLrofdL5bUGda79Af5m+gHyOI01eXdweZc8eG6LXk58yviQ9LuW8fG8c6rEHxA6vGiWANVU/cTAl1NgcXX9zDWyaigNOiq+8t5CZND331JOgf66VHzRrK8Jyo0IwLE4p3zwYIGJ5oVBIGP21Q7Fzp9egE/WjyChkUtP+jKeS90Ug/l6h8lQCWMZKAqmtqEno9AbwtSDhH+xwhbwfpPzA47NbCzT4D/Hl4bQaUDqThOHUQ1SbKmHjeUAmW7Ekz6D9XPmC/FtC6YURAByiRHQ6CI5tvtxzQg==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 最后的战役.flac",
+        "hadExt": true,
+        "title": "最后的战役",
+        "titleCore": "最后的战役",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "最后的战役 周杰伦",
+          "最后的战役",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 最长的电影.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 最长的电影.flac",
+      "size": 24066357,
+      "mtime": "2026-10-22T05:25:09.979Z",
+      "format": "flac",
+      "title": "最长的电影",
+      "artist": "周杰伦",
+      "album": "我很忙",
+      "durationMs": 235840,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/UDw+IXIaQug+YRcbpE1BSeMYPvaNnD/04+VC1d8dtXFNptbUNL6YWmwzkWHN5jnPSdfsu7zX6bKdJ4UTz8NOd8l9/CBiDfk8W4cFNGT/G8V6E+Za8Iawix7ZYMf0+HYlVBob2AdjfJ9vBIYb5KdPynmroGU8lF/5tOYfRJOD9IedmNHD81mG0XgD+kar/L3beRSNfGyPdIb5IgAViEpPt6sPhuX1fA7K0aq4pPto/wc1NVcNVImovGU+ESvRYFaJhmzxUhuCcyeV3jX62kvBJ/4tMaTLQSsWCk000CsukNg0efwMFVAsvRv+yKHHo6XWVmWFuuVPySuYwAoBBHNdz3+5J+FMGiAOR57Tq1WdVF86B1OCFOlaS0LlXXDEuCy0Zhp8LkMoJN2p29AIvxREVB2zmzuZaRV5NDtii0vXoYRgnTv97hWNsJ9n/HBEGOlFZBYPWS0A1dJOJNyOYsgQhsNREAH/QTqcWG1VbXAVhnT",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 最长的电影.flac",
+        "hadExt": true,
+        "title": "最长的电影",
+        "titleCore": "最长的电影",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "最长的电影 周杰伦",
+          "最长的电影",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 本草纲目.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 本草纲目.flac",
+      "size": 25267585,
+      "mtime": "2026-10-22T05:01:52.007Z",
+      "format": "flac",
+      "title": "本草纲目",
+      "artist": "周杰伦",
+      "album": "依然范特西",
+      "durationMs": 209935,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/bVqTgpWF2dMbXP/5VZ7+Emh1lIXneYOfMxSuk1f9hIyB65i4AyYqSGAErVkzHSsrU/ykB1na4LD5FwTd6KvHtvCZEoIypvdkeTsMJFyMY5Ei9hH8oHPpQXBiOi5M1VBkJwuzcCUcFM/AoUyfroAfHtzkbit/FMYoAoA0h262UDBc9vsPQJbarWfSIKSOF+/XSCMI2WbS1OrwXRuyJQ431kf+f5KtJjKURNqsZdf7UKT0cclONdAuePg0UPdQbiG3LtbZsKXOj4TlI/7IDhkZnXQ5vlR+zLKPmNOxshPpHpTQyRSW3OTJu8yWaubwZxbOf/fiZXZyPvAW8IX9J+PUQPvcP8lrInuBffaaMkEHVAG2u4PEcKnox3NRMYtbS7Fga9qmCj/Qq+lROH4sVpZ7yrim3oEkEoGEKLqDOKDsKWWX9oKZyvBKjXMbgNga7jHybZd7lRWuOqCMVEQuf1E+M120DskYMNKjWTrD0v2Yt5m",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 本草纲目.flac",
+        "hadExt": true,
+        "title": "本草纲目",
+        "titleCore": "本草纲目",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "本草纲目 周杰伦",
+          "本草纲目",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 枫.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 枫.flac",
+      "size": 30654954,
+      "mtime": "2026-10-22T05:01:15.191Z",
+      "format": "flac",
+      "title": "枫",
+      "artist": "周杰伦",
+      "album": "十一月的萧邦",
+      "durationMs": 275667,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/QlvOfc2TUteo9CpzQy6binBaMOlXioJIgodnCi8piZ1K7E90EPH88/rXrAjgZ+TmDuS676hCmhH7UXORkujh31uSkzHfEviKrTMaN0iY1xx/RrWt3uBYR/wxLlLLd9j45eJwkJ/gW/0+fPqGckjhxb/ZU5cdM+8ZgdlM5Ejfvi8vmpsC/9wA6xISxw0IsmynIr6mfsIwqKUuf2XKVb4jdnYS8EnGpuXmzPLKjPKhoxYfs98JXIhCyKFY3lPnjpnuVEZMrEYpZ6Ksslz4UUeK3shOmG8Z2UaZol3HELGAl2yPrhLxGr/1wfFZFLjP/NeDA27VMII7BfGFo/HJ/up5yg4QURbLTPMiTABXLMHJIhLFFF7z4MSo6OX6363CB/fdO/SgAgDETxVonytJWKi9AI9LJf4Eu7xJUd2zAHRMd43+t9l8ne4hEtVigkgMn5NMqPS9iEKJDEHeCHGWKZELGoKXHjpFtJFTx/jPw69XUB1",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 枫.flac",
+        "hadExt": true,
+        "title": "枫",
+        "titleCore": "枫",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "枫 周杰伦",
+          "枫",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 止战之殇.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 止战之殇.flac",
+      "size": 30181039,
+      "mtime": "2026-10-22T05:01:55.253Z",
+      "format": "flac",
+      "title": "止战之殇",
+      "artist": "周杰伦",
+      "album": "七里香",
+      "durationMs": 274907,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/aJ7BXLj5ufwZWyWXqRcEKmnvSSA2XZBN9A3HtdS9nglCR6fhbieT77Up6ciM7dB+0/ykB1na4LD5FwTd6KvHtubH0J+Xr5OEJY1P/amJJrdYxgzv5a1VTNWFCA02Uk/yu1FhL/RvdaZLN3YLsf8BwzE1oY0vJTF94KWASjU59UZsLyzWUjcAtrL9asw0PZKQy+ZpCO/Xe0pdwqyXOM6CNvIYgL5mq/ESDnFEdFc2fPCvw3jeWreqmVvmJwFwk70IM03zuodJL9Ovmk88KiQQsnxRIZnhkrysnqFwwhbbiX0PrhLxGr/1wfFZFLjP/NeDK6bIsv4eaKyrvWkmgVsYzY/6r0VTpjpBX7UUhjabVHgj6Q62a6xtaleHDFL6ux8JXyvxrFUYH0Ei2oJNFgt+Woflag5XH+qjB44zIJFKJiX+t9l8ne4hEtVigkgMn5NMqPS9iEKJDEHeCHGWKZELGoKXHjpFtJFTx/jPw69XUB1",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 止战之殇.flac",
+        "hadExt": true,
+        "title": "止战之殇",
+        "titleCore": "止战之殇",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "止战之殇 周杰伦",
+          "止战之殇",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 烟花易冷.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 烟花易冷.flac",
+      "size": 28417426,
+      "mtime": "2026-10-22T05:01:26.199Z",
+      "format": "flac",
+      "title": "烟花易冷",
+      "artist": "周杰伦",
+      "album": "跨时代",
+      "durationMs": 263387,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/XNeJcdwRnu772yaWysJdFiw7O9w3qbWSaX1gQcaSyS6gpBHkz/SXPCD2unnsO665E/ykB1na4LD5FwTd6KvHtvw/BW+dSV8caQPp3Fgr6UyY8w2fa00MMv7jnouBnMEjN1+HpgSei7Mo8ZqCvUHG4RSTCxouKpLdbWkFdRU+3Ch20M0ZHbaUpDuGu31mcg0EU6rWaTrgpd5VUWvBhUhZFrRQqpcveVYCqBZgoKU683cODxKp1UJjCU4JQFQNc2lusc4Ifj57myLQUgmFKkxghwqaJcwTcqGsq4DEITy5AIIsnnPnJ/hrVZsRer2bpHOTXVjuZKAGMycV4xSfTsq+AmY3cYzopjLtJgx7gRPOAYSHApMIh7juZeK9/nTA2XJORx84yHtZ9BRNJHDX93DS2danUEvJCvlslOHCJVDzX7+Wad/S/+c7ZcEYQr6BEZ1CIsDD9N4T9F8F8v8OQvxQDI8c66QQ5eLT2QCNmpAfVkQ",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 烟花易冷.flac",
+        "hadExt": true,
+        "title": "烟花易冷",
+        "titleCore": "烟花易冷",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "烟花易冷 周杰伦",
+          "烟花易冷",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 爱你没差.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 爱你没差.flac",
+      "size": 30449903,
+      "mtime": "2026-10-22T05:01:31.007Z",
+      "format": "flac",
+      "title": "爱你没差",
+      "artist": "周杰伦",
+      "album": "十二新作",
+      "durationMs": 280720,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/UZk1UJ+D2bCRelvEk93UYYCHVJ96XnlIMAbawSUMfaEZ9n6Xnz//L0nvjX648JG8/eqjECwoir82fTCuwh+1lMsn0tMof+vwMTLRWxgRjiv3cc24HxshkpZ3zOaMpzJrXYuKGqBGKieyrmWvieetA405jnxPVHadNI13+hmxnoz8Dj6gh9SOxhHziTCZefPU3dWFrC6SBBb3iXid97/Zjvc9JP5hhT4R879NECz4lRxCPJFOb2Tom0kmFh7znx1RpMtFgLWcwApUjwYU5bh9owgJ5bo798tY4PrOAszAaO7wGxP7D6P4OFkvxtaQu0QZgfzS0LMEGUm8HMdJ2VEZea1JFVn5BZ/L78btvHtLKuE9EO+oHYeSI45PU850sJ3lX4Htm6CrdGHIvIZMp/9HT2NfMiS3pvt2Z1lomLknQ3OaajH5toT2poX/T6j82nvGJBYPWS0A1dJOJNyOYsgQhsNREAH/QTqcWG1VbXAVhnT",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 爱你没差.flac",
+        "hadExt": true,
+        "title": "爱你没差",
+        "titleCore": "爱你没差",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "爱你没差 周杰伦",
+          "爱你没差",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 爱在西元前.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 爱在西元前.flac",
+      "size": 29254147,
+      "mtime": "2026-10-22T05:01:28.652Z",
+      "format": "flac",
+      "title": "爱在西元前",
+      "artist": "周杰伦",
+      "album": "范特西",
+      "durationMs": 234253,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/WOhs6l1nWTjCqoq/BRdb/uqfXO+JoMMeuVUvZZmdQznddwRq4rzpfC5zNSOohIEaydfsu7zX6bKdJ4UTz8NOd8l9/CBiDfk8W4cFNGT/G8VYGwdA7MZc28+K/jyUjd3XZqGZHrpZqR9Cp4cEPcApZnmroGU8lF/5tOYfRJOD9Iez32LckIRGxESVkpv+1ENpeRSNfGyPdIb5IgAViEpPt6sPhuX1fA7K0aq4pPto/wcSF5EBJJwfEz/Y4p5GLdu250t3qsR6vt69GY6fFCgStHg56N+eBfwEQT/ri0n/WaW0efwMFVAsvRv+yKHHo6XWVmWFuuVPySuYwAoBBHNdz3anQ4APz8aAPzQwHnh07zcGAXgGk016S2quwG4A02m0jJFU2ftZ4cGpknAItES+IEnUzWxMp5cov7GPL1wMXk4hRT90X6zSEm8dy4SmqHgSDt4TWXSznXY/iEXdcq1dlv2KhxLDoh/pd8RDXv0WRauy3cJiCaxoZezSWwHT7+Ptuztt3WFerH7amFG3PhcCjLQN/luNuQd6hmHuLrPN+IP",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 爱在西元前.flac",
+        "hadExt": true,
+        "title": "爱在西元前",
+        "titleCore": "爱在西元前",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "爱在西元前 周杰伦",
+          "爱在西元前",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 简单爱.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 简单爱.flac",
+      "size": 32389671,
+      "mtime": "2026-10-22T05:01:38.897Z",
+      "format": "flac",
+      "title": "简单爱",
+      "artist": "周杰伦",
+      "album": "范特西",
+      "durationMs": 270987,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/e5Ukw5a9uIGoBGu09zTZoW3i76iB64UaiO9wQNQzmRC+1+T3sXZv70znVraQnuXHhz8c1u0H3CPbBx/ltBlA65Hf9RCEvdgsFQEu73gSFmTa5U4wFu3HuLoqyXbtG3aABoqJ12DErs6pRL7VKLJTRVbazmftU9Z20Ap9qwx04T/paEJs89+vHZbSg/OCd2tjBwS3+fG+U1nTY0Mg5wHvppIr3z1J+TjJFxOnbkOQF4hBvwuHSmLAqxG0q9ZHmO4BHBanQA6XHdjBTVCL9/wf+M+KE/CUV/ZKdpTdrT6PcD6fCNPdIx/n24BzEqD1Ww/6oAKU7R06BZghLvEKdV7cTRzeDTr36JPYc2/ho6QcY3l58BmZYny5/bOxEh1ng97mXKgocDIB8j/ODd3FUdHv41/p4818sX9cmxKmn93F9DzCTZsR0uxLUyFxZ6+vdyrzEOkp83Q5WeakxBhWJZ50QD6VrFpYNjHznSDwn6WB5+nRWZgBYrCHusVg7dck7zViA==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 简单爱.flac",
+        "hadExt": true,
+        "title": "简单爱",
+        "titleCore": "简单爱",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "简单爱 周杰伦",
+          "简单爱",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 算什么男人.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 算什么男人.flac",
+      "size": 32011526,
+      "mtime": "2026-10-22T05:01:44.635Z",
+      "format": "flac",
+      "title": "算什么男人",
+      "artist": "周杰伦",
+      "album": "哎呦，不错哦",
+      "durationMs": 289463,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/WuWWolKxlF8qsn+ZmID4UjjpgglekLrp6ClGcO5pbVHGoKfQJiMG+uZP7OhJ4vD7y04Hw8enUv+ZQHzyav8UpO9C4hJWzf1aJXDJ27BCW1QwGrzE+kwxbQvcTeOU40pG9bS2sKrNJzSQWihIAz3on9jDFNFlUFT2C4mMBm957xiXjybpG5Q+RwFttSsXwerMGSKku8CcXSgNQMe7AKvh5ZE54Z3EKspvrudNSyxSlhuhtlNKw5buvIlzTwg9jRpEQ3kBANgHN4woG0Ic1l9CyBGvkVrnzQNQXcnenW8xwDXpY37yKf2zjok6rwELqYUWjW1EVpNsillUe/zSDUXIGV2S3/ixtYEv7oVEEYlZzaY5d/BbmwDez60wRQwP8Zh87SWCtgqzzIX0j4C8wLRBXqlXlsqIW2GyUq8K619Ncjm+J+glkK/Danf9XQQNDLWCZClgoxqZ2mphA5EFWWFZydpvvxRrsv8frGMDb/Hd/EdB11TFPcrhCcM9Vd5l+xznQ==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 算什么男人.flac",
+        "hadExt": true,
+        "title": "算什么男人",
+        "titleCore": "算什么男人",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "算什么男人 周杰伦",
+          "算什么男人",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 给我一首歌的时间.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 给我一首歌的时间.flac",
+      "size": 31620784,
+      "mtime": "2026-10-22T05:01:36.229Z",
+      "format": "flac",
+      "title": "给我一首歌的时间",
+      "artist": "周杰伦",
+      "album": "魔杰座",
+      "durationMs": 253560,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/REjYenGDDiRyLtlWKrV2zVv6SdSPUEHLQOCFccZ5yCO1KD4IzZ4dbDCbP6fUCbiJ0UNBh2zWuwtmzApN3awTVR7pF839W8tl7TUTrVEMR73S8lDDMosXxHPltEDAHtsOc3r6w8gU9emsjVvLzZtxA2XicJCf4Fv9Pnz6hnJI4cWFP6ACs+m8GoY/5nXSHN9FRdz1FugKVhz5WCjB/9o6bTvU9T+FiZVNwhApNjmb5SrC0LGAbxmxVMzbSz2sxCdHjnECWpIqlO0BmH+WY0nu7nfFLRBZIlONNzTkPmUd/goeyeLjnCxh8ZNZv02R6cxqD64S8Rq/9cHxWRS4z/zXgzzJGoF/6MLp4A9u9EPDKYewvG3uZ6ueMn0U7TSFtRkTgYxbNgZ41Hlb/57BMkgnkhzTUPqaXC3jpMQ1bLCFcNfk5TwTfnKke3eYZeXuY5a4PrfZfJ3uIRLVYoJIDJ+TTKj0vYhCiQxB3ghxlimRCxqClx46RbSRU8f4z8OvV1AdQ==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 给我一首歌的时间.flac",
+        "hadExt": true,
+        "title": "给我一首歌的时间",
+        "titleCore": "给我一首歌的时间",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "给我一首歌的时间 周杰伦",
+          "给我一首歌的时间",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 蒲公英的约定.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 蒲公英的约定.flac",
+      "size": 26921887,
+      "mtime": "2026-10-22T05:01:27.709Z",
+      "format": "flac",
+      "title": "蒲公英的约定",
+      "artist": "周杰伦",
+      "album": "我很忙",
+      "durationMs": 247200,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/ZK2ZvTONCD+BBIGXyufDevX40+b1Shdm7hrsKNzWFFYlDqyqgZlkkEErDpgeP5O5TrAVZ0xXWptK5R3O0cZVGiG0Dqow9WTX1nfviraSKVisAj2Fe7i/iNznEIquESHp9E0YeclY/ycXOcoZOfbm/7VD4wgUjmx9Y+fcSSg7cMwZBdsQobRTNMsJFTjuFJ9VD4giJqztMUu+JHGWPVEOCGYXNI387NVNcxr8jXlNU7Jbu0qf1aBRV9VcoRmHEpjyYv+qeIW2y/KoZmXWLvzsOeWBtwZ2xj5wqnKrHTtL9iVcTAl1NgcXX9zDWyaigNOiq+8t5CZND331JOgf66VHzQ/MfU2fqcMr4BqhQ4TX/zXyUmja1M9fvqlVOzlPGjxxnAV2kd+wTOdNE8izyIZhygzQCq1fBczVrcUk9hG8+vPCqy5jOYJPewCKxceY5WysPHl4bQaUDqThOHUQ1SbKmHjeUAmW7Ekz6D9XPmC/FtC6YURAByiRHQ6CI5tvtxzQg==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 蒲公英的约定.flac",
+        "hadExt": true,
+        "title": "蒲公英的约定",
+        "titleCore": "蒲公英的约定",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "蒲公英的约定 周杰伦",
+          "蒲公英的约定",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 说了再见.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 说了再见.flac",
+      "size": 29975798,
+      "mtime": "2026-10-22T05:01:19.531Z",
+      "format": "flac",
+      "title": "说了再见",
+      "artist": "周杰伦",
+      "album": "跨时代",
+      "durationMs": 282827,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/T/iCqO2EjdsJE1IGDJXtGrYUkvPPMo3rCd10MhYJBbfVRQ24O6l0JAOhDb5wL2Rn0/ykB1na4LD5FwTd6KvHtvw/BW+dSV8caQPp3Fgr6UyY8w2fa00MMv7jnouBnMEjN1+HpgSei7Mo8ZqCvUHG4RSTCxouKpLdbWkFdRU+3Ch20M0ZHbaUpDuGu31mcg0EU6rWaTrgpd5VUWvBhUhZFrRQqpcveVYCqBZgoKU683cODxKp1UJjCU4JQFQNc2lusc4Ifj57myLQUgmFKkxghwqaJcwTcqGsq4DEITy5AIIsnnPnJ/hrVZsRer2bpHOTUCcN5doic/j00Vq44qaJCsgF8w5UMc+1cE7EIa6h5zvNOaMSVFffM5K13DI4p92KS0aX1O9TsAk6LkFSMfRX8jzO0Jysja03kGcDG8xf0zw6kbIgBdQ0ghPKC+36tneJ3r9d47RtwYbFAHdbIAvdpbSZkG9s9Nj0gBcoOCWqUNGhKiBw/5BsOHfljW3KjUUIsmpxa0/OLuJPTrEj2G3voY=",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 说了再见.flac",
+        "hadExt": true,
+        "title": "说了再见",
+        "titleCore": "说了再见",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "说了再见 周杰伦",
+          "说了再见",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 说好不哭 (with 五月天阿信).flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 说好不哭 (with 五月天阿信).flac",
+      "size": 22641038,
+      "mtime": "2026-10-22T05:01:38.936Z",
+      "format": "flac",
+      "title": "说好不哭 (with 五月天阿信)",
+      "artist": "周杰伦",
+      "album": "说好不哭(with 五月天阿信)",
+      "durationMs": 222333,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/STX21EVKrQCLS88Y2/Cytex1fUQpRsk85glj0sxDJSjXZAi/6prp4faoSs3Pm0uYzeQ42bBN8bY/j3qHqTw3WTE7FzTaHo5aPk4/65D1Vaieixns5RLF3eGqAMU+RRXjm+EDy92/HcghfTpE7TabV9FtOjnW2cyR+u6E1ZKsvPD28/XCgahxhFVnOHQydmiD6mL6lShi47VmCRebzwmtusYNd+rNNeGoGi2/WiC8/6Opo9hoqQ8ds6uqRFWmSrpndyl5IR43rAMQX9mBQxBeZ8LamBmebwPnwVDNRk3tLMRdaFdyxpX9RLo/iD8r1QQT40uWGcMxH7hhOSEDiXeoDVo/ttA5btaMp/mfmb4w7RoiF7EKYbbnt0Jd6DjOXkTfeSnC7hQ2LL0nLyOqHiChhcrmMskawGA8QC0HS2ZJ+/79hZgQ8NCYMlFjlPqFh0urBkydsv6NuA7hdVPtlIE9+BNco2hY54HdK2+qwB4lYr+xySGFKlNNJ41D/je/WO6OljYmdw/QfDkU8ZOlDOmPQyEqIHD/kGw4d+WNbcqNRQiyanFrT84u4k9OsSPYbe+hg==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 说好不哭 (with 五月天阿信).flac",
+        "hadExt": true,
+        "title": "说好不哭 (with 五月天阿信)",
+        "titleCore": "说好不哭",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [
+          "五月天阿信"
+        ],
+        "queries": [
+          "说好不哭 周杰伦",
+          "说好不哭 (with 五月天阿信) 周杰伦",
+          "说好不哭",
+          "说好不哭 (with 五月天阿信)",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 说好的幸福呢.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 说好的幸福呢.flac",
+      "size": 27178896,
+      "mtime": "2026-10-22T05:01:18.529Z",
+      "format": "flac",
+      "title": "说好的幸福呢",
+      "artist": "周杰伦",
+      "album": "魔杰座",
+      "durationMs": 256721,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/YFUHbdUjgjV0df/az5i02CyjJ0R3965swe6ahLQd9PJAQdpivE5/oqoYpNemBPrAjrAVZ0xXWptK5R3O0cZVGiG0Dqow9WTX1nfviraSKViV/OHXagtlIDOmbO8DpatirldZVYjjqnoc9JKHTZojsTVD4wgUjmx9Y+fcSSg7cMwiAjdtivBGzgB6tKpQbyZsz4giJqztMUu+JHGWPVEOCED7BpIeySRyScHgLrofdL5b5usbxs97r75RJsCPc8C2BSkOyhHEHLA4x7fzyTDd0ToC3FQTFByWEm+XtUYcNRPcTAl1NgcXX9zDWyaigNOiq+8t5CZND331JOgf66VHzTMNn1iyLiXlk69c8TDuV5njZ7YL8mVfcQ3RNBR85bzFtmEVMtWIx5kVc4glDC2EFu9wUh4oXMl5M9AZZa8bK/wK6ScvzPW5eDVGjvXREMVlPHl4bQaUDqThOHUQ1SbKmHjeUAmW7Ekz6D9XPmC/FtC6YURAByiRHQ6CI5tvtxzQg==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 说好的幸福呢.flac",
+        "hadExt": true,
+        "title": "说好的幸福呢",
+        "titleCore": "说好的幸福呢",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "说好的幸福呢 周杰伦",
+          "说好的幸福呢",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 轨迹.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 轨迹.flac",
+      "size": 38035269,
+      "mtime": "2026-10-22T05:01:35.646Z",
+      "format": "flac",
+      "title": "轨迹",
+      "artist": "周杰伦",
+      "album": "寻找周杰伦",
+      "durationMs": 326853,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/Q5Ya84SaO+YqflRg3DeJ+PyxcFbHDhdmovNa2aoFdKwlv3zL8VdrVobfEbSlb6JqmlYQN5+Pco6iPITtgNZceRnGQs/gBgs/ZSy6y1WQVt/e/S5aWj0BpoeFBbWRioJEB5WkG9zBxRUtT+gt3oBnIiWlrmTmHQ/HxuKczXWr9sWIFcGefoRtFvyrk0/MVg0TUTnhncQqym+u501LLFKWG75/IvpNZc+5bfZbDO59nRLq5gJ0mIOTJ+QPV3pM0p0H6dIElh8wqgBTADzTZxD02tc8u0cKN1JyI4A7rsrgrTkNbURWk2yKWVR7/NINRcgZWZZGuBSKX15cCvb2W9o9x0445Fsw7tt++d8SRdaaoPY2U6pvIi3lZckumxbE6d/NWnUeEgoObgZwT8wwYD5j9IhTpVoPTGI+4hn0V38FIiEbM/QOQhmvqyRd1stAD/4ryIq4q1eKcX6/1hKK4sRs2ztnDBx0vMnnMjLNPV0/01S8eXhtBpQOpOE4dRDVJsqYeN5QCZbsSTPoP1c+YL8W0LphREAHKJEdDoIjm2+3HNC",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 轨迹.flac",
+        "hadExt": true,
+        "title": "轨迹",
+        "titleCore": "轨迹",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "轨迹 周杰伦",
+          "轨迹",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 退后.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 退后.flac",
+      "size": 30089856,
+      "mtime": "2026-10-22T05:01:24.334Z",
+      "format": "flac",
+      "title": "退后",
+      "artist": "周杰伦",
+      "album": "依然范特西",
+      "durationMs": 261467,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/XBEzipBuaevAu5NiJ6Zh0OjuX2c8o0qNkMrKP9yRUomlv3zL8VdrVobfEbSlb6JqmlYQN5+Pco6iPITtgNZceSuMb2YO91+lFhYFB1QC2jphoqaTVSsqVCxWf4vCUU9Q/4iaGB6eH41rMR5hZwwvTVPBPpGvoLwQGBWhisxX8B2kzHOBYZFb3ryqkjIft5X2qSV9WwPywtyRobXRm/DMotzAlDGo+tZ3QMZPyxGFCIlQ6YRdZOrUUFrW8J1LMG2ldDk4ovJq8gxTJXLbtXzjASoMEZkEAlOYvwPyTqDT/j6PrhLxGr/1wfFZFLjP/NeDGxKtYjPCYtTSY2mn5GOtajV3wHQYNHqJuzYSncM/PmEx8PEttxT14MNldeE9Izxh3zm/oEmN6VwyWcDmbF/gwdFvH+STUgXsAz3KfB5EL8v+t9l8ne4hEtVigkgMn5NMqPS9iEKJDEHeCHGWKZELGoKXHjpFtJFTx/jPw69XUB1",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 退后.flac",
+        "hadExt": true,
+        "title": "退后",
+        "titleCore": "退后",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "退后 周杰伦",
+          "退后",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 黑色毛衣.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 黑色毛衣.flac",
+      "size": 28234896,
+      "mtime": "2026-10-22T05:01:51.751Z",
+      "format": "flac",
+      "title": "黑色毛衣",
+      "artist": "周杰伦",
+      "album": "十一月的萧邦",
+      "durationMs": 252160,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/UryCAtifBDnX4j5OgiKguFe2HIIUsRZ1U6E7pDeARrZFyjGkuKaSfDd6nYikDcz10/ykB1na4LD5FwTd6KvHtvLIfhGnhxq2ktnI6y9WsQ6XajRsMf9ZlcBULXuZwS3Ce10DwHXwY+qKX8lPDmoY4jaIJLt/ZOLKeUhlvYGxTtNRftIMuNXwYo6NUG4XnY4JVGDqBu9VZ7ZPKo2ofJ0cLaUefwWfivhMwIce0suQzVJj2hNQ1uAluEevK7ipfv8v3bVcqgr1s8L2dqCllzqLsJFwoFbJtTmNS52dwqr5qCx2L12na0AeVuxkhHpKAIYo0/eOOrDfcOqh+d2xkdrWEPorx/2AmB98HUpkU+J2bCIpKEzL4qA9/s35f8LLrAJuZpagvZC7YWcQJsW//1Prn4s50T0x0qfyNBM7UVRPeF9awDBwkmIR+1oH+twLT4rWgv/1tlzkyWxp8+4+tlj3HevBDS2PmcW8o2UAGHXm246",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 黑色毛衣.flac",
+        "hadExt": true,
+        "title": "黑色毛衣",
+        "titleCore": "黑色毛衣",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "黑色毛衣 周杰伦",
+          "黑色毛衣",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦 - 龙卷风.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦 - 龙卷风.flac",
+      "size": 27829120,
+      "mtime": "2026-10-22T05:01:46.929Z",
+      "format": "flac",
+      "title": "龙卷风",
+      "artist": "周杰伦",
+      "album": "Jay",
+      "durationMs": 250361,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/S7daCz5uG3RwaIupDvJ7JfHZjqfZnpJ6CuH/HOFcVE6+1+T3sXZv70znVraQnuXHhz8c1u0H3CPbBx/ltBlA673sZZ8vcPB7p/LOQO5L944OKI0yd9yfSV8JDcgtEhHSOiyt9BqeVnQNjktvFN5v4q9ENnVJ+4gJMUuweSLGRVpUYOoG71Vntk8qjah8nRwtpR5/BZ+K+EzAhx7Sy5DNUm0LoOkpVD7q4Hc1/U/IBMc07La7+iXKV1YRaox5qp/473aRaiSj8IjRQWzqfbnHWHR5/AwVUCy9G/7IocejpdZWZYW65U/JK5jACgEEc13PSAkOZbXeMRZmwvppO5RXX6gHFEXweYkEj/CPGiDAwUWxSJTYRWQb+VELbKV/DehMHaZ6hnBrZ8NDyPYmW2zfg5SBqBEc23nvvb3yl1/KSYyEHkyKYIiPMFzC6TQiWf35qPS9iEKJDEHeCHGWKZELGoKXHjpFtJFTx/jPw69XUB1",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦 - 龙卷风.flac",
+        "hadExt": true,
+        "title": "龙卷风",
+        "titleCore": "龙卷风",
+        "artist": "周杰伦",
+        "artists": [
+          "周杰伦"
+        ],
+        "feat": [],
+        "queries": [
+          "龙卷风 周杰伦",
+          "龙卷风",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦、梁心颐 - 珊瑚海.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦、梁心颐 - 珊瑚海.flac",
+      "size": 29221043,
+      "mtime": "2026-10-22T05:01:29.132Z",
+      "format": "flac",
+      "title": "珊瑚海",
+      "artist": "周杰伦;梁心颐",
+      "album": "十一月的萧邦",
+      "durationMs": 255467,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/d/+fk+d0obZaUB3eL1Q18RBbMcq3e0f5B8+3nDIJbc/+1+T3sXZv70znVraQnuXHpg55pSmX82PXnIbRxlnn1lI6utj2ThXxkZUbkfJJG7yyyH4Rp4catpLZyOsvVrEOl2o0bDH/WZXAVC17mcEtwntdA8B18GPqil/JTw5qGOI2iCS7f2TiynlIZb2BsU7TUX7SDLjV8GKOjVBuF52OCVRg6gbvVWe2TyqNqHydHC2lHn8Fn4r4TMCHHtLLkM1SY9oTUNbgJbhHryu4qX7/L921XKoK9bPC9nagpZc6i7CRcKBWybU5jUudncKq+agsdi9dp2tAHlbsZIR6SgCGKNP3jjqw33DqofndsZHa1hDodQ+Zn9G6ZW4DfUFdaegTxLbJDfjiCZyrpj2AA150Y2ZdpekneWh5MioD55b8uN4rQIQdy6hBem9Ijvt3g+7FEu8ByDUqXycmIMLvIDFx2EL/9bZc5MlsafPuPrZY9x3rwQ0tj5nFvKNlABh15tuOg==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦、梁心颐 - 珊瑚海.flac",
+        "hadExt": true,
+        "title": "珊瑚海",
+        "titleCore": "珊瑚海",
+        "artist": "周杰伦、梁心颐",
+        "artists": [
+          "周杰伦",
+          "梁心颐"
+        ],
+        "feat": [],
+        "queries": [
+          "珊瑚海 周杰伦",
+          "珊瑚海 周杰伦、梁心颐",
+          "珊瑚海 周杰伦 梁心颐",
+          "珊瑚海",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "周杰伦、潘儿 - 夜的第七章.flac",
+      "abs": "E:\\CloudMusic_163key\\周杰伦、潘儿 - 夜的第七章.flac",
+      "size": 27559214,
+      "mtime": "2026-10-22T05:01:48.651Z",
+      "format": "flac",
+      "title": "夜的第七章",
+      "artist": "周杰伦;潘儿",
+      "album": "依然范特西",
+      "durationMs": 228628,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/TJfCkuC2PfwNYd45fBCzcbJ7FJjG+9xqMhwF1N2ErMGIg4T8bQNFhrPF8kYno91kCdfsu7zX6bKdJ4UTz8NOd8qCx1MXwbR1ZPwNBZ4N75A6yhGwZmM59/++ckUSs0a+nugr7Mz9dEv0TjsIVBJ6wFkoPHMT6tQBhIBNT5fv7H+TzJRYOZcFec5BVSg2bV0XbOVftkWNDswhidZohCpIyB3VhawukgQW94l4nfe/2Y7qCKU1g4g/kTO9WKJDJ16I520+fYo3shqWBw02+ne8NRwCYZ3yWHW8SJgNbs0kkgPZelEnu4+wBxNZZfJtxGyhdi9dp2tAHlbsZIR6SgCGKNP3jjqw33DqofndsZHa1hDxVV8j0zHWRw1hwOZkPIieB4hS20NvSbURpcWjcPnrECaJHYXuNjCi8gPKcdqIKY+oqP4xAuNNx1OT6VDsIaaVRcvZAlkEBfsu5mzI9X75XQL/9bZc5MlsafPuPrZY9x3rwQ0tj5nFvKNlABh15tuOg==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "周杰伦、潘儿 - 夜的第七章.flac",
+        "hadExt": true,
+        "title": "夜的第七章",
+        "titleCore": "夜的第七章",
+        "artist": "周杰伦、潘儿",
+        "artists": [
+          "周杰伦",
+          "潘儿"
+        ],
+        "feat": [],
+        "queries": [
+          "夜的第七章 周杰伦",
+          "夜的第七章 周杰伦、潘儿",
+          "夜的第七章 周杰伦 潘儿",
+          "夜的第七章",
+          "周杰伦"
+        ]
+      }
+    },
+    {
+      "file": "季彦霖 - 选择失忆.flac",
+      "abs": "E:\\CloudMusic_163key\\季彦霖 - 选择失忆.flac",
+      "size": 52787536,
+      "mtime": "2026-04-04T13:33:12.692Z",
+      "format": "flac",
+      "title": "选择失忆",
+      "artist": "季彦霖",
+      "album": "选择失忆",
+      "durationMs": 279406,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/ZJXazfClIdRje7LCW9glmXDp3iyx8G9+/jp6Zor47hCwWEV73PPbD28IdjYGjXH5sooIlgeY3KqZU9FC0fJtY13zCxrS19WDEDmHFbUDz6fiA7+CoR5VkIdtREFM9i4kUmQDWHWYeWfzSgCbQBf7nwaKiddgxK7OqUS+1SiyU0VpPqzcjI9BxhBUXBH/O1OwX7eFJNk2IcugfXDmIPtFeXvoQJ8i7g8JAHFp/vhp2tn8H5l6TS4XMtMrifig+M2Dlf56z39HePGvgcxCqx7Ci9eYOYlMUdf95s2jPSpFWliUlbddDphi07gb4HqbYgrwnwjT3SMf59uAcxKg9VsP+q+1TYPQTSXTdROJZt4R6fNFIykbTb3O/vdkE6NplZSaVLMnAec+htufhY9qDHG1syrkq3IwbGIjCnmzA1FDa8KRtQaoHZiWaYiJ82dhKf4ApaGnPVq7QQ5ALuCnqBQpmbzrwbncX//3ZpMiH3I5BEh9VWapi1srJE3dGoUZKyeag==",
+      "hasKey": true,
+      "parsed": {
+        "raw": "季彦霖 - 选择失忆.flac",
+        "hadExt": true,
+        "title": "选择失忆",
+        "titleCore": "选择失忆",
+        "artist": "季彦霖",
+        "artists": [
+          "季彦霖"
+        ],
+        "feat": [],
+        "queries": [
+          "选择失忆 季彦霖",
+          "选择失忆",
+          "季彦霖"
+        ]
+      }
+    },
+    {
+      "file": "磨尖的粉笔 - 我只能离开.mp3",
+      "abs": "E:\\CloudMusic_163key\\磨尖的粉笔 - 我只能离开.mp3",
+      "size": 6583634,
+      "mtime": "2024-12-22T05:26:21.690Z",
+      "format": "mp3",
+      "title": "我只能离开",
+      "artist": "磨尖的粉笔",
+      "album": "我只能离开",
+      "durationMs": 158760,
+      "key163": null,
+      "hasKey": false,
+      "frames": [
+        "TPOS",
+        "TRCK",
+        "TPE1",
+        "TIT2",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "磨尖的粉笔 - 我只能离开.mp3",
+        "hadExt": true,
+        "title": "我只能离开",
+        "titleCore": "我只能离开",
+        "artist": "磨尖的粉笔",
+        "artists": [
+          "磨尖的粉笔"
+        ],
+        "feat": [],
+        "queries": [
+          "我只能离开 磨尖的粉笔",
+          "我只能离开",
+          "磨尖的粉笔"
+        ]
+      }
+    },
+    {
+      "file": "艾比利 - 一个人想着一个人 (说唱版).flac",
+      "abs": "E:\\CloudMusic_163key\\艾比利 - 一个人想着一个人 (说唱版).flac",
+      "size": 41150296,
+      "mtime": "2026-03-23T10:42:36.520Z",
+      "format": "flac",
+      "title": "一个人想着一个人 (说唱版)",
+      "artist": "艾比利",
+      "album": "一个人想着一个人（说唱版）",
+      "durationMs": 189116,
+      "key163": null,
+      "hasKey": false,
+      "parsed": {
+        "raw": "艾比利 - 一个人想着一个人 (说唱版).flac",
+        "hadExt": true,
+        "title": "一个人想着一个人 (说唱版)",
+        "titleCore": "一个人想着一个人 (说唱版)",
+        "artist": "艾比利",
+        "artists": [
+          "艾比利"
+        ],
+        "feat": [],
+        "queries": [
+          "一个人想着一个人 (说唱版) 艾比利",
+          "一个人想着一个人 (说唱版)",
+          "艾比利"
+        ]
+      }
+    },
+    {
+      "file": "蒋孜怡,岳燃 - 拼图爱.mp3",
+      "abs": "E:\\CloudMusic_163key\\蒋孜怡,岳燃 - 拼图爱.mp3",
+      "size": 6094465,
+      "mtime": "2025-01-30T18:20:08.173Z",
+      "format": "mp3",
+      "title": "拼图爱",
+      "artist": "蒋孜怡/岳燃",
+      "album": "拼图爱",
+      "durationMs": 151320,
+      "key163": null,
+      "hasKey": false,
+      "frames": [
+        "TPOS",
+        "TRCK",
+        "TPE1",
+        "TIT2",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "蒋孜怡,岳燃 - 拼图爱.mp3",
+        "hadExt": true,
+        "title": "拼图爱",
+        "titleCore": "拼图爱",
+        "artist": "蒋孜怡,岳燃",
+        "artists": [
+          "蒋孜怡",
+          "岳燃"
+        ],
+        "feat": [],
+        "queries": [
+          "拼图爱 蒋孜怡",
+          "拼图爱 蒋孜怡,岳燃",
+          "拼图爱 蒋孜怡 岳燃",
+          "拼图爱",
+          "蒋孜怡"
+        ]
+      }
+    },
+    {
+      "file": "郑润泽 - 瞬.mp3",
+      "abs": "E:\\CloudMusic_163key\\郑润泽 - 瞬.mp3",
+      "size": 4838354,
+      "mtime": "2025-03-07T11:10:06.522Z",
+      "format": "mp3",
+      "title": "瞬",
+      "artist": "郑润泽",
+      "album": "瞬",
+      "durationMs": 284970,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/Q790E056z5mDu6MpA5J9oKuLejDGgMIw4QVMGavhjzScIK8nSVX2zvzKF89VwQGtaqj5aHGZcuRWGqwOmc/aqhN1g9ClQR+QMEY58Dayl5n61FrI9N6SxXbcgBms95ZMRoqJ12DErs6pRL7VKLJTRW0X0bu/lM3bPQ7wQpP2/LBiWITNLaPDfGw6Dawl1gMIu+hAnyLuDwkAcWn++Gna2c75hE9RvWnTYpfA7MA9qYh8pyZYSGftJYccU3KlRbNg5hTl5K+ho0FhooZ4shbL+g4543s4enRjJu5h4FjZYrxfCNPdIx/n24BzEqD1Ww/6sn+DN8hKJquI09h8+1GBdd8htwybFxRAIBGFqZiWfapFn1grCKU8I0R6RmD0WvyN0/Rhy6d9I9X6tnWDLoEkn9G1BqgdmJZpiInzZ2Ep/gCloac9WrtBDkAu4KeoFCmZjx/H6mJc4DoG+V0YRagMtvQN/luNuQd6hmHuLrPN+IP",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "郑润泽 - 瞬.mp3",
+        "hadExt": true,
+        "title": "瞬",
+        "titleCore": "瞬",
+        "artist": "郑润泽",
+        "artists": [
+          "郑润泽"
+        ],
+        "feat": [],
+        "queries": [
+          "瞬 郑润泽",
+          "瞬",
+          "郑润泽"
+        ]
+      }
+    },
+    {
+      "file": "阴雨天 - 和你的照片还留着.mp3",
+      "abs": "E:\\CloudMusic_163key\\阴雨天 - 和你的照片还留着.mp3",
+      "size": 2901996,
+      "mtime": "2025-03-04T10:33:13.821Z",
+      "format": "mp3",
+      "title": "和你的照片还留着",
+      "artist": "阴雨天",
+      "album": "没有停止的爱",
+      "durationMs": 172176,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/ZspOVtoxSMK6sGey/UF1k3ILN9IFocHRoRP+yNJdHG3xihLlL5TFB12/q+JP6ybM0eqEV+vL4WVQTpSawISP3dXLu5DuWd1DRge0J0LVrgXpbrMviM7Sq9+jxVn915aWzsk9N3TfJMIaTaVHoldQsZPJ1PtCHZryoqjla/nMIkoXh66PjKFf3eOas6hy+jNq8S8pejOgDkLZ9vWe4VA8o19iWPdO90tC8AoH9WGvvxvv1Vyr0+l5FBmXF/7oEfXwptXcpVX30VRkBQHsA4nGrfz2fTPSRyMp1JHTr5H7ZPKLBjnpKp1aRtsAtJ6f2CAcmH8Qd2p7ZAt9MZ54TxJEshJEYxDaYXgYJBWlJk5RaIFvurdnWntVVDTQwLGM8w5MqlP3sI0wq3hdp7SqDJiyDAnJOPhv42z5DZCm+bEJ4EY1Le+Q7hSCXHaFwin/D95qAn8nDirxlPH+Zz6nWtTVon632Xyd7iES1WKCSAyfk0yo9L2IQokMQd4IcZYpkQsashPt4OYCJM7P/N4btn8gr8=",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TIT2",
+        "TPE1",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "阴雨天 - 和你的照片还留着.mp3",
+        "hadExt": true,
+        "title": "和你的照片还留着",
+        "titleCore": "和你的照片还留着",
+        "artist": "阴雨天",
+        "artists": [
+          "阴雨天"
+        ],
+        "feat": [],
+        "queries": [
+          "和你的照片还留着 阴雨天",
+          "和你的照片还留着",
+          "阴雨天"
+        ]
+      }
+    },
+    {
+      "file": "颜人中 - 慢慢.flac",
+      "abs": "E:\\CloudMusic_163key\\颜人中 - 慢慢.flac",
+      "size": 38019546,
+      "mtime": "2026-01-20T08:59:53.766Z",
+      "format": "flac",
+      "title": "慢慢",
+      "artist": "颜人中",
+      "album": "慢慢",
+      "durationMs": 198155,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/Z2WBlhtvMiuGqnRUD4xWmXm5sicIshFc+n95xisHQ43ZpN5nsBoUWCZE5munmec0/K6gtyPBQC09SY1QxZi3aAVoPcswU9tk8y6akokDJo++4/rW0vEcHnkWBmBhVttkgsatnyhC88O0V468yr4dbTmroGU8lF/5tOYfRJOD9Ie9YuHM5ajlNklvf+bIyUIYORSNfGyPdIb5IgAViEpPt4xh0+MFwwKfLKold9/yS1haXgmdC8kdxDSJJfY4+K+acFt/naIPDgxmazyXP3vcdJXFGgBVijDwIzwGc73SWs80efwMFVAsvRv+yKHHo6XWVmWFuuVPySuYwAoBBHNdz3lsun9Q5OErBPIFmiDEBRpO6degNyGaclRa74Huce3+ufoOW0rxpRDNCNWFTYGHf4NyCu6mvqkJy4Wn1Xhv9OMWad/S/+c7ZcEYQr6BEZ1CIsDD9N4T9F8F8v8OQvxQDI8c66QQ5eLT2QCNmpAfVkQ",
+      "hasKey": true,
+      "parsed": {
+        "raw": "颜人中 - 慢慢.flac",
+        "hadExt": true,
+        "title": "慢慢",
+        "titleCore": "慢慢",
+        "artist": "颜人中",
+        "artists": [
+          "颜人中"
+        ],
+        "feat": [],
+        "queries": [
+          "慢慢 颜人中",
+          "慢慢",
+          "颜人中"
+        ]
+      }
+    },
+    {
+      "file": "颜人中 - 我只能离开.mp3",
+      "abs": "E:\\CloudMusic_163key\\颜人中 - 我只能离开.mp3",
+      "size": 9257478,
+      "mtime": "2024-12-22T05:26:20.117Z",
+      "format": "mp3",
+      "title": "我只能离开",
+      "artist": "颜人中",
+      "album": "初恋那件小事 电视剧原声带",
+      "durationMs": 230040,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/YO6qJgx5ApzJfpvnWsQTVpch7rS/5QcTa8hTe6N/PL1FBgR+gPx/pk+/E8plAa+/cwxGKwJ3jUN+8+FhtN6lLJ+2szm4fSB745w2b+aeydf3BykD/VBBja2mBrHe1PsdOYiIYp/TwtTdXGte8jBJ8URSyPF8CgOCJgyirATGaIjIO0tSvGwoewulfcG2/a7MRSFkpcog1aYNpwKvLTkazZMwz7kIRXfbdx8T9ThNrlanalG8Tj3pJa6an9A2+otMhLG8Ei0mE2mCIY8PmLZNvv5l2HNyWBtcBWEgjp63zXr3/AYR9I6goVy+JT4+53gHgbD4ZlD3RaTZ1vF0F3Bz9M8a6iDB4jjXOc8yLaWMRgwZFdcudvt47G3maqChs3lEgs3Ec3s+T5THiC63uXIzsZH4U3qfFJfq98YX9XztdG+P4cNiRxSXqiAU7sTPFA7C0ItoQBIlF54aG5YX6mS1jpNCvHZ4RVSPUtCq18gkQCYvyLQjT1N53gEld3IdBiHqpUSNMfCuNiAyVIoFilniqOj0vYhCiQxB3ghxlimRCxqyE+3g5gIkzs/83hu2fyCvw==",
+      "hasKey": true,
+      "frames": [
+        "COMM",
+        "TPOS",
+        "TRCK",
+        "TPE1",
+        "TIT2",
+        "TALB",
+        "APIC"
+      ],
+      "parsed": {
+        "raw": "颜人中 - 我只能离开.mp3",
+        "hadExt": true,
+        "title": "我只能离开",
+        "titleCore": "我只能离开",
+        "artist": "颜人中",
+        "artists": [
+          "颜人中"
+        ],
+        "feat": [],
+        "queries": [
+          "我只能离开 颜人中",
+          "我只能离开",
+          "颜人中"
+        ]
+      }
+    },
+    {
+      "file": "黄龄 - 鸳鸯戏.flac",
+      "abs": "E:\\CloudMusic_163key\\黄龄 - 鸳鸯戏.flac",
+      "size": 55152973,
+      "mtime": "2026-04-09T12:03:11.850Z",
+      "format": "flac",
+      "title": "鸳鸯戏",
+      "artist": "黄龄",
+      "album": "鸳鸯戏",
+      "durationMs": 240078,
+      "key163": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/TH1nj6kELDUgDVp3FeT6BLJNQ6xAvm5CxN01QJeVeLRNwglZULUWurVjRMlj+fSAskMQXR2z4YzdZvXoutpsg1neJmEDkBN2Sfdpp5n8aNtLVYxVVWVOeZuNnJtmAh2+P3evPJ+tIJRY1q/Lby3/i2hqvEh0YBYrxRjM9pjkrbnLD6vBkH/qm3qW1sLdzhbntfGHhxwts+3ZlZ/1FBkokNMh5TXgElKrhROZbAchSvZ6OaXCTGCI+4E0NhhVKxl/uljHt8RdwMujEhTZYpbYzDdX3Ww18jqd/nAdBSXd0egQyRSW3OTJu8yWaubwZxbOR6ds2Qrx7LI/waWFZqqBEeE30xfHHkpO5qzkHlqa4QjKp7XcIWZWEInlgyK6VdK87/cko5dUX5nc92gU+8NWF1Ju8Qr5+qHhI45WS7OZy62X9oKZyvBKjXMbgNga7jHybZd7lRWuOqCMVEQuf1E+M120DskYMNKjWTrD0v2Yt5m",
+      "hasKey": true,
+      "parsed": {
+        "raw": "黄龄 - 鸳鸯戏.flac",
+        "hadExt": true,
+        "title": "鸳鸯戏",
+        "titleCore": "鸳鸯戏",
+        "artist": "黄龄",
+        "artists": [
+          "黄龄"
+        ],
+        "feat": [],
+        "queries": [
+          "鸳鸯戏 黄龄",
+          "鸳鸯戏",
+          "黄龄"
+        ]
+      }
+    }
+  ]
+}

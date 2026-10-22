@@ -1,0 +1,869 @@
+{
+  "185667": {
+    "name": "说了再见",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "跨时代",
+    "albumId": 18875,
+    "duration": 282000,
+    "alias": [
+      "电影《海洋天堂》主题曲"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "185668": {
+    "name": "烟花易冷",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "跨时代",
+    "albumId": 18875,
+    "duration": 263000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185676": {
+    "name": "我落泪情绪零碎",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "跨时代",
+    "albumId": 18875,
+    "duration": 257000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185694": {
+    "name": "给我一首歌的时间",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "魔杰座",
+    "albumId": 18877,
+    "duration": 253000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185699": {
+    "name": "说好的幸福呢",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "魔杰座",
+    "albumId": 18877,
+    "duration": 256720,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185815": {
+    "name": "蒲公英的约定",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "我很忙",
+    "albumId": 18886,
+    "duration": 247199,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185821": {
+    "name": "最长的电影",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "我很忙",
+    "albumId": 18886,
+    "duration": 235840,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185868": {
+    "name": "不能说的秘密",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "不能说的秘密 电影原声带",
+    "albumId": 18888,
+    "duration": 296533,
+    "alias": [
+      "电影《不能说的秘密》主题曲"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "185878": {
+    "name": "夜的第七章",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ],
+      [
+        "潘儿",
+        9119
+      ]
+    ],
+    "album": "依然范特西",
+    "albumId": 18893,
+    "duration": 228627,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185879": {
+    "name": "听妈妈的话",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "依然范特西",
+    "albumId": 18893,
+    "duration": 265000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185882": {
+    "name": "本草纲目",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "依然范特西",
+    "albumId": 18893,
+    "duration": 209000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185884": {
+    "name": "退后",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "依然范特西",
+    "albumId": 18893,
+    "duration": 261000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185904": {
+    "name": "夜曲",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "11月的萧邦",
+    "albumId": 18896,
+    "duration": 226827,
+    "alias": [
+      "Nocturne"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "185906": {
+    "name": "发如雪",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "11月的萧邦",
+    "albumId": 18896,
+    "duration": 299000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185908": {
+    "name": "黑色毛衣",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "11月的萧邦",
+    "albumId": 18896,
+    "duration": 252160,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185912": {
+    "name": "枫",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "11月的萧邦",
+    "albumId": 18896,
+    "duration": 275000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "185920": {
+    "name": "珊瑚海",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ],
+      [
+        "梁心颐",
+        8677
+      ]
+    ],
+    "album": "11月的萧邦",
+    "albumId": 18896,
+    "duration": 255000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "186001": {
+    "name": "七里香",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "七里香",
+    "albumId": 18903,
+    "duration": 299000,
+    "alias": [
+      "Common Jasmine Orange"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186005": {
+    "name": "搁浅",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "七里香",
+    "albumId": 18903,
+    "duration": 240000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "186009": {
+    "name": "止战之殇",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "七里香",
+    "albumId": 18903,
+    "duration": 274000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "186010": {
+    "name": "轨迹",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "寻找周杰伦",
+    "albumId": 18904,
+    "duration": 326000,
+    "alias": [
+      "电影《寻找周杰伦》主题曲"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186011": {
+    "name": "断了的弦",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "寻找周杰伦",
+    "albumId": 18904,
+    "duration": 297000,
+    "alias": [
+      "电影《寻找周杰伦》插曲"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186016": {
+    "name": "晴天",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "叶惠美",
+    "albumId": 18905,
+    "duration": 269000,
+    "alias": [
+      "Sunny Day"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186018": {
+    "name": "东风破",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "叶惠美",
+    "albumId": 18905,
+    "duration": 315018,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "186046": {
+    "name": "半岛铁盒",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "八度空间",
+    "albumId": 18907,
+    "duration": 319400,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "186047": {
+    "name": "暗号",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "八度空间",
+    "albumId": 18907,
+    "duration": 271000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "186059": {
+    "name": "最后的战役",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "八度空间",
+    "albumId": 18907,
+    "duration": 251000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "186114": {
+    "name": "爱在西元前",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "范特西",
+    "albumId": 18915,
+    "duration": 234253,
+    "alias": [
+      "电视剧《丑女大翻身》片头曲"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186119": {
+    "name": "简单爱",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "范特西",
+    "albumId": 18915,
+    "duration": 270000,
+    "alias": [
+      "Simple Love"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186139": {
+    "name": "安静",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "范特西",
+    "albumId": 18915,
+    "duration": 334000,
+    "alias": [
+      "Silence"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186145": {
+    "name": "可爱女人",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "Jay",
+    "albumId": 18918,
+    "duration": 239027,
+    "alias": [
+      "Adorable Lady"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186160": {
+    "name": "龙卷风",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "Jay",
+    "albumId": 18918,
+    "duration": 250000,
+    "alias": [
+      "Tornado"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "186162": {
+    "name": "反方向的钟",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "Jay",
+    "albumId": 18918,
+    "duration": 258000,
+    "alias": [
+      "Counter-Clockwise Clock"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "857983": {
+    "name": "Unchanged Mind",
+    "artists": [
+      [
+        "Valentin",
+        22247
+      ]
+    ],
+    "album": "Make You",
+    "albumId": 85538,
+    "duration": 307186,
+    "alias": [],
+    "fee": 1,
+    "privilege": null
+  },
+  "25641369": {
+    "name": "明明就",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "十二新作",
+    "albumId": 2263029,
+    "duration": 260386,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "25653004": {
+    "name": "爱你没差",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "十二新作",
+    "albumId": 2263029,
+    "duration": 280000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "27681762": {
+    "name": "Cry For Me (feat. Ami)",
+    "artists": [
+      [
+        "Michita",
+        20516
+      ]
+    ],
+    "album": "Pureness",
+    "albumId": 2657564,
+    "duration": 302866,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "29818120": {
+    "name": "算什么男人",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "哎呦，不错哦",
+    "albumId": 3084335,
+    "duration": 289000,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "36270426": {
+    "name": "来自天堂的魔鬼",
+    "artists": [
+      [
+        "G.E.M.邓紫棋",
+        7763
+      ]
+    ],
+    "album": "新的心跳",
+    "albumId": 3189002,
+    "duration": 245493,
+    "alias": [],
+    "fee": 1,
+    "privilege": null
+  },
+  "446512853": {
+    "name": "Phone Kisses",
+    "artists": [
+      [
+        "suhmeduh",
+        12214251
+      ]
+    ],
+    "album": "phone kisses",
+    "albumId": 35044429,
+    "duration": 122006,
+    "alias": [],
+    "fee": 1,
+    "privilege": null
+  },
+  "548556306": {
+    "name": "选择失忆",
+    "artists": [
+      [
+        "季彦霖",
+        12262634
+      ]
+    ],
+    "album": "选择失忆",
+    "albumId": 38033354,
+    "duration": 279344,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "1391274164": {
+    "name": "说好不哭 (with 五月天阿信)",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ],
+      [
+        "五月天 阿信",
+        1875
+      ]
+    ],
+    "album": "说好不哭",
+    "albumId": 81679689,
+    "duration": 222333,
+    "alias": [
+      "Won't Cry"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "1398283847": {
+    "name": "我只能离开",
+    "artists": [
+      [
+        "颜人中",
+        31376161
+      ]
+    ],
+    "album": "初恋那件小事 电视剧原声带",
+    "albumId": 82595937,
+    "duration": 230000,
+    "alias": [
+      "陷在这漩涡之间"
+    ],
+    "fee": 8,
+    "privilege": null
+  },
+  "1409990258": {
+    "name": "我是如此相信",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "我是如此相信",
+    "albumId": 84129171,
+    "duration": 266382,
+    "alias": [
+      "电影《天火》主题曲"
+    ],
+    "fee": 0,
+    "privilege": null
+  },
+  "1910905300": {
+    "name": "慢慢",
+    "artists": [
+      [
+        "颜人中",
+        31376161
+      ]
+    ],
+    "album": "慢慢",
+    "albumId": 138670487,
+    "duration": 198192,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "1962166010": {
+    "name": "不爱我就拉倒",
+    "artists": [
+      [
+        "周杰伦",
+        6452
+      ]
+    ],
+    "album": "最伟大的作品",
+    "albumId": 147779282,
+    "duration": 245880,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "2063864551": {
+    "name": "瞬",
+    "artists": [
+      [
+        "郑润泽",
+        29051613
+      ]
+    ],
+    "album": "瞬",
+    "albumId": 169603895,
+    "duration": 284925,
+    "alias": [],
+    "fee": 1,
+    "privilege": null
+  },
+  "2071207559": {
+    "name": "鸳鸯戏",
+    "artists": [
+      [
+        "黄龄",
+        7890
+      ]
+    ],
+    "album": "鸳鸯戏",
+    "albumId": 171682616,
+    "duration": 240078,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "2135427500": {
+    "name": "和你的照片还留着",
+    "artists": [
+      [
+        "阴雨天",
+        55812353
+      ]
+    ],
+    "album": "没有停止的爱",
+    "albumId": 188105291,
+    "duration": 172129,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  },
+  "2153879235": {
+    "name": "爱在西元前",
+    "artists": [
+      [
+        "周杰伦",
+        0
+      ]
+    ],
+    "album": "",
+    "albumId": 0,
+    "duration": 234280
+  },
+  "2641013819": {
+    "name": "POWER",
+    "artists": [
+      [
+        "G-DRAGON",
+        123577
+      ]
+    ],
+    "album": "POWER",
+    "albumId": 252154723,
+    "duration": 143242,
+    "alias": [],
+    "fee": 1,
+    "privilege": null
+  },
+  "2650460256": {
+    "name": "HOME SWEET HOME (feat. TAEYANG & DAESUNG)",
+    "artists": [
+      [
+        "G-DRAGON",
+        123577
+      ],
+      [
+        "TAEYANG",
+        124831
+      ],
+      [
+        "DAESUNG",
+        123441
+      ]
+    ],
+    "album": "HOME SWEET HOME (feat. TAEYANG & DAESUNG)",
+    "albumId": 255003773,
+    "duration": 211330,
+    "alias": [],
+    "fee": 1,
+    "privilege": null
+  },
+  "2655850235": {
+    "name": "拼图爱",
+    "artists": [
+      [
+        "蒋孜怡",
+        31364543
+      ],
+      [
+        "岳燃",
+        29938303
+      ]
+    ],
+    "album": "拼图爱",
+    "albumId": 256713173,
+    "duration": 151276,
+    "alias": [],
+    "fee": 8,
+    "privilege": null
+  },
+  "2735941345": {
+    "name": "心底的旧",
+    "artists": [
+      [
+        "pro",
+        53262224
+      ],
+      [
+        "陈小满",
+        0
+      ]
+    ],
+    "album": "心底的旧",
+    "albumId": 281425517,
+    "duration": 181802,
+    "alias": [],
+    "fee": 0,
+    "privilege": null
+  }
+}

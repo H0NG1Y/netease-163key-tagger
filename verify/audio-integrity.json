@@ -1,0 +1,651 @@
+{
+  "generatedAt": "2026-10-22T07:17:13.170Z",
+  "rows": [
+    {
+      "file": "G-DRAGON - POWER.mp3",
+      "format": "mp3",
+      "size": 5787484,
+      "audioStart": 55047,
+      "audioEnd": 5787356,
+      "audioLen": 5732309,
+      "audioMd5": "482fb5040c21021045d4851196bd4299",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "5a47f7291868d5d04defea67254f567a525f2b1abb6d75de459e76d29494e97c"
+    },
+    {
+      "file": "G-DRAGON,TAEYANG,DAESUNG - HOME SWEET HOME (feat. TAEYANG & DAESUNG).mp3",
+      "format": "mp3",
+      "size": 8536656,
+      "audioStart": 80170,
+      "audioEnd": 8536528,
+      "audioLen": 8456358,
+      "audioMd5": "df0e252c6c6c494c9cd9a22ce2dbed96",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "6d94e86ee31c71575e357a57601c95cdb919a95e05131593ea1fd9a6ca284ab1"
+    },
+    {
+      "file": "G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3",
+      "format": "mp3",
+      "size": 9901001,
+      "audioStart": 78833,
+      "audioEnd": 9900873,
+      "audioLen": 9822040,
+      "audioMd5": "a3329adeddb3a0be29c56cef13317979",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "6dd9c3682f8b471ae374e7608583b3647428a63901703132fb8f2e2f81c89c15"
+    },
+    {
+      "file": "Michita - Cry For Me (feat. Ami).mp3",
+      "format": "mp3",
+      "size": 4927503,
+      "audioStart": 80304,
+      "audioEnd": 4927375,
+      "audioLen": 4847071,
+      "audioMd5": "01b3352dd046c2fd5fe1f9e86d635e38",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "c51df437e6ce35c92fccfc0acd014ccdb68eb7414a4351dd82a8a42af84c96d9"
+    },
+    {
+      "file": "Valentin - Unchanged Mind.mp3",
+      "format": "mp3",
+      "size": 4968370,
+      "audioStart": 52336,
+      "audioEnd": 4968370,
+      "audioLen": 4916034,
+      "audioMd5": "802b2c8cfecc65a0355cd96e365865d7",
+      "tailTags": [],
+      "sha256": "94aacacb32ca13d47afb8656a89c37ada87bc787a9cfa12d56301fee3cca4845"
+    },
+    {
+      "file": "pro、陈小满 - 心底的旧.mp3",
+      "format": "mp3",
+      "size": 7313088,
+      "audioStart": 38965,
+      "audioEnd": 7312960,
+      "audioLen": 7273995,
+      "audioMd5": "2400105ce78f6f06a24b1ab1d76364e5",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "0caa009000e55c059a2fd41973457d2c33470336fee81781d1886b5a6feeca2a"
+    },
+    {
+      "file": "suhmeduh - Phone Kisses.mp3",
+      "format": "mp3",
+      "size": 2012238,
+      "audioStart": 59116,
+      "audioEnd": 2012238,
+      "audioLen": 1953122,
+      "audioMd5": "735da413e1c67594124a2e11aa1ae8cc",
+      "tailTags": [],
+      "sha256": "12968c8c52f598378faffb3d6165d0ff22eaed9c0bebba98ef26ef6879320c26"
+    },
+    {
+      "file": "周杰伦 - 一路向北.flac",
+      "format": "flac",
+      "size": 35741903,
+      "audioStart": 78813,
+      "audioEnd": 35741903,
+      "audioLen": 35663090,
+      "audioMd5": "8a81049b8c0d2a236516e0725de87567",
+      "tailTags": [],
+      "sha256": "9c7bd45ac0cd581495d71c0da0f1123ba19cf702befef5a1d3ea2788bb9f1d29"
+    },
+    {
+      "file": "周杰伦 - 一路向北.mp3",
+      "format": "mp3",
+      "size": 4791802,
+      "audioStart": 59542,
+      "audioEnd": 4791674,
+      "audioLen": 4732132,
+      "audioMd5": "79c11bbb2365b9e25f8919bbd31fb554",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "8940a37083a74d4044fac2f72471755ba07f7ae669163b11708209f4615ed993"
+    },
+    {
+      "file": "周杰伦 - 七里香.flac",
+      "format": "flac",
+      "size": 35953513,
+      "audioStart": 116693,
+      "audioEnd": 35953513,
+      "audioLen": 35836820,
+      "audioMd5": "c6168a3f5908e9f94e45ee530e63e05c",
+      "tailTags": [],
+      "sha256": "b66c28c4991b1138718f72a4ec4cad6cdece2a637a7e2d1ac3f64ee6f5a74a16"
+    },
+    {
+      "file": "周杰伦 - 不爱我就拉倒.flac",
+      "format": "flac",
+      "size": 30128346,
+      "audioStart": 86261,
+      "audioEnd": 30128346,
+      "audioLen": 30042085,
+      "audioMd5": "e39c0e56f7a77dde8ec4c057657cd26d",
+      "tailTags": [],
+      "sha256": "739771b59d210ff3680d67ba5fc927474edc6f3151393e89df3415e776669381"
+    },
+    {
+      "file": "周杰伦 - 不能说的秘密.flac",
+      "format": "flac",
+      "size": 33758258,
+      "audioStart": 399331,
+      "audioEnd": 33758258,
+      "audioLen": 33358927,
+      "audioMd5": "7e8ac137068eba87016fd0e85f23cc25",
+      "tailTags": [],
+      "sha256": "e73899985e84d0a1608e3e058a33a4e3e9afdb7e7685ff3f6ac06dddb63a6a59"
+    },
+    {
+      "file": "周杰伦 - 东风破.flac",
+      "format": "flac",
+      "size": 34890641,
+      "audioStart": 106649,
+      "audioEnd": 34890641,
+      "audioLen": 34783992,
+      "audioMd5": "5fd5432b87aee5d75a25a0fb6f519256",
+      "tailTags": [],
+      "sha256": "00dc79b5eaa4c7dc65e09a9f47ee7f36590b22e20339ac790eb13e397d1c828b"
+    },
+    {
+      "file": "周杰伦 - 半岛铁盒.flac",
+      "format": "flac",
+      "size": 36699041,
+      "audioStart": 82573,
+      "audioEnd": 36699041,
+      "audioLen": 36616468,
+      "audioMd5": "1c2ce96eb5cb7b2154d461a000141038",
+      "tailTags": [],
+      "sha256": "bc2106fc7c9ba9542480fac116b99d8d2223937d9ca93fbc9728760bb1f245db"
+    },
+    {
+      "file": "周杰伦 - 反方向的钟.flac",
+      "format": "flac",
+      "size": 28420523,
+      "audioStart": 79518,
+      "audioEnd": 28420523,
+      "audioLen": 28341005,
+      "audioMd5": "166345d63dc29601435991ef500c88f6",
+      "tailTags": [],
+      "sha256": "386a5fae0e04f2a60ba7936edd9b9660d634735a5d552e17601f75c8e28c0fb0"
+    },
+    {
+      "file": "周杰伦 - 发如雪.flac",
+      "format": "flac",
+      "size": 36284830,
+      "audioStart": 66903,
+      "audioEnd": 36284830,
+      "audioLen": 36217927,
+      "audioMd5": "81d5b240e7139c7f25394d706242b2a6",
+      "tailTags": [],
+      "sha256": "cc8f59dcf2fd0db5bfdbc219d7e19fc56e7381ce2c04239ac92f81f67d32b7e0"
+    },
+    {
+      "file": "周杰伦 - 可爱女人.flac",
+      "format": "flac",
+      "size": 27770802,
+      "audioStart": 79482,
+      "audioEnd": 27770802,
+      "audioLen": 27691320,
+      "audioMd5": "696ecf2047eebca7b318e24cc1b95d38",
+      "tailTags": [],
+      "sha256": "d6755228d1b98f0cae42ef551eec234a7ae8a1b3834ad596561a4b6a088d815c"
+    },
+    {
+      "file": "周杰伦 - 听妈妈的话.flac",
+      "format": "flac",
+      "size": 31452765,
+      "audioStart": 75652,
+      "audioEnd": 31452765,
+      "audioLen": 31377113,
+      "audioMd5": "44d68aa2d7e7611e2ea23c14787590c8",
+      "tailTags": [],
+      "sha256": "66b01246571a117f80c889b0715afea39b6aaecfab84522602256aa96356a4b7"
+    },
+    {
+      "file": "周杰伦 - 夜曲.flac",
+      "format": "flac",
+      "size": 26897400,
+      "audioStart": 32556,
+      "audioEnd": 26897400,
+      "audioLen": 26864844,
+      "audioMd5": "d33f508ff594ff86fd11414069b75656",
+      "tailTags": [],
+      "sha256": "9fcb3c0361fba04ce7d39157b0435143e67509facb28b90eb1242e3aaf4b2045"
+    },
+    {
+      "file": "周杰伦 - 安静.flac",
+      "format": "flac",
+      "size": 33374722,
+      "audioStart": 84369,
+      "audioEnd": 33374722,
+      "audioLen": 33290353,
+      "audioMd5": "16bb293912b58a904293e4484d3a260c",
+      "tailTags": [],
+      "sha256": "86ae30f185a6582f91c8f23e0d7469f0729455880398d9fdf8a018a5534e270d"
+    },
+    {
+      "file": "周杰伦 - 我是如此相信.flac",
+      "format": "flac",
+      "size": 56573815,
+      "audioStart": 63667,
+      "audioEnd": 56573815,
+      "audioLen": 56510148,
+      "audioMd5": "f4ef6c5c509ede1231f898619f4192af",
+      "tailTags": [],
+      "sha256": "96bfcc9d602b054f43078f1aed264c1086a4c093785cc44353871ad1550a1203"
+    },
+    {
+      "file": "周杰伦 - 我落泪情绪零碎.flac",
+      "format": "flac",
+      "size": 28913875,
+      "audioStart": 85250,
+      "audioEnd": 28913875,
+      "audioLen": 28828625,
+      "audioMd5": "d7379e16f77eb1ab4aca86ce19301207",
+      "tailTags": [],
+      "sha256": "bbe976234df90cb69280901e3530e72896ed4c90835f178a97d450f4bbffc270"
+    },
+    {
+      "file": "周杰伦 - 搁浅.flac",
+      "format": "flac",
+      "size": 26300818,
+      "audioStart": 93771,
+      "audioEnd": 26300818,
+      "audioLen": 26207047,
+      "audioMd5": "a81b48db2e68df69b1273c2b1d2fb0d1",
+      "tailTags": [],
+      "sha256": "fd6dc337de00a83e4b83e3a0bb3c78863fd8789c39c0324fcef12a558b954990"
+    },
+    {
+      "file": "周杰伦 - 断了的弦.flac",
+      "format": "flac",
+      "size": 33022080,
+      "audioStart": 79620,
+      "audioEnd": 33022080,
+      "audioLen": 32942460,
+      "audioMd5": "9677a92d5024338b9da6e319409e307a",
+      "tailTags": [],
+      "sha256": "f2a5234ab61a8d8848dba107da731d29cdba8a9f54702e12e996b788b7a4d1ba"
+    },
+    {
+      "file": "周杰伦 - 明明就.flac",
+      "format": "flac",
+      "size": 27748565,
+      "audioStart": 98346,
+      "audioEnd": 27748565,
+      "audioLen": 27650219,
+      "audioMd5": "f183d855489d6cf8d37f21f36f0020e2",
+      "tailTags": [],
+      "sha256": "68da3a2419d5c54df67b26c0bde20c0ec9b95da92f989fadf1f91c4f69fca486"
+    },
+    {
+      "file": "周杰伦 - 晴天.flac",
+      "format": "flac",
+      "size": 31731031,
+      "audioStart": 106559,
+      "audioEnd": 31731031,
+      "audioLen": 31624472,
+      "audioMd5": "525dca6da689290f9affd35fa54aa1ec",
+      "tailTags": [],
+      "sha256": "4ac390c81d20461e3adcd5032ff4555a17f565981dc7d9d14e0ac6767c284fed"
+    },
+    {
+      "file": "周杰伦 - 暗号.flac",
+      "format": "flac",
+      "size": 30064334,
+      "audioStart": 82501,
+      "audioEnd": 30064334,
+      "audioLen": 29981833,
+      "audioMd5": "4d3e2bd57b7ca0813c8830a7b1b75132",
+      "tailTags": [],
+      "sha256": "c860e9a4c490b800069e883cd05ea64067e790c8ed74847ac8a1a99a772c0774"
+    },
+    {
+      "file": "周杰伦 - 最后的战役.flac",
+      "format": "flac",
+      "size": 30373727,
+      "audioStart": 82465,
+      "audioEnd": 30373727,
+      "audioLen": 30291262,
+      "audioMd5": "1694c03f9d7af20a8b57689d3059c5c5",
+      "tailTags": [],
+      "sha256": "9c9fd2d767f83e0631d9ffeb20a5beffea4e7384d6bf3dad74fcd5d6a0b90ca9"
+    },
+    {
+      "file": "周杰伦 - 最长的电影.flac",
+      "format": "flac",
+      "size": 24066357,
+      "audioStart": 104366,
+      "audioEnd": 24066357,
+      "audioLen": 23961991,
+      "audioMd5": "f79768e9917fa32441942a0ee615cefd",
+      "tailTags": [],
+      "sha256": "a9a051480a424cb6a029c33ea891632d674b58d83bb6f1657d50db0702ce643d"
+    },
+    {
+      "file": "周杰伦 - 本草纲目.flac",
+      "format": "flac",
+      "size": 25267585,
+      "audioStart": 75544,
+      "audioEnd": 25267585,
+      "audioLen": 25192041,
+      "audioMd5": "24e2f53f104fb487ba36dea458860dd1",
+      "tailTags": [],
+      "sha256": "6525b20bf426b4099c292ccdb3dd4bd6104eb5b91063a7aeace4b4bbfd5b819b"
+    },
+    {
+      "file": "周杰伦 - 枫.flac",
+      "format": "flac",
+      "size": 30654954,
+      "audioStart": 66867,
+      "audioEnd": 30654954,
+      "audioLen": 30588087,
+      "audioMd5": "db8d88c34e151d6dbb5b408a7acf8f5c",
+      "tailTags": [],
+      "sha256": "2123d0fc92f1654bcd53e3dcc7430ccbc7fdac00792398f4b54e16dab89fb009"
+    },
+    {
+      "file": "周杰伦 - 止战之殇.flac",
+      "format": "flac",
+      "size": 30181039,
+      "audioStart": 116657,
+      "audioEnd": 30181039,
+      "audioLen": 30064382,
+      "audioMd5": "60a1ad628f680199a8c55434e8278bad",
+      "tailTags": [],
+      "sha256": "c7792174379992f1932ce5b1408c1350899e27e197bc6ff06a5b8c27be6819fa"
+    },
+    {
+      "file": "周杰伦 - 烟花易冷.flac",
+      "format": "flac",
+      "size": 28417426,
+      "audioStart": 72376,
+      "audioEnd": 28417426,
+      "audioLen": 28345050,
+      "audioMd5": "a751bc707a0852d681d1ac726e6674a2",
+      "tailTags": [],
+      "sha256": "36972a72148f7d332d2332b17aed6df3f9b6a6faf81a0c55fa6e606e195597c3"
+    },
+    {
+      "file": "周杰伦 - 爱你没差.flac",
+      "format": "flac",
+      "size": 30449903,
+      "audioStart": 95850,
+      "audioEnd": 30449903,
+      "audioLen": 30354053,
+      "audioMd5": "7bfac437ee3aea66bdcdf9ae417b215f",
+      "tailTags": [],
+      "sha256": "bd626f20a2b33fb228fb2ac2466773a4b730db11e29ffd974dcb2723d570912f"
+    },
+    {
+      "file": "周杰伦 - 爱在西元前.flac",
+      "format": "flac",
+      "size": 29254147,
+      "audioStart": 84189,
+      "audioEnd": 29254147,
+      "audioLen": 29169958,
+      "audioMd5": "da5fc3f59742dbe2fdbc37d1233d6981",
+      "tailTags": [],
+      "sha256": "4cdcbd19505d14c20076da5866e25fed33daca2dae5d49e9c3a3040d03990d1a"
+    },
+    {
+      "file": "周杰伦 - 简单爱.flac",
+      "format": "flac",
+      "size": 32389671,
+      "audioStart": 84261,
+      "audioEnd": 32389671,
+      "audioLen": 32305410,
+      "audioMd5": "f86988484958eb6ab18146e08f7c4250",
+      "tailTags": [],
+      "sha256": "013f216708df58d58c0e55b2b71c331da71998217b52ff38f0af4e0a0f67d92f"
+    },
+    {
+      "file": "周杰伦 - 算什么男人.flac",
+      "format": "flac",
+      "size": 32011526,
+      "audioStart": 103594,
+      "audioEnd": 32011526,
+      "audioLen": 31907932,
+      "audioMd5": "e70aae0169edb60a3e9748bc7a6f84aa",
+      "tailTags": [],
+      "sha256": "6f8785b588035ddc353b0b489f7ebd0bbb670a8c5fb1b452cadf5be8c5e1c0ee"
+    },
+    {
+      "file": "周杰伦 - 给我一首歌的时间.flac",
+      "format": "flac",
+      "size": 31620784,
+      "audioStart": 87808,
+      "audioEnd": 31620784,
+      "audioLen": 31532976,
+      "audioMd5": "4c057fbe564d8893e12f475f946ff263",
+      "tailTags": [],
+      "sha256": "1918bddd20d8c2c17fb9d8e5ef4a5786242dad4ee9354b735eecbe717b49d6c7"
+    },
+    {
+      "file": "周杰伦 - 蒲公英的约定.flac",
+      "format": "flac",
+      "size": 26921887,
+      "audioStart": 78475,
+      "audioEnd": 26921887,
+      "audioLen": 26843412,
+      "audioMd5": "d243775c7b4c4d602e561b03153b1553",
+      "tailTags": [],
+      "sha256": "a8965beb868fb7cdc38f48c3979ae817244469ec08ae1bdeabd54bafd07fb4aa"
+    },
+    {
+      "file": "周杰伦 - 说了再见.flac",
+      "format": "flac",
+      "size": 29975798,
+      "audioStart": 85304,
+      "audioEnd": 29975798,
+      "audioLen": 29890494,
+      "audioMd5": "6e25c78dca99ab7096c4de7f88d6cdc7",
+      "tailTags": [],
+      "sha256": "e5023a812f46cd5773b7be1158d14eefd563884049677f244a2e57deb631d273"
+    },
+    {
+      "file": "周杰伦 - 说好不哭 (with 五月天阿信).flac",
+      "format": "flac",
+      "size": 22641038,
+      "audioStart": 65357,
+      "audioEnd": 22641038,
+      "audioLen": 22575681,
+      "audioMd5": "a6c26caa94d786678a5e733ef4b0a9c1",
+      "tailTags": [],
+      "sha256": "66a3787a8d5515da153fbd9fbaa6936e3febf0750d4092f275c6f6b9c866e2d6"
+    },
+    {
+      "file": "周杰伦 - 说好的幸福呢.flac",
+      "format": "flac",
+      "size": 27178896,
+      "audioStart": 101520,
+      "audioEnd": 27178896,
+      "audioLen": 27077376,
+      "audioMd5": "ef92d930584e26a30129c98fb3df3e0a",
+      "tailTags": [],
+      "sha256": "9f518d1bc53bcbee901601e800a68e8ec05e82c5c9b78a9fe43e6f2e27c14424"
+    },
+    {
+      "file": "周杰伦 - 轨迹.flac",
+      "format": "flac",
+      "size": 38035269,
+      "audioStart": 79674,
+      "audioEnd": 38035269,
+      "audioLen": 37955595,
+      "audioMd5": "4350befc5fe2db3f8fa82690102c7507",
+      "tailTags": [],
+      "sha256": "bf47a3b43b67ac47fb79095a5b340afedcf208043151ec4a0f8128330571b6ae"
+    },
+    {
+      "file": "周杰伦 - 退后.flac",
+      "format": "flac",
+      "size": 30089856,
+      "audioStart": 75652,
+      "audioEnd": 30089856,
+      "audioLen": 30014204,
+      "audioMd5": "835942c0851d98b56befc62e87ba0c07",
+      "tailTags": [],
+      "sha256": "2d74c08df7ce8799e2d1331ca740fc9a3e9b5799305354f940d0d071337e98af"
+    },
+    {
+      "file": "周杰伦 - 黑色毛衣.flac",
+      "format": "flac",
+      "size": 28234896,
+      "audioStart": 66831,
+      "audioEnd": 28234896,
+      "audioLen": 28168065,
+      "audioMd5": "498fcfffab6759c0a902c40274afc88a",
+      "tailTags": [],
+      "sha256": "382f832a440c4dbd9dbed80f8c92cc2fe4f67d6e49b3b66e51b7b737b205c163"
+    },
+    {
+      "file": "周杰伦 - 龙卷风.flac",
+      "format": "flac",
+      "size": 27829120,
+      "audioStart": 79518,
+      "audioEnd": 27829120,
+      "audioLen": 27749602,
+      "audioMd5": "a4b2eea5db0a3d050412472db368ebfc",
+      "tailTags": [],
+      "sha256": "633a749d721cc492549e806ba30f47ba0405d33db0bb91efae93200f7792437a"
+    },
+    {
+      "file": "周杰伦、梁心颐 - 珊瑚海.flac",
+      "format": "flac",
+      "size": 29221043,
+      "audioStart": 32569,
+      "audioEnd": 29221043,
+      "audioLen": 29188474,
+      "audioMd5": "2d25584ebd8590ee23f6dc089c108058",
+      "tailTags": [],
+      "sha256": "982f013c1d161bf2e50f293522150d5e2c63f299b192538bcd31bbfbfe53354e"
+    },
+    {
+      "file": "周杰伦、潘儿 - 夜的第七章.flac",
+      "format": "flac",
+      "size": 27559214,
+      "audioStart": 75587,
+      "audioEnd": 27559214,
+      "audioLen": 27483627,
+      "audioMd5": "3533f07db4572df06291f6f34721dc50",
+      "tailTags": [],
+      "sha256": "1448ddb0aabefbbb1ba24a7f7ea33d279d6751a169b8e854cbe796de03fabaca"
+    },
+    {
+      "file": "季彦霖 - 选择失忆.flac",
+      "format": "flac",
+      "size": 52787536,
+      "audioStart": 81509,
+      "audioEnd": 52787536,
+      "audioLen": 52706027,
+      "audioMd5": "12739c78ecb67a029ed2923daee85ff1",
+      "tailTags": [],
+      "sha256": "c88992d54acc10935de4c87d1c7cd05f7a4894f47e40d9284ce1257a84b47711"
+    },
+    {
+      "file": "磨尖的粉笔 - 我只能离开.mp3",
+      "format": "mp3",
+      "size": 6583634,
+      "audioStart": 232146,
+      "audioEnd": 6583506,
+      "audioLen": 6351360,
+      "audioMd5": "5b2248775d5fe91f3ba41cf13c5aa746",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "f48cbddc0551b1a9537f8bb4f5de84c52edac6ef542d8392ceeda697fa17b132"
+    },
+    {
+      "file": "艾比利 - 一个人想着一个人 (说唱版).flac",
+      "format": "flac",
+      "size": 41150296,
+      "audioStart": 58749,
+      "audioEnd": 41150296,
+      "audioLen": 41091547,
+      "audioMd5": "f3dce8cad09b0b448a5d7f14dbdb7124",
+      "tailTags": [],
+      "sha256": "b5eeab086f6323dbeaf7fb379a36259996dad3d8931d6a5550e2faf70c4da91b"
+    },
+    {
+      "file": "蒋孜怡,岳燃 - 拼图爱.mp3",
+      "format": "mp3",
+      "size": 6094465,
+      "audioStart": 40577,
+      "audioEnd": 6094337,
+      "audioLen": 6053760,
+      "audioMd5": "1db8c663f59081b550cfc7439ee1ea65",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "3ffefe13db788fb7f0f9a93946c58c244fe6d320f28338cafb113f8b0aeee5c1"
+    },
+    {
+      "file": "郑润泽 - 瞬.mp3",
+      "format": "mp3",
+      "size": 4838354,
+      "audioStart": 278421,
+      "audioEnd": 4838354,
+      "audioLen": 4559933,
+      "audioMd5": "c8d44c92c5f854415ad576554a538083",
+      "tailTags": [],
+      "sha256": "6f7a6b16e38f73dafbd1ee2ef46298b0e032064d4a65b675a86ba55746da8e98"
+    },
+    {
+      "file": "阴雨天 - 和你的照片还留着.mp3",
+      "format": "mp3",
+      "size": 2901996,
+      "audioStart": 146796,
+      "audioEnd": 2901996,
+      "audioLen": 2755200,
+      "audioMd5": "ed27779b5962f5aabf44df199d4c5193",
+      "tailTags": [],
+      "sha256": "d7f3256c9725f48af603d1ee2dc01445e68ae4e0eebe50e0ad92fe3d469e986a"
+    },
+    {
+      "file": "颜人中 - 慢慢.flac",
+      "format": "flac",
+      "size": 38019546,
+      "audioStart": 50435,
+      "audioEnd": 38019546,
+      "audioLen": 37969111,
+      "audioMd5": "4bb4b880af8f583cf814e6dfb1437919",
+      "tailTags": [],
+      "sha256": "67b5a2ac9c1ca252b7c608b2123535b3e094c00c814712152ddf17f5e6d3bc0a"
+    },
+    {
+      "file": "颜人中 - 我只能离开.mp3",
+      "format": "mp3",
+      "size": 9257478,
+      "audioStart": 54790,
+      "audioEnd": 9257350,
+      "audioLen": 9202560,
+      "audioMd5": "3e195291fdd660e9979cf521ad92a591",
+      "tailTags": [
+        "ID3v1"
+      ],
+      "sha256": "cf21fb49e0520ea5403f17bc98095e15b33c7c740d6a52a105b3df859779e856"
+    },
+    {
+      "file": "黄龄 - 鸳鸯戏.flac",
+      "format": "flac",
+      "size": 55152973,
+      "audioStart": 81701,
+      "audioEnd": 55152973,
+      "audioLen": 55071272,
+      "audioMd5": "72ea7336db80b9227db437428c36a419",
+      "tailTags": [],
+      "sha256": "2a65db47a42af9145dc8f88f83fc11ee8bf0667f14fbd986fe125c60b723c329"
+    }
+  ],
+  "problems": 0
+}

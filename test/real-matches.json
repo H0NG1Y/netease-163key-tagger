@@ -1,0 +1,107 @@
+{
+  "root": "D:\\HonGLY\\netease-163key-tagger\\test\\e2e\\src",
+  "generatedAt": "2026-10-22T06:21:43.858Z",
+  "total": 1,
+  "auto": 0,
+  "review": 1,
+  "records": [
+    {
+      "file": "Jackie - John Dreamer-亚托克斯 伴奏（Jackie remix）.mp3",
+      "format": "mp3",
+      "localTitle": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+      "localArtist": "Jackie",
+      "localAlbum": "ATOX",
+      "localDurationMs": 213744,
+      "parsed": {
+        "title": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+        "artist": "Jackie",
+        "artists": [
+          "Jackie"
+        ],
+        "feat": []
+      },
+      "queries": [
+        {
+          "q": "John Dreamer-亚托克斯 伴奏（Jackie remix） Jackie",
+          "n": 2
+        }
+      ],
+      "candidateCount": 2,
+      "top": [
+        {
+          "id": 1809412694,
+          "name": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+          "artists": [
+            "Jackie"
+          ],
+          "album": "ATOX",
+          "durationMs": 213702,
+          "score": 1,
+          "parts": {
+            "title": 1,
+            "artist": 1,
+            "duration": 1,
+            "album": 1
+          }
+        },
+        {
+          "id": 1810029383,
+          "name": "John Dreamer-亚托克斯（Jackie remix）",
+          "artists": [
+            "Jackie"
+          ],
+          "album": "ATOX",
+          "durationMs": 213702,
+          "score": 0.9323,
+          "parts": {
+            "title": 0.8769230769230769,
+            "artist": 1,
+            "duration": 1,
+            "album": 1
+          }
+        }
+      ],
+      "best": {
+        "id": 1809412694,
+        "name": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+        "artists": [
+          {
+            "id": 37125028,
+            "name": "Jackie"
+          }
+        ],
+        "album": {
+          "id": 121139178,
+          "name": "ATOX"
+        },
+        "durationMs": 213702,
+        "score": 1
+      },
+      "confidence": "high",
+      "ambiguous": false,
+      "auto": true,
+      "meta": {
+        "musicId": null,
+        "musicName": "",
+        "artist": [],
+        "albumId": 121139178,
+        "album": "ATOX",
+        "albumPicDocId": "",
+        "albumPic": "https://p1.music.126.net/fDOu_nezGgSAF5NfVuqFsg==/109951165606660795.jpg",
+        "bitrate": 320000,
+        "mp3DocId": "cde6b150f488f81c8f0d9b374d2fe2fb",
+        "duration": 213744,
+        "mvId": 0,
+        "alias": [],
+        "transNames": [],
+        "format": "mp3"
+      },
+      "key163": null,
+      "keyLength": 0,
+      "warnings": [
+        "albumPicDocId 为空"
+      ],
+      "error": "元数据不合格: musicId 非法: null (typeof number, isNaN true); musicName 为空; artist 为空"
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "sample": {
+    "meta": {
+      "musicId": 1809412694,
+      "musicName": "John Dreamer-亚托克斯 伴奏（Jackie remix）",
+      "artist": [
+        [
+          "Jackie",
+          37125028
+        ]
+      ],
+      "albumId": 121139178,
+      "album": "ATOX",
+      "albumPicDocId": "109951165606660795",
+      "albumPic": "https://p3.music.126.net/fDOu_nezGgSAF5NfVuqFsg==/109951165606660795.jpg",
+      "bitrate": 320000,
+      "mp3DocId": "cde6b150f488f81c8f0d9b374d2fe2fb",
+      "duration": 213702,
+      "mvId": 0,
+      "alias": [],
+      "transNames": [],
+      "format": "mp3"
+    },
+    "localKbps": 320
+  },
+  "flac": [
+    {
+      "name": "周杰伦 - 七里香.flac",
+      "declared": 320000,
+      "realBps": 958203,
+      "ratio": "0.33"
+    },
+    {
+      "name": "周杰伦 - 不爱我就拉倒.flac",
+      "declared": 320000,
+      "realBps": 975868,
+      "ratio": "0.33"
+    },
+    {
+      "name": "周杰伦 - 不能说的秘密.flac",
+      "declared": 320000,
+      "realBps": 899970,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 东风破.flac",
+      "declared": 320001,
+      "realBps": 882242,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 半岛铁盒.flac",
+      "declared": 320000,
+      "realBps": 917130,
+      "ratio": "0.35"
+    },
+    {
+      "name": "周杰伦 - 反方向的钟.flac",
+      "declared": 320000,
+      "realBps": 878424,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 发如雪.flac",
+      "declared": 320000,
+      "realBps": 968263,
+      "ratio": "0.33"
+    },
+    {
+      "name": "周杰伦 - 可爱女人.flac",
+      "declared": 320002,
+      "realBps": 926801,
+      "ratio": "0.35"
+    },
+    {
+      "name": "周杰伦 - 听妈妈的话.flac",
+      "declared": 320000,
+      "realBps": 945188,
+      "ratio": "0.34"
+    },
+    {
+      "name": "周杰伦 - 夜曲.flac",
+      "declared": 320000,
+      "realBps": 947499,
+      "ratio": "0.34"
+    },
+    {
+      "name": "周杰伦 - 安静.flac",
+      "declared": 320000,
+      "realBps": 796833,
+      "ratio": "0.40"
+    },
+    {
+      "name": "周杰伦 - 我是如此相信.flac",
+      "declared": 320000,
+      "realBps": 1697111,
+      "ratio": "0.19"
+    },
+    {
+      "name": "周杰伦 - 我落泪情绪零碎.flac",
+      "declared": 320000,
+      "realBps": 894279,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 搁浅.flac",
+      "declared": 320000,
+      "realBps": 873082,
+      "ratio": "0.37"
+    },
+    {
+      "name": "周杰伦 - 断了的弦.flac",
+      "declared": 320000,
+      "realBps": 885746,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 明明就.flac",
+      "declared": 320000,
+      "realBps": 849513,
+      "ratio": "0.38"
+    },
+    {
+      "name": "周杰伦 - 晴天.flac",
+      "declared": 320000,
+      "realBps": 937901,
+      "ratio": "0.34"
+    },
+    {
+      "name": "周杰伦 - 暗号.flac",
+      "declared": 320000,
+      "realBps": 882597,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 最后的战役.flac",
+      "declared": 320000,
+      "realBps": 964843,
+      "ratio": "0.33"
+    },
+    {
+      "name": "周杰伦 - 最长的电影.flac",
+      "declared": 320000,
+      "realBps": 812822,
+      "ratio": "0.39"
+    },
+    {
+      "name": "周杰伦 - 本草纲目.flac",
+      "declared": 320000,
+      "realBps": 959996,
+      "ratio": "0.33"
+    },
+    {
+      "name": "周杰伦 - 枫.flac",
+      "declared": 320000,
+      "realBps": 887682,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 止战之殇.flac",
+      "declared": 320000,
+      "realBps": 874897,
+      "ratio": "0.37"
+    },
+    {
+      "name": "周杰伦 - 烟花易冷.flac",
+      "declared": 320000,
+      "realBps": 860940,
+      "ratio": "0.37"
+    },
+    {
+      "name": "周杰伦 - 爱你没差.flac",
+      "declared": 320000,
+      "realBps": 865034,
+      "ratio": "0.37"
+    },
+    {
+      "name": "周杰伦 - 爱在西元前.flac",
+      "declared": 320000,
+      "realBps": 996185,
+      "ratio": "0.32"
+    },
+    {
+      "name": "周杰伦 - 简单爱.flac",
+      "declared": 320000,
+      "realBps": 953712,
+      "ratio": "0.34"
+    },
+    {
+      "name": "周杰伦 - 算什么男人.flac",
+      "declared": 320000,
+      "realBps": 881853,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 给我一首歌的时间.flac",
+      "declared": 320000,
+      "realBps": 994888,
+      "ratio": "0.32"
+    },
+    {
+      "name": "周杰伦 - 蒲公英的约定.flac",
+      "declared": 320000,
+      "realBps": 868720,
+      "ratio": "0.37"
+    },
+    {
+      "name": "周杰伦 - 说了再见.flac",
+      "declared": 320000,
+      "realBps": 845478,
+      "ratio": "0.38"
+    },
+    {
+      "name": "周杰伦 - 说好不哭 (with 五月天阿信).flac",
+      "declared": 320000,
+      "realBps": 812318,
+      "ratio": "0.39"
+    },
+    {
+      "name": "周杰伦 - 说好的幸福呢.flac",
+      "declared": 320000,
+      "realBps": 843792,
+      "ratio": "0.38"
+    },
+    {
+      "name": "周杰伦 - 轨迹.flac",
+      "declared": 320000,
+      "realBps": 928995,
+      "ratio": "0.34"
+    },
+    {
+      "name": "周杰伦 - 退后.flac",
+      "declared": 320000,
+      "realBps": 918334,
+      "ratio": "0.35"
+    },
+    {
+      "name": "周杰伦 - 黑色毛衣.flac",
+      "declared": 320000,
+      "realBps": 893655,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦 - 龙卷风.flac",
+      "declared": 320000,
+      "realBps": 886708,
+      "ratio": "0.36"
+    },
+    {
+      "name": "周杰伦、梁心颐 - 珊瑚海.flac",
+      "declared": 320000,
+      "realBps": 914043,
+      "ratio": "0.35"
+    },
+    {
+      "name": "周杰伦、潘儿 - 夜的第七章.flac",
+      "declared": 320000,
+      "realBps": 961690,
+      "ratio": "0.33"
+    },
+    {
+      "name": "季彦霖 - 选择失忆.flac",
+      "declared": 320000,
+      "realBps": 1509089,
+      "ratio": "0.21"
+    },
+    {
+      "name": "颜人中 - 慢慢.flac",
+      "declared": 320000,
+      "realBps": 1532907,
+      "ratio": "0.21"
+    },
+    {
+      "name": "黄龄 - 鸳鸯戏.flac",
+      "declared": 320002,
+      "realBps": 1835112,
+      "ratio": "0.17"
+    }
+  ]
+}

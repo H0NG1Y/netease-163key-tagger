@@ -1,0 +1,24 @@
+# 依赖（本项目实际零依赖，留一行防止将来加）
+node_modules/
+
+# 运行时产物：扫描/匹配报告、缓存、日志、临时副本
+out/
+*.tmp
+.backup-*
+
+# 本机配置：里面有绝对的目录路径，不应该进仓库
+.config.json
+
+# 测试音乐库：真实音乐文件有版权，不能提交
+music/
+music-backup/
+test/e2e/src/
+test/e2e/work/
+test/e2e/*.json
+test/e2e/*.log.json
+
+# 编辑器和系统垃圾
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

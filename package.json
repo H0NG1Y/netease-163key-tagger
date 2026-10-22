@@ -1,0 +1,23 @@
+{
+  "name": "netease-163key-tagger",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "给本地音乐文件（MP3/FLAC/NCM）写入网易云音乐的 163 key(Don't modify) 标签",
+  "main": "lib/163key.mjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "scan": "node apply.mjs scan",
+    "dry-run": "node apply.mjs apply --dry-run",
+    "apply": "node apply.mjs apply",
+    "verify": "node apply.mjs verify",
+    "self-test": "node apply.mjs self-test",
+    "start": "node server.mjs",
+    "web": "node server.mjs",
+    "test": "node apply.mjs self-test"
+  },
+  "dependencies": {},
+  "comment": "刻意零依赖：只用 Node 内置 crypto / fetch / fs，避免沙箱里装不了包"
+}

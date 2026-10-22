@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-22T07:18:14.244Z",
+  "results": [
+    {
+      "file": "01-crypto.mjs",
+      "title": "算法反证（163key 加解密 + ground truth 逐字节往返）",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "02-audio-integrity.mjs",
+      "title": "音频区不变（vs 备份 / vs 原始素材）",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "03-musicid-audit.mjs",
+      "title": "musicId 正确性（全量反查 + UGC 陷阱 + 时长/专辑）",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "04-structure-idempotency.mjs",
+      "title": "幂等 + 结构完整性（APIC/PICTURE/last 标志）",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "05-guard.mjs",
+      "title": "保护目录 guard（真的调用 write163Key 撞）",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "06-metadata-fidelity.mjs",
+      "title": "元数据保真（标签只能增不能删 / bitrate / 封面）",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "07-audio-integrity-deep.mjs",
+      "title": "音频流深度完整性（Xing 帧数 / STREAMINFO / 尾部标签）",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "08-bitrate-recheck.mjs",
+      "title": "【复验】独立重算 bitrate 并与 163key 逐条比对",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "09-unwritten-recheck.mjs",
+      "title": "【复验】未写入文件是否仍属正确保守",
+      "ok": true,
+      "exitCode": 0
+    },
+    {
+      "file": "10-same-release-guard.mjs",
+      "title": "【复验】sameRelease 判据是否过度放行",
+      "ok": true,
+      "exitCode": 0
+    }
+  ]
+}
