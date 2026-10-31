@@ -1,6 +1,6 @@
 {
   "name": "netease-163key-tagger",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "description": "给本地音乐文件写入网易云音乐的 163key 标签，让客户端认成曲库里的歌",

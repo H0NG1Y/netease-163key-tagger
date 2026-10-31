@@ -100,7 +100,7 @@ function renderPaths() {
   const c = state.config;
   const parts = [];
   parts.push(c.root ? `音乐目录 ${c.root}` : '未设置音乐目录');
-  if (c.backup) parts.push(`备份 ${c.backup}`);
+  if (c.downloadRoot) parts.push(`下载目录 ${c.downloadRoot}`);
   $('paths').textContent = parts.join('   ·   ');
 }
 
@@ -155,7 +155,7 @@ function render() {
       const st = statusOf(r);
       const delta = r.durationDeltaMs;
       const dcls = delta == null ? '' : delta > 5000 ? 'bad' : delta <= 2000 ? 'good' : '';
-      const al = albumName(r.best.album);
+      const al = r.best ? albumName(r.best.album) : '';
       const hit = r.best
         ? `<div class="hitname">${esc(r.best.name)}</div>
            <div class="hitmeta">${esc(artistNames(r.best.artists))}${al ? ` · ${esc(al)}` : ''} · id ${esc(
@@ -459,7 +459,6 @@ function renderClient(off, roots) {
 function openSettings() {
   const c = state.config;
   $('cfg-root').value = c.root || '';
-  $('cfg-backup').value = c.backup || '';
   $('cfg-download').value = c.downloadRoot || '';
   $('cfg-limit').value = c.searchLimit ?? 100;
   $('cfg-queries').value = c.maxQueries ?? 2;
@@ -489,7 +488,6 @@ async function saveSettings() {
       method: 'POST',
       body: {
         root: $('cfg-root').value,
-        backup: $('cfg-backup').value,
         downloadRoot: $('cfg-download').value,
         searchLimit: Number($('cfg-limit').value),
         maxQueries: Number($('cfg-queries').value),

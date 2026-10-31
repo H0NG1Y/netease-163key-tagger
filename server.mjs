@@ -20,6 +20,7 @@ import { build163Key, parse163Key } from './lib/163key.mjs';
 import { readTags, getProtectedRoots, addProtectedRoot } from './lib/tags.mjs';
 import * as api from './lib/netease-api.mjs';
 import { isDefiniteUgc, catalogScore, parseFilename, pickBest, DURATION_TOLERANCE_MS } from './lib/match.mjs';
+import { systemMusicDir } from './lib/paths.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 // exe 态由启动器注入：ASSETS 指向释放出来的资源目录，DATA 指向用户数据目录。
@@ -41,8 +42,8 @@ const PORT = Number(process.env.PORT || 0);
 // ── 配置 ─────────────────────────────────────────────────────
 
 const DEFAULT_CONFIG = {
+  // 留空 = 交给 apply.mjs 用「系统自带的音乐文件夹」(%USERPROFILE%\Music)
   root: process.env.NETEASE_163KEY_ROOT || '',
-  backup: process.env.NETEASE_163KEY_BACKUP || '',
   downloadRoot: '',
   // 额外的只读保护目录：原始素材放这里，工具永远不会往里写
   protect: [],
@@ -62,8 +63,11 @@ function saveConfig(cfg) {
   fs.writeFileSync(CONFIG_FILE, `${JSON.stringify(cfg, null, 2)}\n`);
 }
 let config = loadConfig();
-if (config.backup) addProtectedRoot(config.backup);
+delete config.backup; // v0.3.1 起不再有「备份目录」，老配置里的残留字段直接丢掉
 if (Array.isArray(config.protect)) for (const d of config.protect) if (d) addProtectedRoot(d);
+
+/** 实际生效的音乐目录：设置里留空就落到系统自带的音乐文件夹 */
+const effectiveRoot = () => config.root || systemMusicDir();
 
 // ── 任务管理 ─────────────────────────────────────────────────
 
@@ -154,10 +158,9 @@ function startJob(op, args) {
   fs.writeFileSync(progressFile, '');
 
   const env = { ...process.env };
-  const protect = [config.backup, ...getProtectedRoots()].filter(Boolean);
+  const protect = getProtectedRoots().filter(Boolean);
   if (protect.length) env.NETEASE_163KEY_PROTECT = protect.join(path.delimiter);
-  env.NETEASE_163KEY_ROOT = config.root || '';
-  env.NETEASE_163KEY_BACKUP = config.backup || '';
+  env.NETEASE_163KEY_ROOT = effectiveRoot();
   // 子进程要和父进程用同一个数据目录（exe 态是 ~/.netease-163key-tagger）
   env.NETEASE_163KEY_DATA = DATA;
 
@@ -236,8 +239,7 @@ function reportRecords() {
 
 /** 只允许读 root 之下的文件，防止路径穿越把整个硬盘当音乐库 */
 function safeUnderRoot(rel) {
-  if (!config.root) throw new Error('还没有设置音乐目录');
-  const root = path.resolve(config.root);
+  const root = path.resolve(effectiveRoot());
   const abs = path.resolve(root, rel);
   if (!(abs === root || abs.startsWith(root + path.sep))) throw new Error('路径越界');
   return abs;
@@ -454,15 +456,14 @@ async function handleApi(req, res, url) {
 
   if (p === '/api/config' && req.method === 'POST') {
     const body = JSON.parse((await readBody(req)) || '{}');
-    for (const k of ['root', 'backup', 'downloadRoot']) {
+    for (const k of ['root', 'downloadRoot']) {
       if (typeof body[k] === 'string') config[k] = body[k].trim();
     }
     for (const k of ['searchLimit', 'maxQueries', 'sleepMs']) {
       if (body[k] != null && Number.isFinite(Number(body[k]))) config[k] = Number(body[k]);
     }
-    if (config.backup) addProtectedRoot(config.backup);
     saveConfig(config);
-    return json(res, 200, { ok: true, config, protectedRoots: getProtectedRoots() });
+    return json(res, 200, { ok: true, config, root: effectiveRoot(), protectedRoots: getProtectedRoots() });
   }
 
   if (p === '/api/events') {
@@ -499,15 +500,13 @@ async function handleApi(req, res, url) {
   }
 
   if (p === '/api/scan' && req.method === 'POST') {
-    if (!config.root) return json(res, 400, { error: '先设置音乐目录' });
-    return json(res, 200, startJob('scan', ['--root', config.root, '--out', scanPath()]));
+    return json(res, 200, startJob('scan', ['--root', effectiveRoot(), '--out', scanPath()]));
   }
 
   if (p === '/api/match' && req.method === 'POST') {
-    if (!config.root) return json(res, 400, { error: '先设置音乐目录' });
     const args = [
       '--root',
-      config.root,
+      effectiveRoot(),
       '--report',
       reportPath(),
       '--search-limit',
@@ -536,8 +535,7 @@ async function handleApi(req, res, url) {
   }
 
   if (p === '/api/verify' && req.method === 'POST') {
-    const args = ['--root', config.root, '--report', reportPath(), '--out', path.join(OUT, 'verify.json')];
-    if (config.backup) args.push('--backup', config.backup);
+    const args = ['--root', effectiveRoot(), '--report', reportPath(), '--out', path.join(OUT, 'verify.json')];
     return json(res, 200, startJob('verify', args));
   }
 
@@ -883,8 +881,7 @@ server.listen(PORT, '127.0.0.1', () => {
   const { port } = server.address();
   const url = `http://127.0.0.1:${port}`;
   console.log(`netease-163key-tagger 已启动：${url}`);
-  console.log(`音乐目录: ${config.root || '(未设置)'}`);
-  if (config.backup) console.log(`备份目录（只读保护）: ${config.backup}`);
+  console.log(`音乐目录: ${effectiveRoot()}${config.root ? '' : '  （系统音乐文件夹，没设置过就用它）'}`);
   console.log('按 Ctrl+C 停止服务。');
   if (process.env.NO_OPEN !== '1') {
     const cmd =

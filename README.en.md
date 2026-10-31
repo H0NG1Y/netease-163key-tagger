@@ -32,12 +32,12 @@ Every release ships **two builds with identical features**; the only difference 
 | Download | Best for | Notes |
 | --- | --- | --- |
 | `netease-163key-tagger-vX.Y.Z.exe` | Occasional use, keep it on a USB stick | **Portable** — no install, no extraction, just double-click. No Node.js needed. |
-| `netease-163key-tagger-setup-vX.Y.Z.exe` | Regular use, want it on your PATH | **Installer** — installs to a fixed folder, registers itself on PATH, adds a standard uninstall entry. |
+| `netease-163key-tagger-setup-vX.Y.Z.exe` | Regular use, want it on your PATH | **Installer** — installs per-user, registers itself on PATH, adds a standard uninstall entry. **No admin rights needed.** |
 
 Each release also ships `checksums.txt` so you can verify the download:
 
 ```powershell
-Get-FileHash .\netease-163key-tagger-v0.3.0.exe -Algorithm SHA256
+Get-FileHash .\netease-163key-tagger-v0.3.1.exe -Algorithm SHA256
 ```
 
 ### Portable build
@@ -61,11 +61,11 @@ The command line works too, but you have to spell out the path:
 
 Download `...-setup-...exe`, double-click it, click **Install**. It will:
 
-1. Install to `C:\Program Files\netease-163key-tagger\`
-2. Add that folder to the **system** PATH
+1. Install to `%LOCALAPPDATA%\Programs\netease-163key-tagger\` (current user only)
+2. Add that folder to the **user** PATH
 3. Register a standard uninstall entry in **Settings → Apps → Installed apps**
 
-Because it writes to Program Files and the system PATH, **it asks for administrator rights via UAC** (same as the neighbouring [gacha-link-fetcher](https://github.com/H0NG1Y/gacha-link-fetcher)). The wizard lets you choose whether to add the PATH entry, whether to create a desktop shortcut, and whether to launch the app when done.
+**No administrator rights, no UAC prompt** (per-user since 0.3.1; the 0.3.0 build installed into Program Files as admin — uninstall that one first if you have it). The wizard lets you choose whether to add the PATH entry, whether to create a desktop shortcut, and whether to launch the app when done.
 
 Then open a **new** terminal window and run it from anywhere:
 
@@ -86,16 +86,16 @@ These are the standard Inno Setup switches:
 
 ```powershell
 # silent install (adds the PATH entry by default)
-.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+.\netease-163key-tagger-setup-v0.3.1.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 
 # custom folder
-.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /DIR="D:\Tools\163key"
+.\netease-163key-tagger-setup-v0.3.1.exe /VERYSILENT /DIR="D:\Tools\163key"
 
 # skip the PATH entry (no /TASKS means no optional task)
-.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /TASKS=""
+.\netease-163key-tagger-setup-v0.3.1.exe /VERYSILENT /TASKS=""
 
 # silent uninstall
-"C:\Program Files\netease-163key-tagger\unins000.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+"%LOCALAPPDATA%\Programs\netease-163key-tagger\unins000.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 ```
 
 Install logs land in `%TEMP%\Setup Log *.txt`.
@@ -105,11 +105,11 @@ Install logs land in `%TEMP%\Setup Log *.txt`.
 <details>
 <summary>Which environment variable does it touch? Can it break my PATH?</summary>
 
-It edits **`Path`** under `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` — the system PATH.
+It edits **`Path`** under `HKCU\Environment` — the **current user's** PATH. The system PATH is never touched, so other accounts on the machine are unaffected.
 
 Three deliberate choices to avoid making a mess:
 
-- The value is read **raw**, so existing `%SystemRoot%\system32`-style variable references in your PATH are **not** expanded (verified by experiment, not assumed)
+- The value is read **raw**, so existing `%USERPROFILE%\...`-style variable references in your PATH are **not** expanded (verified by experiment, not assumed)
 - `ValueType: expandsz` plus `preservestringtype` keeps the type as `REG_EXPAND_SZ` instead of downgrading it to `REG_SZ`
 - It checks first, so an already-present folder is never added twice
 
@@ -140,12 +140,12 @@ pwsh .\Build-Release.ps1
 ## Usage
 
 1. Double-click the EXE; your browser opens `http://127.0.0.1:port`.
-2. Open **Settings** and pick your **music folder** (gets written) and a **backup folder** (registered read-only, the tool will never write into it).
+2. Open **Settings** and confirm your **music folder** (gets written). Leave it blank to use the system music folder (`%USERPROFILE%\Music`).
 3. Click **① Scan** to read tags, duration and real bitrate.
 4. Click **② Match** to search the catalog. A live progress bar shows the current file.
 5. For anything uncertain, click **Review** to compare candidates side by side — audition the file, see cover art and duration deltas, or paste a song ID / share link for an exact lookup.
 6. Click **③ Write tags**. Only auto-matched entries are written by default; everything else needs your explicit approval.
-7. Click **④ Verify** to compare the audio payload against the backup byte for byte.
+7. Click **④ Verify** to re-parse every file and confirm the 163key is self-consistent and the audio duration is unchanged.
 
 Tick the two checkboxes to also fix title / artist / album / cover art (off by default).
 
@@ -158,7 +158,7 @@ Tick the two checkboxes to also fix title / artist / album / cover art (off by d
 - In-place writes whenever the new tag fits the existing padding — audio bytes stay untouched
 - Optional metadata rewrite for title, artist, album and cover art (`--meta` / `--cover`)
 - Dry-run by default; nothing is written without explicit confirmation
-- Backup folder is registered read-only with segment-aware path checks
+- Any folder can be registered read-only (the `protect` config key) with segment-aware path checks
 - Zero npm dependencies, Node built-ins only
 
 ## About the "Downloaded" state
@@ -212,7 +212,7 @@ netease-163key-tagger scan     --root D:\Music
 netease-163key-tagger match    --root D:\Music
 netease-163key-tagger apply    --report out/matches.json --dry-run
 netease-163key-tagger apply    --report out/matches.json --write
-netease-163key-tagger verify   --root D:\Music --backup D:\Music-backup
+netease-163key-tagger verify   --root D:\Music
 netease-163key-tagger self-test
 ```
 
@@ -253,7 +253,7 @@ Two more subtle ones: the client only reads the **last** `COMM` frame (a key pla
 - Only reads the music folder you choose.
 - Network is used for two things: catalog search, and cover download (only when you tick the cover option).
 - Reports, caches and logs stay in the app data folder; nothing is uploaded.
-- The backup folder is registered read-only; any write attempt errors out.
+- Any folder you register as protected is refused at write time; write attempts error out.
 - Dry-run by default; writing requires explicit confirmation.
 - Never modifies anything inside the client install directory; the Client Check opens a copy of the database read-only.
 

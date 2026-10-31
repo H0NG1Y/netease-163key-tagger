@@ -32,12 +32,12 @@
 | 下载 | 适合谁 | 说明 |
 | --- | --- | --- |
 | `netease-163key-tagger-v版本号.exe` | 偶尔用、想随身带 | **单文件版**，绿色免安装，双击即用，不需要装 Node.js |
-| `netease-163key-tagger-setup-v版本号.exe` | 经常用、想直接敲命令 | **安装版**，装到固定目录并登记进 PATH，带标准卸载项 |
+| `netease-163key-tagger-setup-v版本号.exe` | 经常用、想直接敲命令 | **安装版**，装到用户目录并登记进 PATH，带标准卸载项，**不需要管理员** |
 
 Release 同时提供 `checksums.txt`，可以核对下载文件的 SHA-256：
 
 ```powershell
-Get-FileHash .\netease-163key-tagger-v0.3.0.exe -Algorithm SHA256
+Get-FileHash .\netease-163key-tagger-v0.3.1.exe -Algorithm SHA256
 ```
 
 ### 单文件版
@@ -61,11 +61,11 @@ Get-FileHash .\netease-163key-tagger-v0.3.0.exe -Algorithm SHA256
 
 下载 `...-setup-...exe`，**双击**，点「安装」。它会做三件事：
 
-1. 装到 `C:\Program Files\netease-163key-tagger\`
-2. 把安装目录登记进**系统** PATH
+1. 装到 `%LOCALAPPDATA%\Programs\netease-163key-tagger\`（只给当前用户）
+2. 把安装目录登记进**用户** PATH
 3. 在「设置 → 应用 → 已安装的应用」里登记标准卸载项
 
-因为要写 Program Files 和系统 PATH，**安装时会弹一次 UAC 要管理员权限**（和隔壁的 [gacha-link-fetcher](https://github.com/H0NG1Y/gacha-link-fetcher) 一样）。安装向导里可以选：
+**不需要管理员权限，全程不弹 UAC**（0.3.1 起改成每用户安装；0.3.0 那次是管理员装到 Program Files，如果你装过，先卸载它再装新版）。安装向导里可以选：
 
 - 是否加入 PATH
 - 是否创建桌面快捷方式
@@ -90,16 +90,16 @@ Inno Setup 的标准静默参数：
 
 ```powershell
 # 静默安装（默认会加 PATH）
-.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+.\netease-163key-tagger-setup-v0.3.1.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 
 # 指定目录
-.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /DIR="D:\Tools\163key"
+.\netease-163key-tagger-setup-v0.3.1.exe /VERYSILENT /DIR="D:\Tools\163key"
 
 # 不要加 PATH（不加 /TASKS 就是不加）
-.\netease-163key-tagger-setup-v0.3.0.exe /VERYSILENT /TASKS=""
+.\netease-163key-tagger-setup-v0.3.1.exe /VERYSILENT /TASKS=""
 
 # 静默卸载
-"C:\Program Files\netease-163key-tagger\unins000.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+"%LOCALAPPDATA%\Programs\netease-163key-tagger\unins000.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 ```
 
 安装日志写在 `%TEMP%\Setup Log *.txt`。
@@ -109,11 +109,11 @@ Inno Setup 的标准静默参数：
 <details>
 <summary>它改的是哪个环境变量？会不会写坏我的 PATH？</summary>
 
-改的是 `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` 里的 **`Path`**，也就是系统 PATH。
+改的是 `HKCU\Environment` 里的 **`Path`**，也就是**当前用户**的 PATH——不碰系统 PATH，也就不会影响这台机器上的其他账户。
 
 三个实现细节，专门为了不给人添麻烦：
 
-- 读的时候是**原样读**的，PATH 里原有的 `%SystemRoot%\system32` 这类变量引用**不会被展开**（这条是实测验证过的）
+- 读的时候是**原样读**的，PATH 里原有的 `%USERPROFILE%\...` 这类变量引用**不会被展开**（这条是实测验证过的）
 - `ValueType: expandsz` + `preservestringtype`，值类型仍然是 `REG_EXPAND_SZ`，不会被降级成 `REG_SZ`
 - 安装前先查重，已经在 PATH 里就不重复添加
 
@@ -144,12 +144,12 @@ pwsh .\Build-Release.ps1
 ## 使用方法
 
 1. 双击 EXE，浏览器会自动打开 `http://127.0.0.1:端口`。
-2. 点「设置」，选择**音乐目录**（会被写入）和**备份目录**（会被登记为只读，工具永远不会往里写）。
+2. 点「设置」，确认**音乐目录**（会被写入）。留空就用系统自带的音乐文件夹（`%USERPROFILE%\Music`）。
 3. 点「① 扫描目录」，读取每个文件的标签、时长和实际码率。
 4. 点「② 联网匹配」，按歌手和歌名去曲库搜索，进度条实时显示处理到哪个文件。
 5. 对拿不准的条目点「复核」，在右侧抽屉里对比候选：可以试听、看封面和时长差，也可以直接粘贴歌曲 ID 或分享链接精确查找。
 6. 点「③ 写入标签」。默认只写「自动命中」的条目，其余需要你显式放行。
-7. 点「④ 校验结果」，把音频区和备份逐字节比对。
+7. 点「④ 校验结果」，重新解析每个文件，确认 163key 自洽、音频时长没变。
 
 想同时修正文件里显示的标题、歌手、专辑或封面，勾上对应的两个复选框（默认关闭，见下方「顺带改写文件信息」）。
 
@@ -162,7 +162,7 @@ pwsh .\Build-Release.ps1
 - 写入优先「同尺寸原地改」：能塞进原标签空间时只改标签区，音频字节一字节不动
 - 可选同时改写标题、歌手、专辑与封面（`--meta` / `--cover`）
 - 所有写操作默认 dry-run，不显式确认不落盘
-- 备份目录登记为只读保护，路径比较按分段进行，不会误伤同前缀的兄弟目录
+- 可以把任意目录登记为只读保护（配置里的 `protect`），路径比较按分段进行，不会误伤同前缀的兄弟目录
 - 零 npm 依赖，只用 Node 内置模块
 
 ## 关于「让客户端认成已下载」
@@ -220,7 +220,7 @@ netease-163key-tagger scan     --root D:\Music
 netease-163key-tagger match    --root D:\Music
 netease-163key-tagger apply    --report out/matches.json --dry-run
 netease-163key-tagger apply    --report out/matches.json --write
-netease-163key-tagger verify   --root D:\Music --backup D:\Music-backup
+netease-163key-tagger verify   --root D:\Music
 netease-163key-tagger self-test
 ```
 
@@ -265,7 +265,7 @@ netease-163key-tagger self-test
 - 只读取你指定的音乐目录，不会扫描其他位置。
 - 联网只做两件事：搜索曲库、下载封面（仅在你勾选「替换封面」时）。
 - 匹配报告、缓存和日志保存在程序数据目录，不会上传。
-- 备份目录登记为只读保护，任何写入尝试都会直接报错。
+- 写盘前会拒绝任何被登记为只读的目录（配置里的 `protect`），任何写入尝试都会直接报错。
 - 默认 dry-run；实际写入需要你显式确认。
 - 不修改客户端安装目录里的任何文件；「客户端检查」对数据库只读（复制到临时目录后再打开）。
 

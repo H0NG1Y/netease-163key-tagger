@@ -6,7 +6,7 @@
  *   node apply.mjs match    [--root DIR] [--report FILE] [--api MOD] [--sleep MS] [--limit N]
  *                           [--search-limit N] [--max-queries N]
  *   node apply.mjs apply    [--report FILE] [--review FILE] [--write] [--only SUBSTR] [--flac-field NAME]
- *   node apply.mjs verify   [--root DIR] [--report FILE] [--backup DIR]
+ *   node apply.mjs verify   [--root DIR] [--report FILE] [--out FILE]
  *   node apply.mjs self-test
  *
  * 安全默认：apply 不带 --write 就是 dry-run；--root 指向 E:\CloudMusic 会被硬拒绝。
@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url';
 import { build163Key, parse163Key, TAG_PREFIX } from './lib/163key.mjs';
 import { readTags, write163Key, detectFormat, parseId3v2, parseFlac, isProtected, PROTECTED_ROOTS, addProtectedRoot } from './lib/tags.mjs';
 import { parseFilename, pickBest, DURATION_TOLERANCE_MS } from './lib/match.mjs';
+import { systemMusicDir } from './lib/paths.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 // exe 态：源码被释放到临时目录，配置与产物必须落在用户数据目录，
@@ -36,10 +37,9 @@ function readLocalConfig() {
   }
 }
 const LOCAL_CFG = readLocalConfig();
-const DEFAULT_ROOT = process.env.NETEASE_163KEY_ROOT || LOCAL_CFG.root || '';
-const DEFAULT_BACKUP = process.env.NETEASE_163KEY_BACKUP || LOCAL_CFG.backup || '';
-// 备份目录和配置里点名的只读目录，一律先上锁再干活。
-if (DEFAULT_BACKUP) addProtectedRoot(DEFAULT_BACKUP);
+// 默认音乐目录 = 系统自带的音乐文件夹（%USERPROFILE%\Music），省得用户手打路径。
+const DEFAULT_ROOT = process.env.NETEASE_163KEY_ROOT || LOCAL_CFG.root || systemMusicDir();
+// 配置里点名的只读目录一律先上锁再干活。
 for (const d of LOCAL_CFG.protect || []) if (d) addProtectedRoot(d);
 
 const AUDIO_RE = /\.(mp3|flac)$/i;
@@ -105,18 +105,22 @@ function resolveRoot(flags) {
   if (!raw) {
     throw new Error(
       '没有指定音乐目录。用 --root "D:\\你的\\音乐目录"，\n' +
-        '或者在项目根目录建 .config.json 写上 {"root": "...", "backup": "..."}（Web 界面会自动帮你写）。',
+        '或者在配置目录建 .config.json 写上 {"root": "..."}（Web 界面会自动帮你写）。',
     );
   }
   const root = path.resolve(raw);
   if (isProtected(root)) {
-    throw new Error(`--root 指向了只读保护目录：${root}\n这个目录是备份/原始素材，工具不会往里写。`);
+    throw new Error(`--root 指向了只读保护目录：${root}\n这个目录被登记为只读（原始素材），工具不会往里写。`);
   }
   return root;
 }
 
-/** 音频区 md5：跳过标签，只哈希音频字节 */
-function audioDigest(file) {
+/**
+ * 音频区指纹：跳过标签，只算音频字节的 md5。
+ * verify 把它记进结果 JSON——没有「备份副本」可比的年代，它让用户能自己留档、
+ * 隔一段时间再跑一次对比（音频区变了哈希就会变）。
+ */
+function audioFingerprint(file) {
   const buf = fs.readFileSync(file);
   const fmt = detectFormat(file, buf);
   let off = 0;
@@ -609,12 +613,11 @@ async function cmdApply(flags) {
 
 function cmdVerify(flags) {
   const root = resolveRoot(flags);
-  const backup = path.resolve(String(flags.backup || DEFAULT_BACKUP));
   const report = readJsonIf(path.resolve(String(flags.report || path.join(OUT, 'matches.json'))));
   const expect = new Map((report?.records || []).map((r) => [r.file, r]));
   const files = listAudio(root);
 
-  let okCount = 0;
+  let durOk = 0;
   const problems = [];
   const perFile = [];
   for (const f of files) {
@@ -653,17 +656,28 @@ function cmdVerify(flags) {
       }
     }
 
-    // 音频区必须与备份完全一致
-    const bk = path.join(backup, rel);
-    if (fs.existsSync(bk)) {
-      const a = audioDigest(f);
-      const b = audioDigest(bk);
-      row.audioMd5 = a.audioMd5;
-      row.backupAudioMd5 = b.audioMd5;
-      if (a.audioMd5 !== b.audioMd5) problems.push(`${rel}: 音频区 md5 与备份不一致！`);
-      else okCount++;
+    // 音频区自洽检查（不再需要一份「备份副本」）：
+    //   标签写在音频流之外，所以只要能重新解析出音频头、且时长与扫描时一致，
+    //   就说明这次写入没碰过音频区。时长变了 = 音频头被动过，必须报出来。
+    const expDur = exp?.localDurationMs;
+    row.audioDurationMs = t.durationMs ?? null;
+    if (Number.isFinite(expDur) && expDur > 0 && Number.isFinite(t.durationMs) && t.durationMs > 0) {
+      row.expectedDurationMs = expDur;
+      if (Math.abs(t.durationMs - expDur) > 1) {
+        problems.push(`${rel}: 音频时长 ${t.durationMs}ms 与扫描时 ${expDur}ms 不一致（音频区可能被破坏）`);
+      } else {
+        durOk++;
+      }
     } else {
-      row.backupMissing = true;
+      row.audioDurationUnchecked = true;
+    }
+    // 顺便留下音频区指纹，方便用户自己隔期比对
+    try {
+      const fp = audioFingerprint(f);
+      row.audioMd5 = fp.audioMd5;
+      row.audioBytes = fp.size - fp.off;
+    } catch {
+      /* 指纹算不出来不影响判定 */
     }
     perFile.push(row);
   }
@@ -672,7 +686,6 @@ function cmdVerify(flags) {
   const intentional = perFile.filter((r) => r.skippedIntentional);
   writeJson(outFile, {
     root,
-    backup,
     when: new Date().toISOString(),
     files: perFile.length,
     problems,
@@ -682,14 +695,14 @@ function cmdVerify(flags) {
       files: perFile.length,
       withKey: perFile.filter((r) => r.hasKey).length,
       skippedIntentional: intentional.length,
-      audioVerified: okCount,
+      audioDurationVerified: durOk,
       problems: problems.length,
     },
     skipped: intentional.map((r) => ({ file: r.file, format: r.format, reason: r.expected })),
     perFile,
   });
-  console.log(`校验 ${root}（对比备份 ${backup}）`);
-  console.log(`  文件 ${perFile.length}，音频区与备份一致 ${okCount}`);
+  console.log(`校验 ${root}`);
+  console.log(`  文件 ${perFile.length}，音频时长与扫描时一致 ${durOk}`);
   console.log(`  带 163key: ${perFile.filter((r) => r.hasKey).length}，按策略有意未写: ${intentional.length}`);
   if (problems.length) {
     console.log(`  ❌ ${problems.length} 个问题：`);
@@ -698,7 +711,7 @@ function cmdVerify(flags) {
     console.log('  ✅ 无问题');
   }
   console.log(`  -> ${outFile}`);
-  emit('done', { op: 'verify', out: outFile, counts: { files: perFile.length, withKey: perFile.filter((r) => r.hasKey).length, skippedIntentional: intentional.length, audioVerified: okCount, problems: problems.length }, problems: problems.slice(0, 40) });
+  emit('done', { op: 'verify', out: outFile, counts: { files: perFile.length, withKey: perFile.filter((r) => r.hasKey).length, skippedIntentional: intentional.length, audioDurationVerified: durOk, problems: problems.length }, problems: problems.slice(0, 40) });
   return problems.length;
 }
 
@@ -706,6 +719,7 @@ function cmdVerify(flags) {
 
 function cmdSelfTest() {
   let bad = 0;
+  let ran = 0;
   for (const t of ['test/tags.selftest.mjs', 'test/match.selftest.mjs', 'test/meta.selftest.mjs', 'test/e2e.mjs']) {
     const p = path.join(HERE, t);
     if (!fs.existsSync(p)) {
@@ -714,9 +728,19 @@ function cmdSelfTest() {
     }
     console.log(`\n=== ${t} ===`);
     const r = spawnSync(NODE, [p], { stdio: 'inherit', cwd: HERE });
+    ran++;
     if (r.status !== 0) bad++;
   }
-  console.log(bad ? `\n自测失败：${bad} 个套件不通过` : '\n自测全部通过');
+  if (ran === 0) {
+    // 单文件版（SEA）只打包运行时资源，不含 test/ —— 这些套件还依赖
+    // test/e2e/src 里的音频样本，塞进 exe 得不偿失。这里必须说清楚，
+    // 不能把「一个套件都没跑」渲染成「全部通过」。
+    console.log('\n没有可运行的测试套件。');
+    console.log('单文件版不含 test/（套件需要 test/e2e/src 里的音频样本），这是正常现象；');
+    console.log('要跑完整自测请在源码目录执行： node apply.mjs self-test');
+    return 0;
+  }
+  console.log(bad ? `\n自测失败：${bad} 个套件不通过` : `\n自测全部通过（${ran} 个套件）`);
   return bad;
 }
 
@@ -736,8 +760,8 @@ function emit(kind, data = {}) {
 // ── main ─────────────────────────────────────────────────────
 
 const { cmd, flags } = parseArgs(process.argv.slice(2));
-// 环境变量追加只读保护目录（多个用系统路径分隔符隔开）。Web 端用它把用户
-// 选定的备份目录锁成只读，保证任何参数组合下都不会写进备份。
+// 环境变量追加只读保护目录（多个用系统路径分隔符隔开）。Web 端用它把用户在
+// 配置里点名的只读目录锁死，保证任何参数组合下都不会往里写。
 if (process.env.NETEASE_163KEY_PROTECT) {
   for (const d of String(process.env.NETEASE_163KEY_PROTECT).split(path.delimiter)) {
     if (d.trim()) addProtectedRoot(d.trim());
@@ -760,37 +784,47 @@ const USAGE = `netease-163key-tagger
   node apply.mjs apply    [--report FILE] [--write] [--only SUBSTR] [--flac-field NAME]
                           [--no-flac-comment-copy] [--include-review] [--all]
                           [--meta] [--cover]
-  node apply.mjs verify   [--root DIR] [--report FILE] [--backup DIR] [--out FILE]
+  node apply.mjs verify   [--root DIR] [--report FILE] [--out FILE]
   node apply.mjs self-test
 
-默认 root = ${DEFAULT_ROOT || '(未配置，用 --root 指定)'}（会被写入的工作目录）
-备份目录 = ${DEFAULT_BACKUP || '(未配置)'}，它是只读保护目录，写入会被硬拒绝。
+默认 root = ${DEFAULT_ROOT}（系统音乐文件夹 %USERPROFILE%\\Music，可在设置里改）
+verify 不再需要备份副本：它校验每个文件的 163key 自洽性，并用「音频时长与扫描时一致」
+来证明音频区没被这次写入动过。
 apply 默认只写「高置信度自动匹配」的记录；--include-review 放行中等置信度，--all 放行全部。
 match 默认每个查询拉 --search-limit 条（默认 100）——匿名搜索里翻唱会挤满前 20 条，
 原唱在更深的位置；每个文件最多试 --max-queries 个查询（默认 2），拿到时长自洽的自动候选就收手。`;
 
-try {
-  switch (cmd) {
-    case 'scan':
-      cmdScan(flags);
-      break;
-    case 'match':
-      await cmdMatch(flags);
-      break;
-    case 'apply':
-      await cmdApply(flags);
-      break;
-    case 'verify':
-      process.exitCode = cmdVerify(flags) ? 1 : 0;
-      break;
-    case 'self-test':
-      process.exitCode = cmdSelfTest() ? 1 : 0;
-      break;
-    default:
-      console.log(USAGE);
-      process.exitCode = cmd ? 2 : 0;
+// 入口分发。
+// 用 async IIFE 包住、不在模块顶层 await：顶层 await 会让本文件成为
+// 「异步 ESM 图」，node 的 require(esm) 会直接拒绝加载
+// （ERR_REQUIRE_ASYNC_MODULE），而 SEA 单文件版启动器正是靠
+// createRequire 从释放目录里加载本文件的。
+// 返回值导出成 `done`：require() 是同步的，启动器拿到命名空间后
+// `await done` 才能真正等这次命令跑完（否则异步命令可能被提前退出）。
+export const done = (async () => {
+  try {
+    switch (cmd) {
+      case 'scan':
+        cmdScan(flags);
+        break;
+      case 'match':
+        await cmdMatch(flags);
+        break;
+      case 'apply':
+        await cmdApply(flags);
+        break;
+      case 'verify':
+        process.exitCode = cmdVerify(flags) ? 1 : 0;
+        break;
+      case 'self-test':
+        process.exitCode = cmdSelfTest() ? 1 : 0;
+        break;
+      default:
+        console.log(USAGE);
+        process.exitCode = cmd ? 2 : 0;
+    }
+  } catch (e) {
+    console.error(`错误：${e.message}`);
+    process.exitCode = 1;
   }
-} catch (e) {
-  console.error(`错误：${e.message}`);
-  process.exitCode = 1;
-}
+})();

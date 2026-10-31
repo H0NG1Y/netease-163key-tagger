@@ -95,6 +95,7 @@ const path = require('node:path');
 const os = require('node:os');
 const crypto = require('node:crypto');
 const { pathToFileURL } = require('node:url');
+const { createRequire } = require('node:module');
 
 const EMBEDDED = {
 ${assetLines}
@@ -108,20 +109,47 @@ function contentHash() {
 }
 
 /**
- * 释放内嵌资源到临时目录，返回该目录。
- * 目录名带内容指纹：同名则跳过写入（第二次启动几乎零开销）。
+ * 把内嵌资源写到 dir。
  */
-function materialize() {
-  const base = process.env.NETEASE_163KEY_HOME || path.join(os.tmpdir(), 'netease-163key-tagger');
-  const dir = path.join(base, contentHash());
-  const ready = path.join(dir, '.ready');
-  if (fs.existsSync(ready)) return dir;
+function extractInto(dir) {
   fs.mkdirSync(path.join(dir, 'lib'), { recursive: true });
   fs.mkdirSync(path.join(dir, 'web'), { recursive: true });
   for (const [rel, b64] of Object.entries(EMBEDDED)) {
     fs.writeFileSync(path.join(dir, rel), Buffer.from(b64, 'base64'));
   }
-  fs.writeFileSync(ready, new Date().toISOString());
+  fs.writeFileSync(path.join(dir, '.ready'), new Date().toISOString());
+}
+
+/**
+ * 目录是不是「完整可用」：每个文件都在、字节数对得上、.ready 也在。
+ * 只认 .ready 是不够的 —— 目录被外部清过、或上次写到一半被打断时，
+ * 只认标记会一直加载一堆残缺文件。
+ */
+function dirLooksComplete(dir) {
+  for (const [rel, b64] of Object.entries(EMBEDDED)) {
+    let st;
+    try {
+      st = fs.statSync(path.join(dir, rel));
+    } catch {
+      return false;
+    }
+    if (!st.isFile() || st.size !== Buffer.from(b64, 'base64').length) return false;
+  }
+  return fs.existsSync(path.join(dir, '.ready'));
+}
+
+/**
+ * 释放内嵌资源到临时目录，返回该目录。
+ * 目录名带内容指纹：同名且完整就跳过写入（第二次启动几乎零开销）。
+ */
+function materialize(force) {
+  const base = process.env.NETEASE_163KEY_HOME || path.join(os.tmpdir(), 'netease-163key-tagger');
+  const dir = path.join(base, contentHash());
+  if (!force && dirLooksComplete(dir)) return dir;
+  try {
+    fs.rmSync(dir, { recursive: true, force: true });
+  } catch {}
+  extractInto(dir);
   return dir;
 }
 
@@ -147,11 +175,52 @@ function materialize() {
   const target = isCli ? 'apply.mjs' : 'server.mjs';
   if (isCli) process.argv = [process.argv[0], path.join(dir, 'apply.mjs'), ...cliArgs];
 
-  try {
-    await import(pathToFileURL(path.join(dir, target)).href);
-  } catch (e) {
+  // 加载方式：createRequire 优先，动态 import / require 做兜底。
+  // 为什么 createRequire 排第一：它锚在释放目录的假 CJS 文件上，能正确
+  //   把 entry 当「磁盘上的文件路径」解析。另外两种在 Node 26 的 SEA 里
+  //   都会把路径当成内置模块去找（No such built-in module: C:\...）。
+  // 前提：apply.mjs / server.mjs 的 ESM 图里不能有顶层 await，
+  //   否则 createRequire 会抛 ERR_REQUIRE_ASYNC_MODULE。
+  //   （apply.mjs 的入口分发已经包进 async IIFE 来满足这个前提。）
+  const entry = path.join(dir, target);
+  const attempts = [
+    ['createRequire', () => createRequire(path.join(dir, '__entry__.cjs'))(entry)],
+    ['import', () => import(pathToFileURL(entry).href)],
+    ['require', () => require(entry)],
+  ];
+
+  async function tryLoad() {
+    const failures = [];
+    for (const [name, attempt] of attempts) {
+      try {
+        const r = attempt();
+        const mod = r && typeof r.then === 'function' ? await r : r;
+        // apply.mjs 把入口分发的结果导出成 done：require() 是同步的，
+        // 必须显式等它，否则 match/apply 这类异步命令会被提前退出。
+        if (mod && mod.done && typeof mod.done.then === 'function') await mod.done;
+        return { ok: true, failures };
+      } catch (e) {
+        failures.push(name + ': ' + (e && e.message ? e.message : e));
+      }
+    }
+    return { ok: false, failures };
+  }
+
+  let res = await tryLoad();
+  if (!res.ok) {
+    // 兜底：解包目录可能被外部清理过，或被安全软件扫到一半卡住 ——
+    // 强制重写一遍资源再试一次，能吸收掉这类瞬时的读取失败。
+    try {
+      materialize(true);
+      res = await tryLoad();
+    } catch (e) {
+      res.failures.push('重新解包: ' + (e && e.message ? e.message : e));
+    }
+  }
+  if (!res.ok) {
     console.error('');
-    console.error('  启动失败：' + (e && e.message ? e.message : e));
+    console.error('  启动失败：');
+    for (const line of res.failures) console.error('    · ' + line);
     console.error('');
     console.error('  如果反复失败，可以删掉这个目录后重试：');
     console.error('    ' + dir);

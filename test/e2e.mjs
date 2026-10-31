@@ -282,14 +282,17 @@ console.log('\n[E5] 重复 apply 幂等');
   }
 }
 
-// ── 6. verify（对比原件当备份）────────────────────────────────
+// ── 6. verify（自洽校验：163key 自洽 + 音频时长与扫描时一致）──────
 console.log('\n[E6] verify');
 {
   // verify 有问题时退出码是 1，这里自己判，所以允许任意退出码
-  run(['verify', '--root', WORK, '--report', p('matches.json'), '--backup', SRC, '--out', p('verify.json')], null);
+  run(['verify', '--root', WORK, '--report', p('matches.json'), '--out', p('verify.json')], null);
   const v = readJson(p('verify.json'));
   ok(v.problems.length === 0, `verify 无问题（problems=${v.problems.length}）`);
   if (v.problems.length) for (const x of v.problems) console.log(`     - ${x}`);
+  // 每个文件都要有音频区指纹留档
+  const noFp = (v.perFile || []).filter((r) => !r.audioMd5);
+  ok(noFp.length === 0, `每个文件都记了音频区指纹（缺 ${noFp.length} 个）`);
 }
 
 console.log('\n============================================================');

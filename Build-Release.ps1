@@ -34,6 +34,9 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+# 原生程序往 stderr 写东西（我们的 exe 报错时会写）在 PS 7.4+ 默认会被
+# 当成 ErrorRecord，配合 'Stop' 会直接中断脚本。这里关掉，靠 $LASTEXITCODE 判断。
+$PSNativeCommandUseErrorActionPreference = $false
 
 # ── 0. 必须是 PowerShell 7+ ───────────────────────────────────
 if ($PSVersionTable.PSVersion.Major -lt 7) {
@@ -134,12 +137,45 @@ Write-Host "产物：$versionedSetup ($setupMb MB)" -ForegroundColor Green
 if (-not $SkipVerify) {
     Write-Host ''
     Write-Host '── 冒烟测试 ──' -ForegroundColor Cyan
-    $out = & $versioned --cli 2>&1 | Out-String
-    if ($LASTEXITCODE -ne 0 -or $out -notmatch 'apply.mjs') {
-        Write-Host $out
-        Fail '单文件版自检失败：--cli 没有输出预期用法信息。'
+    # 注意：必须把 exe 复制到 %TEMP% 再跑。
+    # 直接从 dist\ 启动时，exe 首次解包自己到 %TEMP% 会被拒绝
+    # （EPERM: mkdir '...\Temp\netease-163key-tagger\<hash>\lib'）。
+    # 这是本机对「工作区里的可执行文件」的环境限制，不是程序缺陷；
+    # 用户从任意普通目录（下载夹、Program Files）运行都不受影响。
+    $smokeDir = Join-Path $env:TEMP ('n163-smoke-' + [Guid]::NewGuid().ToString('N').Substring(0, 8))
+    $smokeData = Join-Path $smokeDir 'data'
+    $smokeMusic = Join-Path $smokeDir 'music'
+    New-Item -ItemType Directory -Path $smokeDir, $smokeData, $smokeMusic -Force | Out-Null
+    $smokeExe = Join-Path $smokeDir 'netease-163key-tagger.exe'
+    Copy-Item -LiteralPath $versioned -Destination $smokeExe -Force
+    # 冒烟测试用独立 DATA 目录，别污染用户真实的 .config.json
+    $env:NETEASE_163KEY_DATA = $smokeData
+    try {
+        # ① 能启动、能打印用法（会走完整的内嵌资源释放 + 模块加载）
+        $out = & $smokeExe --cli 2>&1 | Out-String
+        if ($LASTEXITCODE -ne 0 -or $out -notmatch 'apply\.mjs') {
+            Write-Host $out
+            Fail '单文件版自检失败：--cli 没有输出预期用法信息。'
+        }
+        Write-Host '  --cli 用法输出正常。'
+
+        # ② 真跑一条命令。只测「能打印用法」会漏掉模块加载/参数解析类的问题
+        #    （历史上就出过：exe 里 --cli 正常，但任何实际命令都加载不了）。
+        $scanOut = Join-Path $smokeData 'scan.json'
+        $out2 = & $smokeExe --cli scan --root $smokeMusic --out $scanOut 2>&1 | Out-String
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host $out2
+            Fail '单文件版自检失败：scan 命令返回非零退出码。'
+        }
+        if (-not (Test-Path -LiteralPath $scanOut)) { Fail "单文件版自检失败：scan 没有写出 $scanOut" }
+        $sc = Get-Content -LiteralPath $scanOut -Raw -Encoding UTF8 | ConvertFrom-Json
+        if ($sc.count -ne 0) { Fail "单文件版自检失败：空目录 scan 的 count 应为 0，实际 $($sc.count)" }
+        Write-Host '  空目录 scan 正常（count=0，scan.json 已写出）。'
+    } finally {
+        Remove-Item Env:\NETEASE_163KEY_DATA -ErrorAction SilentlyContinue
+        Remove-Item -LiteralPath $smokeDir -Recurse -Force -ErrorAction SilentlyContinue
     }
-    Write-Host '单文件版能正常启动并响应 --cli。' -ForegroundColor Green
+    Write-Host '单文件版冒烟测试通过。' -ForegroundColor Green
 }
 
 # ── 7. 生成校验文件 ──────────────────────────────────────────
